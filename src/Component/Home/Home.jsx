@@ -2,8 +2,10 @@ import React from "react";
 import "./home.css";
 
 function Home(props) {
-  return (<div><div className="container" id="container">
-  {/* <!-- /////////////////////////////////////// SECTION_1 START ////////////////////////////// --> */}
+  return (<div>
+    
+    <div className="container" id="container">
+  {/* /* <!-- /////////////////////////////////////// SECTION_1 START ////////////////////////////// --> */ }
 
   <section className="section_1">
     <div>
