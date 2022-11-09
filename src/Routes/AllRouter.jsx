@@ -1,8 +1,7 @@
 import React from "react";
 import Home from "../Component/Home/Home";
 import { Routes, Route } from "react-router-dom";
-import InternShips from "../Pages/InternShips";
-
+import InternShips from "../Pages/InternShips/InternShips";
 import JobsPage from "../Pages/JobsPage";
 import SignIngPage from "../Pages/SignIngPage";
 import LoginPage from "../Pages/LoginPage";
@@ -12,12 +11,20 @@ import ProfilePage from "../Pages/ProfilePage";
 import ChangePassword from "../Pages/ChangePassword";
 import CoursesPage from "../Pages/CoursesPage";
 import NotFoundPage from "../Pages/NotFoundPage";
+import { ChakraProvider } from "@chakra-ui/react";
 function AllRouter(props) {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/courses" element={<CoursesPage />} />
-      <Route path="/internships" element={<InternShips />} />
+      <Route
+        path="/internships"
+        element={
+          <ChakraProvider>
+            <InternShips />
+          </ChakraProvider>
+        }
+      />
       <Route path="/jobs" element={<JobsPage />} />
       <Route path="/signin" element={<SignIngPage />} />
       <Route path="/login" element={<LoginPage />} />
