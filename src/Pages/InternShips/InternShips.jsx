@@ -14,7 +14,7 @@ import {
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   SearchFailure,
   SearchRequest,
@@ -63,7 +63,7 @@ function InternShips(props) {
     setcitiypopup(!citiypop);
     dispatch(SearchRequest());
     axios
-      .get(`http://localhost:8080/intership?location=${converlowercase}`)
+      .get(`http://localhost:8080/interships?location=${converlowercase}`)
       .then((res) => dispatch(SearchSuccess(res.data)))
       .catch((err) => {
         console.log("err:", err);
@@ -96,7 +96,7 @@ function InternShips(props) {
 
     dispatch(SearchRequest());
     axios
-      .get(`http://localhost:8080/intership?q=${converlowercase}`)
+      .get(`http://localhost:8080/interships?q=${converlowercase}`)
       .then((res) => dispatch(SearchSuccess(res.data)))
       .catch((err) => {
         console.log("err:", err);
@@ -132,7 +132,7 @@ function InternShips(props) {
     if (citiyselected) {
       axios
         .get(
-          `http://localhost:8080/intership?location=${citiyselected.toLowerCase()}&type=${converlowercase}`
+          `http://localhost:8080/interships?location=${citiyselected.toLowerCase()}&type=${converlowercase}`
         )
         .then((res) => dispatch(SearchSuccess(res.data)))
         .catch((err) => {
@@ -142,7 +142,7 @@ function InternShips(props) {
     } else if (citiyselected && typeselected) {
       axios
         .get(
-          `http://localhost:8080/intership?location=${citiyselected.toLowerCase()}&type=${converlowercase} &Timing=${typeselected.toLowerCase()}`
+          `http://localhost:8080/interships?location=${citiyselected.toLowerCase()}&type=${converlowercase}&Timing=${typeselected.toLowerCase()}`
         )
         .then((res) => dispatch(SearchSuccess(res.data)))
         .catch((err) => {
@@ -151,7 +151,7 @@ function InternShips(props) {
         });
     } else {
       axios
-        .get(`http://localhost:8080/intership?q=${converlowercase}`)
+        .get(`http://localhost:8080/interships?q=${converlowercase}`)
         .then((res) => dispatch(SearchSuccess(res.data)))
         .catch((err) => {
           console.log("err:", err);
@@ -183,7 +183,7 @@ function InternShips(props) {
       let converlowercase = search.toLowerCase();
       dispatch(SearchRequest());
       axios
-        .get(`http://localhost:8080/intership?q=${converlowercase}`)
+        .get(`http://localhost:8080/interships?q=${converlowercase}`)
         .then((res) => dispatch(SearchSuccess(res.data)))
         .catch((err) => {
           console.log("err:", err);
@@ -200,6 +200,8 @@ function InternShips(props) {
       });
     }
   };
+  console.log("citiyselected:", citiyselected);
+  useEffect(() => {}, []);
 
   return (
     <Box>

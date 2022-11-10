@@ -154,7 +154,7 @@ function IntenShipResults() {
               margin={"auto"}
               marginBottom={"15px"}
             >
-              <Box width={"25%"} shadow="xs" _hover={{ background: "gray.50" }}>
+              <Box width={"25%"}>
                 {/* <Image src={interImage} alt="left_image" /> */}
               </Box>
 
