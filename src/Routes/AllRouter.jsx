@@ -29,7 +29,7 @@ function AllRouter(props) {
       <Route path="/signin" element={<SignIngPage />} />
       <Route path="/login" element={<LoginPage />} />
       <Route path="/cart" element={<CartPages />} />
-      <Route path="/viewandaplly" element={<ViewAndAplly />} />
+      <Route path="/viewandaplly/:id" element={<ViewAndAplly />} />
       <Route path="/changepassword" element={<ChangePassword />} />
       <Route path="/profile" element={<ProfilePage />} />
       <Route path="*" element={<NotFoundPage />} />
