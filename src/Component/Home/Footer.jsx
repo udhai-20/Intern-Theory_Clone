@@ -1,13 +1,13 @@
 import './footer.css'
 
 function Footer(props) {
-  return(<div><div class="footer">
-  <div class="footer_upper">
-    <div class="links">
+  return(<div><div className="footer">
+  <div className="footer_upper">
+    <div className="links">
       <div>
         <p>
           <a
-            class="material-icons jss290 fab fa-facebook-square"
+            className="material-icons jss290 fab fa-facebook-square"
             aria-hidden="true"
             href="https://www.facebook.com/interntheory"
             target="_blank"
@@ -18,7 +18,7 @@ function Footer(props) {
       <div>
         <p>
           <a
-            class="material-icons jss290 fab fa-linkedin"
+            className="material-icons jss290 fab fa-linkedin"
             aria-hidden="true"
             href="https://www.linkedin.com/company/interntheory"
             target="_blank"
@@ -29,7 +29,7 @@ function Footer(props) {
       <div>
         <p>
           <a
-            class="material-icons fab fa-twitter-square"
+            className="material-icons fab fa-twitter-square"
             aria-hidden="true"
             href="https://twitter.com/InternTheory"
             target="_blank"
@@ -39,7 +39,7 @@ function Footer(props) {
       </div>
       <div>
         <a
-          class="material-icons jss290 fab fa-instagram jss282"
+          className="material-icons jss290 fab fa-instagram jss282"
           aria-hidden="true"
           href="https://www.instagram.com/interntheory"
           target="_blank"
@@ -47,19 +47,19 @@ function Footer(props) {
         ></a>
       </div>
     </div>
-    <div class="search">
-      <div class="by_place">
+    <div className="search">
+      <div className="by_place">
         <div>BY PLACE</div>
-        <div class="hr_line"></div>
+        <div className="hr_line"></div>
         <div><p>Internship In Mumbai</p></div>
         <div><p>Internship In Delhi</p></div>
         <div><p>Internship In Banglore</p></div>
         <div><p>Internship In Pune</p></div>
         <div><p>Internship In Hydrabad</p></div>
       </div>
-      <div class="by_profile">
+      <div className="by_profile">
         <div>BY PROFILE</div>
-        <div class="hr_line"></div>
+        <div className="hr_line"></div>
         <div>
           <p>Marketing Internships</p>
         </div>
@@ -80,9 +80,9 @@ function Footer(props) {
         </div>
       </div>
 
-      <div class="by_type">
+      <div className="by_type">
         <div>BY TYPE</div>
-        <div class="hr_line"></div>
+        <div className="hr_line"></div>
         <div>
           <p>Full Time Internships</p>
         </div>
@@ -95,8 +95,8 @@ function Footer(props) {
       </div>
     </div>
   </div>
-  <div class="footer_lower">
-    <div class="footer_lower_links">
+  <div className="footer_lower">
+    <div className="footer_lower_links">
       <div>FIND INTERNSHIPS</div>
       <div>POST INTERNSHIP</div>
       <div>COURSES</div>
@@ -106,9 +106,9 @@ function Footer(props) {
       <div>ABOUT US</div>
       <div>SITEMAP</div>
     </div>
-    <div class="hr_line"></div>
+    <div className="hr_line"></div>
   </div>
-  <div class="copyright">
+  <div className="copyright">
     <p>© 2015 - 2021 INTERNTHEORY. ALL RIGHTS RESERVED.</p>
   </div>
 </div></div>)
