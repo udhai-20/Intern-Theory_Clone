@@ -8,24 +8,6 @@
 a {
   text-decoration: none;
 }
-.btn {
-  border: none;
-  margin: 2px;
-  padding: 9px;
-  background-color: rgb(223, 30, 46);
-  color: white;
-  border-radius: 3px;
-  cursor: pointer;
-}
-.btn-light {
-  color: rgb(81, 136, 240);
-  background: transparent;
-  font-weight: 500;
-}
-.btn-light:hover {
-  background-color: rgb(228, 234, 245);
-}
-
 .c-img-container {
     /* background-color: rgb(25,65,77); */
     background: url(https://assets.interntheory.com/creative/courses/listpage/Course-bannerbg.jpg);

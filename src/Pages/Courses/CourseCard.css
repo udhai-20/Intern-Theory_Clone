@@ -8,7 +8,7 @@
 a {
   text-decoration: none;
 }
-.c-bftn {
+.c-btn {
   border: none;
   margin: 2px;
   padding: 9px;
@@ -22,7 +22,7 @@ a {
   background: transparent;
   font-weight: 500;
 }
-.btn-light:hover {
+.c-btn-light:hover {
   background-color: rgb(228, 234, 245);
 }
 .c-card-container {
