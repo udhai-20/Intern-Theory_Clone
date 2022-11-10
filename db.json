@@ -22,15 +22,36 @@
 		"Chandigarh",
 		"Kolkata"
 	],
-
+ "preferance": [
+		"Advertising",
+		"Branding",
+		"Content Writing",
+		"Digital Marketing",
+		"Journalism",
+    "business development",
+		"human resources",
+		"Marketing",
+		"Operations",
+		"Others",
+    "Graphic Designing",
+		"Photography",
+		"Sales",
+		"Social Media",
+		"Software Development"
+	],
+  "Types" : [
+		"Full Time",
+    "Part TIme",
+    "Work From Home"
+	],
   "intership": [
     {
       "image": "https://assets.interntheory.com/creative/logo.png",
       "courseName": "Develop Your Skillset",
       "title": "Online Skill Development Programs",
       "Timing": "Taught by Industry Experts Internship",
-      "type": "Certified Courses",
-      "location": "Guaranteed Internship Opportunities",
+      "type": "Chuman resources",
+      "location": "pune",
       "stipend": "Learn Industry-Demanded Skills",
       "remain": "4-6 Weeks"
     },
@@ -51,7 +72,7 @@
       "Timing": "Work From Home Internship",
       "type": "human resources",
       "selection": "mumbai,delhi,bangalore ,...More",
-      "location": "mumbai,delhi,bangalore ,...More",
+      "location": "mumbai",
       "stipend": "1000 - 5000 per month",
       "remain": "2 weeks left"
     },
@@ -96,13 +117,34 @@
       "remain": "2 weeks left"
     },
     {
+      "image": "https://assets.interntheory.com/uploads/company/logos/1d75708bc583f58cdf96401fb790d7d6a904b79e.jpg",
+      "courseName": "graghic designer",
+      "title": "Digivance Solutions",
+      "Timing": "Full Time Internship",
+      "type": "social media",
+      "location": "ahmedabad",
+      "stipend": "7000 per month",
+      "remain": "2 weeks left"
+    },
+    {
       "image": "https://assets.interntheory.com/uploads/company/companylogos/62362fbf882221470f099d8d0a119df93ce19831/7e34b7356b30b3696d14fcab94c6e8989a42fd69com.jpg",
       "courseName": "Sales Officer",
       "title": "Laugh Out Loud Ventures",
       "Timing": "Part Time,Work From Home Internship",
       "type": "marketing",
       "selection8": "mumbai,bangalore,delhi ,...More",
-      "location": "mumbai,bangalore,delhi ,...More",
+      "location": "bangalore",
+      "stipend": "3000 - 6000 per month",
+      "remain": "2 weeks left"
+    },
+    {
+      "image": "https://assets.interntheory.com/uploads/company/companylogos/62362fbf882221470f099d8d0a119df93ce19831/7e34b7356b30b3696d14fcab94c6e8989a42fd69com.jpg",
+      "courseName": "Sales Officer",
+      "title": "Laugh Out Loud Ventures",
+      "Timing": "Part Time,Work From Home Internship",
+      "type": "marketing",
+      "selection8": "mumbai,bangalore,delhi ,...More",
+      "location": "gurugram",
       "stipend": "3000 - 6000 per month",
       "remain": "2 weeks left"
     },
@@ -152,7 +194,7 @@
       "title": "Quick Hub",
       "Timing": "Part Time Internship",
       "type": "business development",
-      "location": "chennai",
+      "location": "bangalore",
       "stipend": "4000 per month",
       "remain": "5 days left"
     },
@@ -161,7 +203,7 @@
       "courseName": "Android Developer Intern",
       "title": "Prodigstum Technologies Private Limited",
       "Timing": "Full Time Internship",
-      "type": "app design and development",
+      "type": "software development",
       "location": "bangalore",
       "stipend": "25000 per month",
       "remain": "4 days left"
@@ -173,7 +215,7 @@
       "Timing": "Work From Home Internship",
       "type": "Education and Training",
       "selection8": "delhi,gurgaon,greater noida ,...More",
-      "location": "delhi,gurgaon,greater, noida ,chennai,...More",
+      "location": "delhi",
       "stipend": "16000 per month",
       "remain": "4 days left"
     },
@@ -203,8 +245,18 @@
       "title": "DIBC",
       "Timing": "Full Time Internship",
       "type": "SEO",
-      "location": "mumbai",
+      "location": "ahmedabad",
       "stipend": "3000 - 8000 per month",
+      "remain": "2 days left"
+    },
+    {
+      "image": "https://assets.interntheory.com/uploads/company/companylogos/b666213054c4a46dca64c77096f26c7be7d32630/089e4392566e10879a428bbfd819f37abb18408fcom.jpg",
+      "courseName": "Graphic Design Intern",
+      "title": "DIBC",
+      "Timing": "Full Time Internship",
+      "type": "graphic designing",
+      "location": "ahmedabad",
+      "stipend": "5000 - 10000 per month",
       "remain": "2 days left"
     }
   ]
