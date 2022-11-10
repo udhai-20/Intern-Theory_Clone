@@ -31,8 +31,8 @@ export default function CourseCard({
           </div>
           <p className="c-card-emi">{emi} </p>
           <div className="c-card-btn">
-            <button className="btn btn-light">KNOW MORE</button>
-            <button onClick={() => handleAddToCart(id)} className="btn">
+            <button className="c-btn c-btn-light">KNOW MORE</button>
+            <button onClick={() => handleAddToCart(id)} className="c-btn">
               ADD TO CART
             </button>
           </div>
