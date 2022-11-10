@@ -1,19 +1,263 @@
 {
-  "posts": [
+  "cities" : [
+		"Ahmedabad",
+		"Delhi",
+		"Bangalore",
+		"Pune",
+		"Gurugram",
+		"Jalandhar",
+		"Nagpur",
+		"Aurangabaad",
+		"Indore",
+		"Bhopal",
+		"Agra",
+		"Hyderabad",
+		"Mumbai",
+		"Valsad",
+		"New Delhi",
+		"Jaipur",
+		"Kota",
+		"Faridabaad",
+		"Jalgaav",
+		"Chandigarh",
+		"Kolkata"
+	],
+ "preferance": [
+		"Advertising",
+		"Branding",
+		"Content Writing",
+		"Digital Marketing",
+		"Journalism",
+    "business development",
+		"human resources",
+		"Marketing",
+		"Operations",
+		"Others",
+    "Graphic Designing",
+		"Photography",
+		"Sales",
+		"Social Media",
+		"Software Development"
+	],
+  "Types" : [
+		"Full Time",
+    "Part TIme",
+    "Work From Home"
+	],
+  "intership": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "image": "https://assets.interntheory.com/creative/logo.png",
+      "courseName": "Develop Your Skillset",
+      "title": "Online Skill Development Programs",
+      "Timing": "Taught by Industry Experts Internship",
+      "type": "Chuman resources",
+      "location": "pune",
+      "stipend": "Learn Industry-Demanded Skills",
+      "remain": "4-6 Weeks"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "image": "https://assets.interntheory.com/uploads/company/logos/bf3174743fe71c1e3028caabc90044f486d5bc7b.jpg",
+      "courseName": "area sales manager",
+      "title": "HomeCapital",
+      "Timing": "Full Time Internship",
+      "type": "business development",
+      "location": "pune",
+      "stipend": "60000 - 80000 per month",
+      "remain": "3 weeks left"
+    },
+    {
+      "image": "https://assets.interntheory.com/uploads/company/companylogos/62362fbf882221470f099d8d0a119df93ce19831/7e34b7356b30b3696d14fcab94c6e8989a42fd69com.jpg",
+      "courseName": "Human Resource Associate",
+      "title": "Laugh Out Loud Ventures",
+      "Timing": "Work From Home Internship",
+      "type": "human resources",
+      "selection": "mumbai,delhi,bangalore ,...More",
+      "location": "mumbai",
+      "stipend": "1000 - 5000 per month",
+      "remain": "2 weeks left"
+    },
+    {
+      "image": "https://assets.interntheory.com/uploads/company/logos/964b36c595044cf05eeab95d881e196638a6b3ef.jpg",
+      "courseName": "Purchase Interns",
+      "title": "Bombay Hemp Company (BOHECO) Pvt. Ltd.",
+      "Timing": "Full Time Internship",
+      "type": "operations",
+      "location": "mumbai",
+      "stipend": "5000 per month",
+      "remain": "2 weeks left"
+    },
+    {
+      "image": "https://assets.interntheory.com/uploads/company/logos/964b36c595044cf05eeab95d881e196638a6b3ef.jpg",
+      "courseName": "Marketing Communications Intern",
+      "title": "Bombay Hemp Company (BOHECO) Pvt. Ltd.",
+      "Timing": "Full Time Internship",
+      "type": "marketing",
+      "location": "mumbai",
+      "stipend": "Expenses Covered",
+      "remain": "2 weeks left"
+    },
+    {
+      "image": "https://assets.interntheory.com/uploads/company/logos/964b36c595044cf05eeab95d881e196638a6b3ef.jpg",
+      "courseName": "Research and Development",
+      "title": "Bombay Hemp Company (BOHECO) Pvt. Ltd.",
+      "Timing": "Full Time Internship",
+      "type": "Healthcare, Life Sciences & Pharma",
+      "location": "mumbai",
+      "stipend": "2000 per month",
+      "remain": "2 weeks left"
+    },
+    {
+      "image": "https://assets.interntheory.com/uploads/company/logos/1d75708bc583f58cdf96401fb790d7d6a904b79e.jpg",
+      "courseName": "graghic designer",
+      "title": "Digivance Solutions",
+      "Timing": "Full Time Internship",
+      "type": "social media",
+      "location": "delhi",
+      "stipend": "7000 per month",
+      "remain": "2 weeks left"
+    },
+    {
+      "image": "https://assets.interntheory.com/uploads/company/logos/1d75708bc583f58cdf96401fb790d7d6a904b79e.jpg",
+      "courseName": "graghic designer",
+      "title": "Digivance Solutions",
+      "Timing": "Full Time Internship",
+      "type": "social media",
+      "location": "ahmedabad",
+      "stipend": "7000 per month",
+      "remain": "2 weeks left"
+    },
+    {
+      "image": "https://assets.interntheory.com/uploads/company/companylogos/62362fbf882221470f099d8d0a119df93ce19831/7e34b7356b30b3696d14fcab94c6e8989a42fd69com.jpg",
+      "courseName": "Sales Officer",
+      "title": "Laugh Out Loud Ventures",
+      "Timing": "Part Time,Work From Home Internship",
+      "type": "marketing",
+      "selection8": "mumbai,bangalore,delhi ,...More",
+      "location": "bangalore",
+      "stipend": "3000 - 6000 per month",
+      "remain": "2 weeks left"
+    },
+    {
+      "image": "https://assets.interntheory.com/uploads/company/companylogos/62362fbf882221470f099d8d0a119df93ce19831/7e34b7356b30b3696d14fcab94c6e8989a42fd69com.jpg",
+      "courseName": "Sales Officer",
+      "title": "Laugh Out Loud Ventures",
+      "Timing": "Part Time,Work From Home Internship",
+      "type": "marketing",
+      "selection8": "mumbai,bangalore,delhi ,...More",
+      "location": "gurugram",
+      "stipend": "3000 - 6000 per month",
+      "remain": "2 weeks left"
+    },
+    {
+      "image": "https://assets.interntheory.com/uploads/company/companylogos/28f80763d5314f188e54e4172fa2f6f42efe44ce/48c5aedd02344af8032a4cbdf11928a7b292d829com.png",
+      "courseName": "Human Resource Internship",
+      "title": "MiStay",
+      "Timing": "Full Time Internship",
+      "type": "human resources",
+      "location": "bangalore",
+      "stipend": "12000 per month",
+      "remain": "1 week"
+    },
+    {
+      "image": "https://assets.interntheory.com/uploads/company/logos/f1ef347fca86b4e1d8b4a445ff3a8fcf14fc7302.jpg",
+      "courseName": "Marketing Interns",
+      "title": "Pravaig Dynamics",
+      "Timing": "Full Time,Part Time Internship",
+      "type": "digital marketing",
+      "location": "delhi",
+      "stipend": "5000 per month",
+      "remain": "1 week"
+    },
+    {
+      "image": "https://assets.interntheory.com/uploads/company/logos/1d75708bc583f58cdf96401fb790d7d6a904b79e.jpg",
+      "courseName": "Business Developement Intern",
+      "title": "Digivance Solutions",
+      "Timing": "Full Time Internship",
+      "type": "sales",
+      "location": "delhi",
+      "stipend": "9000 per month",
+      "remain": "5 days left"
+    },
+    {
+      "image": "https://assets.interntheory.com/uploads/company/logos/dbf920dc45baea0404cc7ed8ff4f896e756a5a28.jpg",
+      "courseName": "Content Writing Intern",
+      "title": "Quick Hub",
+      "Timing": "Part Time Internship",
+      "type": "content writing",
+      "location": "delhi",
+      "stipend": "4000 per month",
+      "remain": "5 days left"
+    },
+    {
+      "image": "https://assets.interntheory.com/uploads/company/logos/dbf920dc45baea0404cc7ed8ff4f896e756a5a28.jpg",
+      "courseName": "Business Development Intern",
+      "title": "Quick Hub",
+      "Timing": "Part Time Internship",
+      "type": "business development",
+      "location": "bangalore",
+      "stipend": "4000 per month",
+      "remain": "5 days left"
+    },
+    {
+      "image": "https://assets.interntheory.com/uploads/company/logos/7e0684b4c431480811b83b825a9eb5c557bbd60b.jpg",
+      "courseName": "Android Developer Intern",
+      "title": "Prodigstum Technologies Private Limited",
+      "Timing": "Full Time Internship",
+      "type": "software development",
+      "location": "bangalore",
+      "stipend": "25000 per month",
+      "remain": "4 days left"
+    },
+    {
+      "image": "https://assets.interntheory.com/uploads/company/logos/6896a097f867af415418295aae772fb58b8a0a1b.jpg",
+      "courseName": "Education counsellor",
+      "title": "Collegedunia Web Pvt. Ltd.",
+      "Timing": "Work From Home Internship",
+      "type": "Education and Training",
+      "selection8": "delhi,gurgaon,greater noida ,...More",
+      "location": "delhi",
+      "stipend": "16000 per month",
+      "remain": "4 days left"
+    },
+    {
+      "image": "https://assets.interntheory.com/uploads/company/companylogos/b666213054c4a46dca64c77096f26c7be7d32630/089e4392566e10879a428bbfd819f37abb18408fcom.jpg",
+      "courseName": "social media",
+      "title": "DIBC",
+      "Timing": "Full Time,Part Time Internship",
+      "type": "social media",
+      "location": "mumbai",
+      "stipend": "3000 - 8000 per month",
+      "remain": "2 days left"
+    },
+    {
+      "image": "https://assets.interntheory.com/uploads/company/companylogos/b666213054c4a46dca64c77096f26c7be7d32630/089e4392566e10879a428bbfd819f37abb18408fcom.jpg",
+      "courseName": "Graphic Design Intern",
+      "title": "DIBC",
+      "Timing": "Full Time Internship",
+      "type": "graphic designing",
+      "location": "mumbai",
+      "stipend": "5000 - 10000 per month",
+      "remain": "2 days left"
+    },
+    {
+      "image": "https://assets.interntheory.com/uploads/company/companylogos/b666213054c4a46dca64c77096f26c7be7d32630/089e4392566e10879a428bbfd819f37abb18408fcom.jpg",
+      "courseName": "SEO Interns SEARCH ENGINE OPTIMIZATION",
+      "title": "DIBC",
+      "Timing": "Full Time Internship",
+      "type": "SEO",
+      "location": "ahmedabad",
+      "stipend": "3000 - 8000 per month",
+      "remain": "2 days left"
+    },
+    {
+      "image": "https://assets.interntheory.com/uploads/company/companylogos/b666213054c4a46dca64c77096f26c7be7d32630/089e4392566e10879a428bbfd819f37abb18408fcom.jpg",
+      "courseName": "Graphic Design Intern",
+      "title": "DIBC",
+      "Timing": "Full Time Internship",
+      "type": "graphic designing",
+      "location": "ahmedabad",
+      "stipend": "5000 - 10000 per month",
+      "remain": "2 days left"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
