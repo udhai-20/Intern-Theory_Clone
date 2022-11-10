@@ -9,14 +9,14 @@ import CartPages from "../Pages/CartPages";
 import ViewAndAplly from "../Pages/ViewAndAplly";
 import ProfilePage from "../Pages/ProfilePage";
 import ChangePassword from "../Pages/ChangePassword";
-import CoursesPage from "../Pages/CoursesPage";
+import Courses from "../Pages/Courses/Courses";
 import NotFoundPage from "../Pages/NotFoundPage";
 import { ChakraProvider } from "@chakra-ui/react";
 function AllRouter(props) {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/courses" element={<CoursesPage />} />
+      <Route path="/courses" element={<Courses />} />
       <Route
         path="/internships"
         element={
