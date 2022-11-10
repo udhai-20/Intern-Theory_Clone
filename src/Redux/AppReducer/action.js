@@ -1,4 +1,4 @@
-import { getRemovable } from "json-server/lib/server/mixins";
+import axios from "axios";
 import {
   SEARCH_DATA_REQUEST,
   SEARCH_DATA_SUCCESS,
@@ -27,19 +27,19 @@ const SearchFailure = () => {
 const getCourseRequest = () => {
   return { type: GET_COURSE_DATA_REQUEST };
 };
-const getCourseSuccess = () => {
-  return { type: GET_COURSE_DATA_SUCCESS };
+const getCourseSuccess = (payload) => {
+  return { type: GET_COURSE_DATA_SUCCESS, payload };
 };
 const getCourseFailure = () => {
   return { type: GET_COURSE_DATA_FAILURE };
 };
-const postCourseRequest = () => {
+const addTocartRequest = () => {
   return { type: POST_ADDTOCART_REQUEST };
 };
-const postCourseSuccess = () => {
+const addTocartSuccess = () => {
   return { type: POST_ADDTOCART_SUCCESS };
 };
-const postCourseFailure = () => {
+const addTocartFailure = () => {
   return { type: POST_ADDTOCART_FAILURE };
 };
 const deleteCartRequest = () => {
@@ -52,6 +52,31 @@ const deleteCartFailure = () => {
   return { type: DELETE_CART_FAILURE };
 };
 
+export const getCourses = (dispatch) => {
+  dispatch(getCourseRequest());
+  return axios
+    .get("http://localhost:8080/courses")
+    .then((res) => {
+      dispatch(getCourseSuccess(res.data));
+    })
+    .catch((err) => {
+      dispatch(getCourseFailure());
+    });
+};
+export const addToCart = (payload) => (dispatch) => {
+  dispatch(addTocartRequest());
+  return axios
+    .post("http://localhost:8080/cart", payload)
+    .then((res) => {
+      alert("Item Added To Cart Successfully");
+    })
+    .catch((err) => {
+      if (err.code === "ERR_BAD_RESPONSE") {
+        alert("Item AllReady Added");
+      }
+    });
+};
+
 export {
   SearchRequest,
   SearchSuccess,
@@ -59,9 +84,9 @@ export {
   getCourseRequest,
   getCourseSuccess,
   getCourseFailure,
-  postCourseRequest,
-  postCourseSuccess,
-  postCourseFailure,
+  addTocartRequest,
+  addTocartSuccess,
+  addTocartFailure,
   deleteCartRequest,
   deleteCartSuccess,
   deleteCartFailure,
