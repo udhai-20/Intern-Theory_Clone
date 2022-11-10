@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./home.css";
 
 function Home(props) {
@@ -6,6 +7,10 @@ function Home(props) {
     
     <div className="container" id="container">
   {/* /* <!-- /////////////////////////////////////// SECTION_1 START ////////////////////////////// --> */ }
+   
+
+
+
 
   <section className="section_1">
     <div>
@@ -132,9 +137,9 @@ function Home(props) {
       </div>
       <div className="section_2_cont_2">
         <div>
-          <img
+          <img    
             className="partner_logo"
-            src="https://assets.interntheory.com/creative/home-logo/logo-1.png"
+            src="https://assets.interntheory.com/creative/home-logo/logo-1.png"  
           />
         </div>
         <div>
@@ -394,7 +399,7 @@ function Home(props) {
     </div>
   </section>
 </div>
-
+   
 </div>
 );
 }
