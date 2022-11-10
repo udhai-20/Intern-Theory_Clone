@@ -19,6 +19,7 @@ import {
   AiFillLinkedin,
   AiOutlineWhatsApp,
 } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const theme = extendTheme({
   fonts: {
@@ -224,10 +225,11 @@ function IntenShipResults() {
                       <AiOutlineWhatsApp />
                     </Box>
                   )}
-
-                  <Text fontSize={"15px"} color={"#087CDD"} fontWeight="bold">
-                    VIEW AND APPLY
-                  </Text>
+                  <Link to={`/viewandaplly/${el.id}`}>
+                    <Text fontSize={"15px"} color={"#087CDD"} fontWeight="bold">
+                      VIEW AND APPLY
+                    </Text>
+                  </Link>
                 </Box>
               </Box>
             </Box>
