@@ -210,8 +210,6 @@ function InternShips(props) {
         justifyContent="space-between"
         alignItems="center"
         gap="4"
-        // bg=" rgb(255, 255, 255)"
-
         bg="rgb(255, 255, 255)"
         boxShadow="xs"
         p="30px"
