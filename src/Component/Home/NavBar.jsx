@@ -1,8 +1,7 @@
-import React from "react";
+import React,{memo, useState} from "react";
 import './navbar.css';
+import {NavLink} from 'react-router-dom'
 
-
-function Navbar(props) {
 
 // document.getElementById("munu_btn").addEventListener("click",myFun)
 
@@ -10,14 +9,40 @@ function Navbar(props) {
 //   alert("rohit kumar malav")
 // }
 
+function Navbar(props) {
+let logo=false;
+let sty;
+let stn;
+
+  const [menu,setMenu]=useState(logo)
+
+if(menu){
+   sty={
+    display: 'inline-block'
+  }
+  stn={
+    display: 'none'
+  }
+}else{
+   stn={
+    display: 'inline-block'
+  }
+  sty={
+    display: 'none'
+  }
+}
+
+
   return <div><nav>
-  <div className="side_menu" id="side_bar">
-    <div className="menu_btn" id="menu_btn_2">
-      <img className="menu_image" src="" />
+  <div className="side_menu" id="side_bar" style={sty}>
+    <div className="menu_btn" id="menu_btn_2"  >
+      <button  onClick={()=>setMenu(logo=logo)}>
+      <img className="menu_image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHkAAAB5CAMAAAAqJH57AAAATlBMVEX////u7u4AAADt7e3x8fH+/v7v7+/4+Pj8/Pzs7Oz5+fn19fX7+/v9/f309PTAwMCenp56enrX19czMzO5ubkmJiZ0dHTKysri4uLR0dHQ8OJ4AAAG6ElEQVRoge2bbXvbKgyGzcGYN5uuXdet//+PHkmAMDZO7NTJunV8yX2RlyfGQhZCdB00NQhoEyKCNEg90sjkkAKSRvIyk0bySA5IBKQRqa9JWaCBCEVE9095oWwX/yHI25W7pbKCNuFvDwaoo/9AFPWQ8EqFY9Lwnc4zaSSPv+MEKQONgvSYUETJTBOJdAO03pA8kJjwLaRhrCnAxwaUVx77NJJG8kwByTGNAn+aaMhkiEiEhlcoHAT8J7Zr3OIy0K4e8jLQRDzQkobX2DzQRuYbOyEMJLdUVpvKbGatW6z5FrvGLd6lvH3NV5XlQnnPNQ9o1opU+JrFWNNMORoX6kXjqq9ZrA3ciGzWc+UJmkFD6kcgVYhMCmkKaBYOKRpXTdHMIvVoXEDJzICiceG7E77bs9ywaz7L/fNZ7p/PF5Uf6cOG+yr3C+VOWGujcUkgS/+hRzJMcbSRojKTRorGhRT1mAxThxSvmUSybSuy7QHkI6FFJxcaKbpQeJcdJ9t2JpBX3VhIDrVtw+fIcfYAN/mw6/P5qA/rP+hJPo8Pu6YsoaVrBrJMSZkpICVlaEkZmmdKZs1kgZIyikRloKRssPXYRoCpUKjJIXkkPVWkkTxTADKOaSQqIib3RXtvexJ5wIelWbV+VBb6vD7swcrdwGaGFiAnNjjDVMxMZzPLPiybmbMbxpVGG40rKmNnF00KW6jJAZgFaSTPFI3LAC4oIDmmaFKFSKQ9n9mkauOyh+Mw+RBPcrsPI+/5wAgQLSU+IAcwgXTNlo3LZuMiiqNt58ZlPRMbV35AZprgGWwlGRe82mTWaCnpvoMJmELJc7FJcZ+u+9i4DBvXjKKZsUiA13N9WJpVJ/qwE1d0+32Y9tDiDUFSNRkk+tzE1CG5FfUXYs/ow6Jy9GHvb8/Pb9CeqTG9Nfo2KX/lZ7/tw8LSh+nX/85rT8qFLFKIfFhy2YNkT9KfqkzzWfJ8lpd82B2Ud65iH6Jc4jA0s/tc88RxmJLZzGASOgf3HRu8ujGSejpR+VWHEVV6+mmWS/NZ8nyWNJ9//vh+Vvvx2vN8lrs8CUalY5fJ3E7+cByGk6yEB4ug4EjseS0Ok8s4rPGoLA9IXz8qk3J+LLYelSsfFtJ9d87XpJECk2+QRvLc5+u+BYWaXNuHfSQOK9EXE8wq9mHysg97cBz2aOWmD8PORZBPlEZ7HeTrVpDPVHzYNPNhGpsP8CSP5JmgL+wgjeS5z9d9+IOlby4S5VeRQb7IvasbnlV5Fq9pNasIv+xacudo28Zo283RLma2Gm3vG8ZFoSM+0Ah1RW4vOaLRrX+aaGtWWUuPU0spPCTJNFAyj0kg9TVJJhv6cT6rRJlV94/DXo/4sL8wDpuPtm618cw47GlsamzMqlMjwI3VTduT3EF5pw97lPJ6tF++nddehvZot9wXmJhSxkyToa1MhETYVMaJ9hcngztBiaAzkkkEn9NtH7kZGdhFlvmkyOCaD/uqcdix0ZbHR7u+7yXIagZjvu7TrcCrhFuh8WwsYVmZVfIDkcEqDtuTZSb8gnEYrtzZhwke7Xn20V7OAe7cQeHRRmVXLxkvLx7LkrG1oNxcPHoWKRTas+rsLDPPqnmG5tP4sJTTH9LTnNLY1EcpazIASlnTiFCimv4N5cXp3ygmSmz6Xcpl5S5+PZ3X7Eb2kVNhdN97ylydn3HFNlaZt5iDXmdo/sVh91ReZh/vMtoLH8bp/OAKnZ5xzVuSs92D37i6afqw4df7+8u6vfPL6t33bQqH4rB+5cM8+zDyZuOWD5vYcx3wYeKxu8B5I9KkXSPDO9/1RuShLUlftiQN73uaagc0pc6FlVyxBGZ2tywzVyw1fNiDq7Q+WwR4713gsap4MIUul1WwmV0pq+Cd77kP67d9GHa2gnyuWLp1daO++Fryt/uwef2WaZWGRTO7WBrmW6VhTH0hw1t4apGhaWXyGzn9ZWGcK2bGK8hCig3uprXk5fl80ZP8KZVpMx+285qPVBSrVLqNRdz5hEBSHvCaU3nriB9cnRDo+IQAUC7dToWueEIgERqzopJXrKFNJwQsl/RShj7ae6OklyitJauSXs+UfNi6pHciEbpc3BrIxcQ8n+9cpbWqWf9kPqylLK8pHz0VEU+CYNIUy+jFlGgYcrF+LNGPdKFEP1Ms0Z9yiX4s1qfq/0IkR+qLaEgs5nMq3e6q+Zxse35AYTafBQ85Uzr90nXZthfKzfn8VX3Y+aciVD5mRKecFseMRD5mNMRjRoGPGbUOHM2OGfHhokKTyMeM0kkQMvN4tgkvV2Ui0a5QOWTVOFqVTwjUh6xkcqEqnxDAU07Yd/CU01VPshzog6ecPqD8x0aAj6vr/R8ltd1YlLV5jQAAAABJRU5ErkJggg==" />
+      </button>
     </div>
     <div className="logo_btn">
     
-      <img className="logo" src="Images/logo.png" />
+      <img className="logo" src="https://assets.interntheory.com/creative/logo.png" />
     </div>
     <div className="side_menu_list">
       <div className="visible_2 when_login">
@@ -32,6 +57,7 @@ function Navbar(props) {
           <p id="mobile_no"></p>
         </div>
       </div>
+
       <div className="visible after_login" onclick="home()">
         <div className="side_menu_svg_cont">
           <svg
@@ -45,9 +71,13 @@ function Navbar(props) {
             <path fill="none" d="M0 0h24v24H0z"></path>
           </svg>
         </div>
+        
         <div className="side_menu_content">
-          <p>Home</p>
+        <NavLink to='/'> <p onClick={()=>setMenu(logo=logo)}
+        style={{color:"black"}}>Home</p></NavLink>
+          
         </div>
+        
       </div>
       <div className="visible when_login" onclick="dash_board()">
         <div className="side_menu_svg_cont">
@@ -65,11 +95,13 @@ function Navbar(props) {
           </svg>
         </div>
         <div className="side_menu_content">
-          <p>Dashboard</p>
+        <NavLink to="/dashboard"><p onClick={()=>setMenu(logo=logo)}
+        style={{color:"black"}}>Dashboard</p></NavLink>
+          
         </div>
       </div>
       <div className="visible"
-      //  style="display: none"
+       style={{display: "none"}}
        >
         <div className="side_menu_svg_cont">
           <svg
@@ -105,7 +137,9 @@ function Navbar(props) {
           </svg>
         </div>
         <div className="side_menu_content">
-          <p>Internships</p>
+          <NavLink to='/internships'><p onClick={()=>setMenu(logo=logo)}
+          style={{color:"black"}}>Internships</p></NavLink>
+          
         </div>
       </div>
       <div className="visible" onclick="jobs()">
@@ -124,11 +158,13 @@ function Navbar(props) {
           </svg>
         </div>
         <div className="side_menu_content">
-          <p>Jobs</p>
+          <NavLink to='/jobs'>  <p onClick={()=>setMenu(logo=logo)}
+          style={{color:"black"}}>Jobs</p></NavLink>
+        
         </div>
       </div>
       <div className="visible" 
-      // style="display: none"
+      style={{display: "none"}}
       >
         <div className="side_menu_svg_cont">
           <svg
@@ -145,7 +181,7 @@ function Navbar(props) {
           </svg>
         </div>
         <div className="side_menu_content" 
-        // style="display: none"
+        style={{display: "none"}}
         >
           <p>Post Internship</p>
         </div>
@@ -166,7 +202,9 @@ function Navbar(props) {
           </svg>
         </div>
         <div className="side_menu_content">
-          <p>Courses</p>
+          <NavLink to="/courses"><p onClick={()=>setMenu(logo=logo)}
+          style={{color:"black"}}>Courses</p></NavLink>
+          
           <svg
             className="drop_down"
             id="drop_down_1"
@@ -198,7 +236,7 @@ function Navbar(props) {
         </div>
       </div>
       <div id="div_1_2" className="hidden visible" 
-      // style="display: none"
+      style={{display: "none"}}
       >
         <div className="side_menu_svg_cont"></div>
         <div className="side_menu_content" onclick="online_courses()">
@@ -221,7 +259,8 @@ function Navbar(props) {
           </svg>
         </div>
         <div className="side_menu_content">
-          <p>Transactions</p>
+        <p >Transactions</p>
+          
         </div>
       </div>
       <div className="visible" onclick="contact_us()">
@@ -240,11 +279,12 @@ function Navbar(props) {
           </svg>
         </div>
         <div className="side_menu_content">
-          <p>Contact Us</p>
+        <p >Contact Us</p>
+          
         </div>
       </div>
       <div 
-      // style="display: none"
+      style={{display: "none"}}
        className="visible">
         <div className="side_menu_svg_cont">
           <svg
@@ -279,7 +319,9 @@ function Navbar(props) {
           </svg>
         </div>
         <div className="side_menu_content">
-          <p>Register</p>
+        <NavLink to='/signin'> <p onClick={()=>setMenu(logo=logo)}
+        style={{color:"black"}}>Register</p></NavLink>
+         
           <svg
             className="drop_down"
             id="drop_down_2"
@@ -332,7 +374,9 @@ function Navbar(props) {
           </svg>
         </div>
         <div className="side_menu_content">
-          <p>Login</p>
+        <NavLink to='/login'> <p onClick={()=>setMenu(logo=logo)}
+        style={{color:"black"}}>Login</p></NavLink>
+         
           <svg
             className="drop_down"
             id="drop_down_3"
@@ -360,7 +404,7 @@ function Navbar(props) {
       <div
         id="div_3_1"
         className="hidden visible"
-        // style="display: none"
+        style={{display: "none"}}
         onclick="logIn()"
       >
         <div className="side_menu_svg_cont"></div>
@@ -375,7 +419,7 @@ function Navbar(props) {
         </div>
       </div>
       <div className="visible" 
-      // style="display: none"
+     style={{display: "none"}}
       >
         <div className="side_menu_svg_cont">
           <svg
@@ -392,7 +436,9 @@ function Navbar(props) {
           </svg>
         </div>
         <div className="side_menu_content">
-          <p>Change Password</p>
+        <NavLink to='/changepassword'> <p onClick={()=>setMenu(logo=logo)}
+        style={{color:"black"}}>Change Password</p></NavLink>
+         
         </div>
       </div>
       <div className="visible when_login" onclick="logout()">
@@ -412,21 +458,22 @@ function Navbar(props) {
         </div>
         <div className="side_menu_content">
           <p>Logout</p>
+          
         </div>
       </div>
     </div>
   </div>
 
-  <div className="menu_btn" id="menu_btn">
-  
-    <img className="menu_image" src="https://assets.stickpng.com/images/588a6507d06f6719692a2d15.png" />
-    
+  <div className="menu_btn" id="menu_btn" style={stn} >
+  <button onClick={()=>setMenu(logo=!logo)}>
+    <img className="menu_image" src="data:image/png;base64,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" />
+    </button>
   </div>
-  <div className="logo_btn" id="logo_btn">
+  <div className="logo_btn" id="logo_btn" style={stn}>
     <img className="logo" src="https://assets.interntheory.com/creative/logo.png" />
   </div>
   <div className="sign_btn after_login">
-    <button onclick="logIn()">SIGN IN</button>
+    <button className="butt" onclick="logIn()">SIGN IN</button>
   </div>
 
   <div className="cart_btn when_login new_right">
