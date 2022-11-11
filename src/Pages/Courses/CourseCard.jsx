@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import { addToCart } from "../../Redux/AppReducer/action";
 
 export default function CourseCard(data) {
+  console.log("course card");
   const dispatch = useDispatch();
   const handleAddToCart = () => {
     dispatch(addToCart(data));

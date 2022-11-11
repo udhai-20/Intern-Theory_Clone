@@ -68,7 +68,7 @@ export const getCourses = (dispatch) => {
   return axios
     .get("http://localhost:8080/courses")
     .then((res) => {
-      dispatch(res.data);
+      dispatch(getCourseSuccess(res.data));
     })
     .catch((err) => {
       dispatch(getCourseFailure());
@@ -93,20 +93,6 @@ export const getApply = (id) => (dispatch) => {
       dispatch(getApplySuccess(res.data));
     })
     .catch((_) => {
-      getApplyFailure();
+      dispatch(getApplyFailure());
     });
-};
-export {
-  SearchRequest,
-  SearchSuccess,
-  SearchFailure,
-  getCourseRequest,
-  getCourseSuccess,
-  getCourseFailure,
-  addToCartRequest,
-  addToCartSuccess,
-  addToCartFailure,
-  deleteCartRequest,
-  deleteCartSuccess,
-  deleteCartFailure,
 };

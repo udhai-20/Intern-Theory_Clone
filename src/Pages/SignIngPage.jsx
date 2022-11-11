@@ -1,6 +1,6 @@
 import React from "react";
 
-function SigningPage(props) {
+function SigningPage() {
   return <div></div>;
 }
 

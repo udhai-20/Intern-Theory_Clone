@@ -1,6 +1,6 @@
 import React from "react";
 
-function ChangePassword(props) {
+function ChangePassword() {
   return <div></div>;
 }
 
