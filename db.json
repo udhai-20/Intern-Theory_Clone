@@ -39,7 +39,11 @@
     "Social Media",
     "Software Development"
   ],
-  "Types": ["Full Time", "Part TIme", "Work From Home"],
+  "Types": [
+    "Full Time",
+    "Part TIme",
+    "Work From Home"
+  ],
   "interships": [
     {
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlPD84iU_lPqoa3SZX9zbQ3m6r6_ZjaFk7Yw&usqp=CAU.jpg",
@@ -442,5 +446,33 @@
       "emi": "EMI Starting at ₹ 172/month"
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": 4,
+      "image": "https://assets.interntheory.com/creative/courses/thumbnails/web-development-course.png",
+      "name": "Web Development Course",
+      "desc": "Learn the art of web design and web development. Join this o ...",
+      "oldPrice": "7999",
+      "newPrice": "3999",
+      "emi": "EMI Starting at ₹ 229/month"
+    },
+    {
+      "id": 3,
+      "image": "https://assets.interntheory.com/creative/courses/thumbnails/data-analytics-r-programming-course.png",
+      "name": "Data Analytics With R Programming Course",
+      "desc": "Learn data science online. Join this online data analytics c ...",
+      "oldPrice": "11999",
+      "newPrice": "5999",
+      "emi": "EMI Starting at ₹ 343/month"
+    },
+    {
+      "id": 7,
+      "image": "https://assets.interntheory.com/creative/courses/thumbnails/advanced-excel-course.png",
+      "name": "Advanced Excel Course",
+      "desc": "Master MS Excel. Take the online ms excel course and learn t ...",
+      "oldPrice": "5999",
+      "newPrice": "2999",
+      "emi": "EMI Starting at ₹ 172/month"
+    }
+  ]
 }
