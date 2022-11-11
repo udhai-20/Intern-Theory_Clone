@@ -7,7 +7,7 @@ import SignIngPage from "../Pages/SignIngPage";
 import LoginPage from "../Pages/LoginPage";
 import CartPages from "../Pages/CartPages";
 import ViewAndAplly from "../Pages/ViewAndAplly";
-import ProfilePage from "../Pages/ProfilePage";
+import ProfilePage from "../Pages/Profile/Profile";
 import ChangePassword from "../Pages/ChangePassword";
 import Courses from "../Pages/Courses/Courses";
 import NotFoundPage from "../Pages/NotFoundPage";
