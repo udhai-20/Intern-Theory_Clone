@@ -3,6 +3,32 @@ import "./Profile.css";
 import { AiOutlineMail, AiFillPhone } from "react-icons/ai";
 import { Link } from "react-router-dom";
 function Profile(props) {
+  let userDetails = {
+    name: "udhaya Prakash",
+    gender: "male",
+    DOB: "10-05-1997",
+    Languages: "English",
+    Hobbies: "Reading Books",
+    Achievements: "N/A",
+    Skills: "Java",
+    Preferences: "software",
+    Email_ID: "udhayaprakash122@gmail.com",
+    PH: "9444052343",
+    Google_Acc: "NA",
+    FaceBook_Acc: "NA",
+  };
+
+  let Address = {
+    City: "Chidambaram",
+    State: "TamilNadu",
+    PinCode: "608002",
+  };
+  let collage_work = {
+    degree: "graduation",
+    preferance: "Bachelor of Civil Engineering",
+    college_name: "J.N.N Institute Of Engineering",
+    experiance: "fresher",
+  };
   return (
     <div>
       <div className="profile_wrapper">
@@ -49,11 +75,11 @@ function Profile(props) {
                 />
 
                 <div className="profile_name">
-                  <p>udhaya Prakash</p>
+                  <p>{userDetails.name}</p>
                   <div className="profile_resumesection">
                     <button className="profile_resume_btn">View Resume</button>
                     <button className="profile_resume_btn-1">
-                      DownloadResume
+                      Download Resume
                     </button>
                   </div>
                 </div>
@@ -66,49 +92,53 @@ function Profile(props) {
                 <li className="profile_li">
                   <span className="profile_li_span_heading">Name:</span>
                   <span className="profile_li_span_heading_name">
-                    udhaya Prakash
+                    {userDetails.name}
                   </span>
                 </li>
                 <li className="profile_li">
                   <span className="profile_li_span_heading">Gender:</span>
-                  <span className="profile_li_span_heading_name">Male</span>
+                  <span className="profile_li_span_heading_name">
+                    {userDetails.gender}
+                  </span>
                 </li>
                 <li className="profile_li">
                   <span className="profile_li_span_heading">DOB:</span>
                   <span className="profile_li_span_heading_name">
-                    17-05-1997
+                    {userDetails.DOB}
                   </span>
                 </li>
                 <li className="profile_li">
                   <span className="profile_li_span_heading">Languages:</span>
                   <span className="profile_li_span_heading_name">
-                    Tamil,English
+                    {userDetails.Languages}
                   </span>
                 </li>
                 <li className="profile_li">
                   <span className="profile_li_span_heading">Hobbies:</span>
                   <span className="profile_li_span_heading_name">
-                    Reading Books
-                  </span>
-                </li>
-
-                <li className="profile_li">
-                  <span className="profile_li_span_heading">Name:</span>
-                  <span className="profile_li_span_heading_name">
-                    udhaya Prakash
+                    {userDetails.Hobbies}
                   </span>
                 </li>
                 <li className="profile_li">
                   <span className="profile_li_span_heading">Achievements:</span>
-                  <span className="profile_li_span_heading_name">N/A</span>
+                  <span className="profile_li_span_heading_name">
+                    {" "}
+                    {userDetails.Achievements}
+                  </span>
                 </li>
                 <li className="profile_li">
                   <span className="profile_li_span_heading">Skills:</span>
-                  <span className="profile_li_span_heading_name">Java</span>
+                  <span className="profile_li_span_heading_name">
+                    {" "}
+                    {userDetails.Skills}
+                  </span>
                 </li>
                 <li className="profile_li">
                   <span className="profile_li_span_heading">Preferences:</span>
-                  <span className="profile_li_span_heading_name">Software</span>
+                  <span className="profile_li_span_heading_name">
+                    {" "}
+                    {userDetails.Preferences}
+                  </span>
                 </li>
               </ul>
             </div>

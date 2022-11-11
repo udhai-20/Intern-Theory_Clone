@@ -20,10 +20,12 @@ import {
   SearchRequest,
   SearchSuccess,
 } from "../../Redux/AppReducer/action";
-import IntenShipResults from "./IntenShipResults";
+
 import { useSearchParams } from "react-router-dom";
 
-function InternShips(props) {
+import SearchResults from "./SearchResults";
+
+function SearchPage(props) {
   const [searchParams, setSearchParams] = useSearchParams();
   const dispatch = useDispatch();
   let FilterResult = useSelector((state) => state.AppReducer);
@@ -203,6 +205,26 @@ function InternShips(props) {
   console.log("citiyselected:", citiyselected);
   useEffect(() => {}, []);
 
+  const getData = () => {
+    //  need to send props from page for searchresults
+    setpreferanceselected("");
+    setselectedtype("");
+    setselectedcitiy("");
+    console.log("search:", search);
+
+    dispatch(SearchRequest());
+    axios
+      .get(`http://localhost:8080/interships?q=bangalore`)
+      .then((res) => dispatch(SearchSuccess(res.data)))
+      .catch((err) => {
+        console.log("err:", err);
+        dispatch(SearchFailure());
+      });
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
   return (
     <Box>
       <Box
@@ -391,7 +413,7 @@ function InternShips(props) {
           </Button>
         </Box>
       </Box>
-      <Box marginTop={"30px"}>
+      <Box marginTop={"30px"} margin="auto">
         {FilterResult.isLoading && (
           <Spinner
             thickness="4px"
@@ -410,11 +432,11 @@ function InternShips(props) {
         >
           All Internships
         </Text>
-        <IntenShipResults />
+        <SearchResults />
       </Box>
     </Box>
     // jdjssd
   );
 }
 
-export default InternShips;
+export default SearchPage;
