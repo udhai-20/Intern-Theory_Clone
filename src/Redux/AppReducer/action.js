@@ -56,7 +56,7 @@ export const getCourses = (dispatch) => {
   return axios
     .get("http://localhost:8080/courses")
     .then((res) => {
-      dispatch(res.data);
+      dispatch(getCourseSuccess(res.data));
     })
     .catch((err) => {
       dispatch(getCourseFailure());
@@ -64,8 +64,8 @@ export const getCourses = (dispatch) => {
 };
 export const addToCart = (data) => (dispatch) => {
   dispatch(addToCartRequest());
-  axios
-    .post("http://localhost:8080/cart")
+  return axios
+    .post("http://localhost:8080/cart", data)
     .then((res) => {
       alert("Item Added To Cart Successfully");
     })
