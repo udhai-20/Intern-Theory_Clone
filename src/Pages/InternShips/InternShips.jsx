@@ -231,6 +231,7 @@ function InternShips(props) {
             placeholder="Citys"
             onClick={handleCatchCitiys}
             value={citiyselected}
+            readOnly
           />
           {citiypop && (
             <List
@@ -251,9 +252,10 @@ function InternShips(props) {
               cursor="pointer"
             >
               {city.length > 0 &&
-                city.map((el) => {
+                city.map((el, i) => {
                   return (
                     <ListItem
+                      key={i + 1}
                       _hover={{
                         background: "gray.50",
                         width: "auto",
@@ -280,6 +282,7 @@ function InternShips(props) {
             onClick={handleCatchTypes}
             value={typeselected}
             placeholder="Types"
+            readOnly
           />
           {typepop && (
             <List
@@ -301,9 +304,10 @@ function InternShips(props) {
               cursor="pointer"
             >
               {type.length > 0 &&
-                type.map((el) => {
+                type.map((el, i) => {
                   return (
                     <ListItem
+                      key={i + 1}
                       _hover={{
                         background: "gray.50",
                         width: "auto",
@@ -331,6 +335,7 @@ function InternShips(props) {
             onClick={handleCatchPreferance}
             value={preferanceselected}
             placeholder="Preferance"
+            readOnly
           />
           {preferancepop && (
             <List
@@ -352,9 +357,10 @@ function InternShips(props) {
               cursor="pointer"
             >
               {preferance.length > 0 &&
-                preferance.map((el) => {
+                preferance.map((el, i) => {
                   return (
                     <ListItem
+                      key={i + 1}
                       _hover={{
                         background: "gray.50",
                         width: "auto",
@@ -391,6 +397,7 @@ function InternShips(props) {
             speed="0.65s"
             emptyColor="gray.200"
             color="blue.500"
+            duration="10000"
             size="xl"
           />
         )}
