@@ -11,12 +11,16 @@ import {
   SEARCH_DATA_FAILURE,
   SEARCH_DATA_REQUEST,
   SEARCH_DATA_SUCCESS,
+  GET_APPLY_DATA_FAILURE,
+  GET_APPLY_DATA_REQUEST,
+  GET_APPLY_DATA_SUCCESS,
 } from "./actionTypes";
 
 const initialState = {
   courseData: [],
   searchData: [],
   cartData: [],
+  applyData: {},
   isLoading: false,
   isError: false,
 };
@@ -48,6 +52,13 @@ export const reducer = (oldState = initialState, action) => {
       return { ...oldState, isLoading: false, cartData: payload };
     case GET_CART_DATA_FAILURE:
       return { ...oldState, isLoading: false, isError: true };
+    case GET_APPLY_DATA_REQUEST:
+      return { ...oldState, isLoading: true };
+    case GET_APPLY_DATA_SUCCESS:
+      return { ...oldState, isLoading: false, applyData: payload };
+    case GET_APPLY_DATA_FAILURE:
+      return { ...oldState, isLoading: false, isError: true };
+
     default:
       return oldState;
   }

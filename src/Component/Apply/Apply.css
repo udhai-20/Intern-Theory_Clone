@@ -160,6 +160,9 @@
     margin-top: 0px;
   }
 }
+.a-btn-cont{
+   text-align: end;
+}
 @media screen and (max-width: 500px) {
   
   .last-image {

@@ -74,6 +74,7 @@ a {
   .c-oldprice {
     text-decoration: line-through;
     font-size: 13px;
+    margin-right: 7px;
     display: flex;
     align-items: flex-end;
   }
@@ -88,8 +89,8 @@ a {
     justify-content: end;
   }
   .c-card-emi {
-    color: rgb(247, 147, 40);
-    /* color: rgb(167, 164, 9); */
+    color: rgb(247, 147, 11);
+    font-size: 13px;
     text-align: end;
     font-weight: 500;
     margin: 3px 0;
