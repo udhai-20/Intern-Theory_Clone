@@ -1,12 +1,10 @@
 .dashboard_wrapper {
-
     display: flex;
     width: 80%;
     justify-content: space-between;
     margin: auto;
     margin-top: 10px;
     height: auto;
-
 }
 
 .dashboard_wrapper .dashboard_leftside {
@@ -45,7 +43,6 @@
     font-weight: 500;
     font-size: 16px;
     border-radius: 0.4rem;
-
 }
 
 .dashboard_leftside_child_profile:hover {
@@ -64,8 +61,6 @@
     color: #999;
     width: 100%;
     margin-top: 15px;
-
-
 }
 
 .dashboard_leftside_parent {
@@ -93,17 +88,14 @@
 .dashboard_leftside_contact_email_color {
     color: black;
     font-size: 16px;
-
 }
 
 /* //right side */
-
 .dashboard_rightside>div {
     display: flex;
     flex-direction: column;
     padding: 1rem;
     width: 100%;
-
 }
 
 .dashboard_rightside_top {
@@ -129,7 +121,6 @@
     font-size: 20px;
     text-align: left;
     margin-top: 15px;
-
 }
 
 .dashboard_rightside_RecomendedCoursesection {
@@ -173,12 +164,10 @@
     margin: auto;
     margin-top: 10px;
     height: 500px;
-
 }
 
 .dasboard_bottom_left_section {
     width: 30%;
-
     /* border: 1px solid rgb(0, 0, 255); */
     height: 500px;
     ;
@@ -189,10 +178,11 @@
     padding: .8rem;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
     border-radius: .8rem;
+    /* border: 1px solid rgb(0, 255, 30); */
     height: 500px;
     background-color: #fff;
     margin-left: 50px;
-    margin-top: 15px;
+    margin-top: 1px;
 }
 
 .dasboard_bottom_right_top {
@@ -200,7 +190,6 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-
 }
 
 .dasboard_bottom_right_twosections {
@@ -215,13 +204,9 @@
     color: rgba(0, 0, 0, 0.54);
     ;
     font-size: 0.875rem;
-
 }
 
-
-
 .dashboard_bottom_line {
-
     margin-top: 8px;
 }
 
@@ -245,7 +230,6 @@
     border: none;
     border-bottom: 1px solid gray;
     background: transparent;
-
 }
 
 .dashboard_select option {
@@ -322,7 +306,6 @@
     height: 2px;
     background:
         repeating-linear-gradient(90deg, rgb(192, 187, 187) 0 10px, #0000 0 12px)
-        /*10px red then 2px transparent -> repeat }this!*/
 }
 
 * {

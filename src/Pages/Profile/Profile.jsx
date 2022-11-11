@@ -58,19 +58,137 @@ function Profile(props) {
                   </div>
                 </div>
               </div>
-
-              {/* <div className="profile_top_right">
-                <p>change password</p>
-              </div> */}
             </div>
+            {/* PersonalDetails */}
             <p className="profile_personal">PersonalDetails</p>
             <div className="profile_personal_details">
-              <ul>
+              <ul className="profile_ul">
                 <li className="profile_li">
-                  <span>Name:</span>
+                  <span className="profile_li_span_heading">Name:</span>
+                  <span className="profile_li_span_heading_name">
+                    udhaya Prakash
+                  </span>
                 </li>
-                <li></li>
+                <li className="profile_li">
+                  <span className="profile_li_span_heading">Gender:</span>
+                  <span className="profile_li_span_heading_name">Male</span>
+                </li>
+                <li className="profile_li">
+                  <span className="profile_li_span_heading">DOB:</span>
+                  <span className="profile_li_span_heading_name">
+                    17-05-1997
+                  </span>
+                </li>
+                <li className="profile_li">
+                  <span className="profile_li_span_heading">Languages:</span>
+                  <span className="profile_li_span_heading_name">
+                    Tamil,English
+                  </span>
+                </li>
+                <li className="profile_li">
+                  <span className="profile_li_span_heading">Hobbies:</span>
+                  <span className="profile_li_span_heading_name">
+                    Reading Books
+                  </span>
+                </li>
+
+                <li className="profile_li">
+                  <span className="profile_li_span_heading">Name:</span>
+                  <span className="profile_li_span_heading_name">
+                    udhaya Prakash
+                  </span>
+                </li>
+                <li className="profile_li">
+                  <span className="profile_li_span_heading">Achievements:</span>
+                  <span className="profile_li_span_heading_name">N/A</span>
+                </li>
+                <li className="profile_li">
+                  <span className="profile_li_span_heading">Skills:</span>
+                  <span className="profile_li_span_heading_name">Java</span>
+                </li>
+                <li className="profile_li">
+                  <span className="profile_li_span_heading">Preferences:</span>
+                  <span className="profile_li_span_heading_name">Software</span>
+                </li>
               </ul>
+            </div>
+            <hr className="dashboard_dashedline"></hr>
+            {/* Contact Details */}
+            <p className="profile_personal">Contact Details</p>
+            <div className="profile_personal_details">
+              <ul className="profile_ul">
+                <li className="profile_li">
+                  <span className="profile_li_span_heading">Email ID:</span>
+                  <span className="profile_li_span_heading_name">
+                    udhayaprakash122@gmail.com
+                  </span>
+                </li>
+                <li className="profile_li">
+                  <span className="profile_li_span_heading">PH:</span>
+                  <span className="profile_li_span_heading_name">
+                    9444052343
+                  </span>
+                </li>
+                <li className="profile_li">
+                  <span className="profile_li_span_heading">Google Acc:</span>
+                  <span className="profile_li_span_heading_name">NA</span>
+                </li>
+                <li className="profile_li">
+                  <span className="profile_li_span_heading">FaceBook Acc:</span>
+                  <span className="profile_li_span_heading_name">NA</span>
+                </li>
+              </ul>
+            </div>
+            <hr className="dashboard_dashedline"></hr>
+            {/* Address Details */}
+            <p className="profile_personal">Address Details</p>
+            <div className="profile_personal_details">
+              <ul className="profile_ul">
+                <li className="profile_li">
+                  <span className="profile_li_span_heading">Address</span>
+                  <span className="profile_li_span_heading_name"></span>
+                </li>
+                <li className="profile_li">
+                  <span className="profile_li_span_heading">City:</span>
+                  <span className="profile_li_span_heading_name">
+                    Chidambaram
+                  </span>
+                </li>
+                <li className="profile_li">
+                  <span className="profile_li_span_heading">State:</span>
+                  <span className="profile_li_span_heading_name">
+                    TamilNadu
+                  </span>
+                </li>
+                <li className="profile_li">
+                  <span className="profile_li_span_heading">PinCode:</span>
+                  <span className="profile_li_span_heading_name">608002</span>
+                </li>
+              </ul>
+            </div>
+            <hr className="dashboard_dashedline"></hr>
+            {/* Education Details */}
+            <div className="profile_edcuation_details">
+              <div className="profile_leftSide">
+                <p className="profile_personal">Work Experience</p>
+                <hr className="dashboard_personal"></hr>
+                <p className="dashboard_personal_1">--</p>
+                <p className="dashboard_personal_2">Fresher</p>
+              </div>
+
+              <div className="profile_RightSide">
+                <div className="profile_leftSide">
+                  <p className="profile_personal">Education Details</p>
+                  <hr className="dashboard_personal"></hr>
+                  <p className="dashboard_personal_1">Graduation</p>
+                  <p className="dashboard_personal_2">
+                    Bachelor of Civil Engineering
+                  </p>
+                  <p className="dashboard_personal_2">
+                    J.N.N Institute Of Engineering
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

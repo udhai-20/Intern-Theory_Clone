@@ -32,6 +32,7 @@ a {
     background: white;
     border-radius: 5px;
     margin: auto;
+    height: auto;
   }
   .c-card-wrapper {
     height: 250px;
