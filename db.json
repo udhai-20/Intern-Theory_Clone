@@ -39,8 +39,11 @@
     "Social Media",
     "Software Development"
   ],
-  "Types": ["Full Time", "Part TIme", "Work From Home"],
-
+  "Types": [
+    "Full Time",
+    "Part TIme",
+    "Work From Home"
+  ],
   "interships": [
     {
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlPD84iU_lPqoa3SZX9zbQ3m6r6_ZjaFk7Yw&usqp=CAU.jpg",
@@ -197,14 +200,12 @@
       "duration": "3 months",
       "startDate": "2022-11-14",
       "deadline": "2022-12-02",
-
       "idesc": "We’re looking for a driven, ambitious individual who wants to create a career in social media and content marketing. We provide extensive training, guidance and support, as well as the opportunity to experience the industry from the inside and gain valuable work experience.",
       "skills": " Marketing",
       "companyDesc": "We, Bombay Hemp Company, incorporated in 2013, are an Agro-based enterprise reimagining the future of Indian agriculture and sustainable living with hemp as our lens. Hemp’s uses are kaleidoscopic. Pull its Fibre out and it’ll give you Yarn; chop it into Softwood, it’ll give you material to build Shelter; study its Genetics, and you’ll find Medicine.  Our design fuses this very potential with the existing industries of Agriculture, Technology, and Medicine, to bring together Community, Impact, and Value.",
       "location-1": "Bombay Hemp Company Pvt. Ltd. (BOHECO), Unit #2, Cama Industrial Estate, SunMill Compound Rd, Lower Parel, Mumbai – 400013, Maharashtra, India., mumbai, 400013",
       "id": 8
     },
-
     {
       "image": "https://assets.interntheory.com/uploads/company/logos/964b36c595044cf05eeab95d881e196638a6b3ef.jpg",
       "courseName": "Marketing Communications Intern",
@@ -220,7 +221,6 @@
       "duration": "3 months",
       "startDate": "2022-11-14",
       "deadline": "2022-12-02",
-
       "idesc": "We’re looking for a driven, ambitious individual who wants to create a career in social media and content marketing. We provide extensive training, guidance and support, as well as the opportunity to experience the industry from the inside and gain valuable work experience.",
       "skills": " Marketing",
       "companyDesc": "We, Bombay Hemp Company, incorporated in 2013, are an Agro-based enterprise reimagining the future of Indian agriculture and sustainable living with hemp as our lens. Hemp’s uses are kaleidoscopic. Pull its Fibre out and it’ll give you Yarn; chop it into Softwood, it’ll give you material to build Shelter; study its Genetics, and you’ll find Medicine.  Our design fuses this very potential with the existing industries of Agriculture, Technology, and Medicine, to bring together Community, Impact, and Value.",
@@ -229,7 +229,6 @@
     },
     {
       "image": "https://assets.interntheory.com/uploads/company/logos/1d75708bc583f58cdf96401fb790d7d6a904b79e.jpg",
-
       "courseName": "graghic designer",
       "title": "Digivance Solutions",
       "Timing": "full time internship",
@@ -237,14 +236,12 @@
       "location": "delhi",
       "stipend": "7000 per month",
       "remain": "2 weeks left",
-
       "availablity": "full time internship",
       "category": "Marketing",
       "quantity": "1",
       "duration": "3 months",
       "startDate": "2022-11-14",
       "deadline": "2022-12-02",
-
       "idesc": "We’re looking for a driven, ambitious individual who wants to create a career in social media and content marketing. We provide extensive training, guidance and support, as well as the opportunity to experience the industry from the inside and gain valuable work experience.",
       "skills": " Marketing",
       "companyDesc": "We, Bombay Hemp Company, incorporated in 2013, are an Agro-based enterprise reimagining the future of Indian agriculture and sustainable living with hemp as our lens. Hemp’s uses are kaleidoscopic. Pull its Fibre out and it’ll give you Yarn; chop it into Softwood, it’ll give you material to build Shelter; study its Genetics, and you’ll find Medicine.  Our design fuses this very potential with the existing industries of Agriculture, Technology, and Medicine, to bring together Community, Impact, and Value.",
@@ -266,7 +263,6 @@
       "duration": "3 months",
       "startDate": "2022-11-14",
       "deadline": "2022-12-02",
-
       "idesc": "We’re looking for a driven, ambitious individual who wants to create a career in social media and content marketing. We provide extensive training, guidance and support, as well as the opportunity to experience the industry from the inside and gain valuable work experience.",
       "skills": " Marketing",
       "companyDesc": "We, Bombay Hemp Company, incorporated in 2013, are an Agro-based enterprise reimagining the future of Indian agriculture and sustainable living with hemp as our lens. Hemp’s uses are kaleidoscopic. Pull its Fibre out and it’ll give you Yarn; chop it into Softwood, it’ll give you material to build Shelter; study its Genetics, and you’ll find Medicine.  Our design fuses this very potential with the existing industries of Agriculture, Technology, and Medicine, to bring together Community, Impact, and Value.",
@@ -289,7 +285,6 @@
       "duration": "3 months",
       "startDate": "2022-11-14",
       "deadline": "2022-12-02",
-
       "idesc": "We’re looking for a driven, ambitious individual who wants to create a career in social media and content marketing. We provide extensive training, guidance and support, as well as the opportunity to experience the industry from the inside and gain valuable work experience.",
       "skills": " Marketing",
       "companyDesc": "We, Bombay Hemp Company, incorporated in 2013, are an Agro-based enterprise reimagining the future of Indian agriculture and sustainable living with hemp as our lens. Hemp’s uses are kaleidoscopic. Pull its Fibre out and it’ll give you Yarn; chop it into Softwood, it’ll give you material to build Shelter; study its Genetics, and you’ll find Medicine.  Our design fuses this very potential with the existing industries of Agriculture, Technology, and Medicine, to bring together Community, Impact, and Value.",
@@ -312,7 +307,7 @@
       "startDate": "2022-11-14",
       "deadline": "2022-12-02",
       "idesc": "We’re looking for a driven, ambitious individual who wants to create a career in social media and content marketing. We provide extensive training, guidance and support, as well as the opportunity to experience the industry from the inside and gain valuable work experience.",
-      "skills": " Marketing",
+      "skills": "Marketing",
       "companyDesc": "We, Bombay Hemp Company, incorporated in 2013, are an Agro-based enterprise reimagining the future of Indian agriculture and sustainable living with hemp as our lens. Hemp’s uses are kaleidoscopic. Pull its Fibre out and it’ll give you Yarn; chop it into Softwood, it’ll give you material to build Shelter; study its Genetics, and you’ll find Medicine.  Our design fuses this very potential with the existing industries of Agriculture, Technology, and Medicine, to bring together Community, Impact, and Value.",
       "location-1": "Bombay Hemp Company Pvt. Ltd. (BOHECO), Unit #2, Cama Industrial Estate, SunMill Compound Rd, Lower Parel, Mumbai – 400013, Maharashtra, India., mumbai, 400013",
       "id": 13
@@ -332,15 +327,51 @@
       "duration": "3 months",
       "startDate": "2022-11-14",
       "deadline": "2022-12-02",
-
       "idesc": "We’re looking for a driven, ambitious individual who wants to create a career in social media and content marketing. We provide extensive training, guidance and support, as well as the opportunity to experience the industry from the inside and gain valuable work experience.",
       "skills": " Marketing",
       "companyDesc": "We, Bombay Hemp Company, incorporated in 2013, are an Agro-based enterprise reimagining the future of Indian agriculture and sustainable living with hemp as our lens. Hemp’s uses are kaleidoscopic. Pull its Fibre out and it’ll give you Yarn; chop it into Softwood, it’ll give you material to build Shelter; study its Genetics, and you’ll find Medicine.  Our design fuses this very potential with the existing industries of Agriculture, Technology, and Medicine, to bring together Community, Impact, and Value.",
       "location-1": "Bombay Hemp Company Pvt. Ltd. (BOHECO), Unit #2, Cama Industrial Estate, SunMill Compound Rd, Lower Parel, Mumbai – 400013, Maharashtra, India., mumbai, 400013",
       "id": 14
+    },
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXOK0iGfLK3qjdMb4nS90pA_J2ish_NnS2Ag&usqp=CAU",
+      "courseName": "Business Development Executive",
+      "title": "Gryphon Academy",
+      "Timing": "Full Time Internship",
+      "type": "Business Development",
+      "quantity": "12",
+      "duration": "3 months",
+      "startDate": "2022-11-16",
+      "deadline": "2022-11-15",
+      "stippend": "600-500 per month",
+      "idesc": "\"We’re looking for a driven, ambitious individual who wants to create a career in social media and content marketing. We provide extensive training, guidance and support, as well as the opportunity to experience the industry from the inside and gain valuable work experience.\"",
+      "skills": " Marketing",
+      "companyDesc": "We, Bombay Hemp Company, incorporated in 2013, are an Agro-based enterprise reimagining the future of Indian agriculture and sustainable living with hemp as our lens. Hemp’s uses are kaleidoscopic. Pull its Fibre out and it’ll give you Yarn; chop it into Softwood, it’ll give you material to build Shelter; study its Genetics, and you’ll find Medicine.  Our design fuses this very potential with the existing industries of Agriculture, Technology, and Medicine, to bring together Community, Impact, and Value.",
+      "location": "pune",
+      "remining": "2-3 weeks",
+      "address": "Bombay Hemp Company Pvt. Ltd. (BOHECO), Unit #2, Cama Industrial Estate, SunMill Compound Rd, Lower Parel, Mumbai – 400013, Maharashtra, India., mumbai, 400013",
+      "id": 15
+    },
+    {
+      "image": "data:image/png;base64,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",
+      "courseName": "Data Analatic",
+      "title": "Google",
+      "Timing": "Full Time Internship",
+      "type": "part time",
+      "quantity": "3",
+      "duration": "3 months",
+      "startDate": "2022-11-23",
+      "deadline": "2022-11-28",
+      "stippend": "3000-6000 month",
+      "idesc": "Create User Stories & Issues, Plan Sprints, & Distribute Tasks Across Your Software Team. Explore Various \"Per User\" Pricing Options, So You'll Never Pay For More Than You Need. For",
+      "skills": "software kt",
+      "companyDesc": "Create User Stories & Issues, Plan Sprints, & Distribute Tasks Across Your Software Team. Explore Various \"Per User\" Pricing Options, So You'll Never Pay For More Than You Need. For",
+      "location": "bangalore",
+      "remining": "3-4 weeks",
+      "address": "bangalore",
+      "id": 16
     }
   ],
-
   "courses": [
     {
       "id": 1,
