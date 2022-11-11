@@ -88,7 +88,7 @@ body {
 	}
 }
 @media (max-width: 952px) {
-	button {
+	.button {
 		height: 56px;
 		margin-top: 0px;
 	}
@@ -185,7 +185,7 @@ body {
 	}
 }
 @media (max-width: 600px) {
-	button {
+	.button {
 		display: none;
 	}
 	.section_2_cont_1 {
