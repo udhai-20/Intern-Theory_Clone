@@ -1,7 +1,7 @@
 .profile_wrapper {
 
     display: flex;
-    width: 80%;
+    width: 70%;
     justify-content: space-between;
     margin: auto;
     margin-top: 10px;
@@ -16,7 +16,7 @@
 .profile_wrapper .profile_leftside {
     width: 30%;
     background-color: #fff;
-    height: auto;
+    height: 400px;
     padding: .5rem;
     border-radius: .8rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -98,14 +98,15 @@
 
 .profile_wrapper>.profile_rightside {
     width: 66%;
-    border: 1px solid red;
+    border-radius: .8rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     padding: 1rem;
-    height: 500px
+    margin-bottom: 20px;
+    height: auto
 }
 
 .profile_rightside_inside {
-    border: 1px solid rgb(0, 255, 72);
-
+    /* border: 1px solid rgb(0, 255, 72); */
     gap: 5;
 
 }
@@ -120,7 +121,7 @@
     width: 320px;
     height: 110px;
     justify-content: space-between;
-    border: 1px solid rgb(63, 27, 27);
+    /* border: 1px solid rgb(63, 27, 27); */
 }
 
 .profile_name {
@@ -172,6 +173,71 @@
 
 }
 
+.profile_ul {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
 .profile_li {
     display: flex;
+    width: 100%;
+    margin-top: 10px;
+    gap: 100px;
+    align-items: center;
+    /* border: 1px solid rgb(4, 255, 0); */
+}
+
+.profile_li_span_heading {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.57;
+    width: 100px;
+    /* border: 1px solid rgb(0, 0, 255); */
+    letter-spacing: 0.00714em;
+}
+
+.profile_li_span_heading_name {
+    color: #3C4858;
+    font-size: 0.875rem;
+    margin-right: 100px;
+    /* border: 1px solid red; */
+}
+
+.dashboard_dashedline {
+    width: 100%;
+    margin: 25px 0;
+    height: 2px;
+    background:
+        repeating-linear-gradient(90deg, rgb(192, 187, 187) 0 10px, #0000 0 12px)
+        /*10px red then 2px transparent -> repeat }this!*/
+}
+
+.dashboard_personal {
+    width: 100%;
+}
+
+.profile_edcuation_details {
+    display: flex;
+    justify-content: space-between;
+    gap: 3px;
+}
+
+.profile_leftSide {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+}
+
+.dashboard_personal_1 {
+    color: #3C4858;
+    font-size: 20px;
+}
+
+.dashboard_personal_2 {
+    color: #3C4858;
+    font-size: .875rem;
 }
