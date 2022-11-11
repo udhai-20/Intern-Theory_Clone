@@ -12,6 +12,9 @@ import {
   POST_ADDTOCART_FAILURE,
   POST_ADDTOCART_REQUEST,
   POST_ADDTOCART_SUCCESS,
+  GET_APPLY_DATA_FAILURE,
+  GET_APPLY_DATA_REQUEST,
+  GET_APPLY_DATA_SUCCESS,
 } from "./actionTypes";
 
 const SearchRequest = () => {
@@ -51,12 +54,21 @@ const deleteCartSuccess = () => {
 const deleteCartFailure = () => {
   return { type: DELETE_CART_FAILURE };
 };
+const getApplyRequest = () => {
+  return { type: GET_APPLY_DATA_REQUEST };
+};
+const getApplySuccess = (payload) => {
+  return { type: GET_APPLY_DATA_SUCCESS, payload };
+};
+const getApplyFailure = () => {
+  return { type: GET_APPLY_DATA_FAILURE };
+};
 export const getCourses = (dispatch) => {
   dispatch(getCourseRequest());
   return axios
     .get("http://localhost:8080/courses")
     .then((res) => {
-      dispatch(getCourseSuccess(res.data));
+      dispatch(res.data);
     })
     .catch((err) => {
       dispatch(getCourseFailure());
@@ -64,13 +76,24 @@ export const getCourses = (dispatch) => {
 };
 export const addToCart = (data) => (dispatch) => {
   dispatch(addToCartRequest());
-  return axios
+  axios
     .post("http://localhost:8080/cart", data)
     .then((res) => {
       alert("Item Added To Cart Successfully");
     })
     .catch((err) => {
       alert("Item Allready added");
+    });
+};
+export const getApply = (id) => (dispatch) => {
+  dispatch(getApplyRequest());
+  return axios
+    .get(` http://localhost:8080/interships/${id}`)
+    .then((res) => {
+      dispatch(getApplySuccess(res.data));
+    })
+    .catch((_) => {
+      getApplyFailure();
     });
 };
 export {

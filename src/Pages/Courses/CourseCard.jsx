@@ -23,9 +23,9 @@ export default function CourseCard(data) {
         <div className="c-card-price-wrapper">
           <div className="c-card-odlprice">
             <span className="c-oldprice">₹{data.oldPrice}</span>
-            <p className="c-card-price">{data.newPrice}₹ </p>
+            <p className="c-card-price">{data.newPrice}₹</p>
           </div>
-          <p className="c-card-emi">{data.emi} </p>
+          <p className="c-card-emi">{data.emi}</p>
           <div className="c-card-btn">
             <button className="c-btn c-btn-light">KNOW MORE</button>
             <button onClick={() => handleAddToCart()} className="c-btn">

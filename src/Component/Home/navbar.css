@@ -51,7 +51,7 @@ nav div {
 	text-align: center;
 	left: -5px;
 }
-button {
+/* button {
 	border: none;
 	border-radius: 5px;
 	background: #dd1e2e;
@@ -66,7 +66,7 @@ button {
 button:hover {
 	opacity: 0.7;
 	cursor: pointer;
-}
+} */
 .menu_btn:hover,
 .cart_btn:hover {
 	background-color: rgba(0, 0, 0, 0.07);
