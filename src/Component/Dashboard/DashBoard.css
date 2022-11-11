@@ -6,6 +6,7 @@
     margin: auto;
     margin-top: 10px;
     height: auto;
+
 }
 
 .dashboard_wrapper .dashboard_leftside {
@@ -37,6 +38,7 @@
 .dashboard_leftside_child_profile {
     background-color: #087CDD;
     width: max-content;
+    margin-top: 15px;
     padding: 0.4rem;
     text-transform: uppercase;
     color: #fff;
@@ -55,11 +57,13 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 1.75rem;
+    margin-top: 10px;
 }
 
 .dashboard_leftside_line {
     color: #999;
     width: 100%;
+    margin-top: 15px;
 
 
 }
@@ -71,6 +75,7 @@
 
 .dashboard_leftside_contact {
     text-align: left;
+    margin-top: 15px;
 }
 
 .dashboard_leftside_contact_email {
@@ -79,14 +84,16 @@
     align-items: center;
     color: #3C4858;
     text-align: left;
-    gap: 2;
+    gap: 8px;
     overflow: hidden;
     overflow-wrap: hidden;
+    margin-top: 15px;
 }
 
 .dashboard_leftside_contact_email_color {
     color: black;
     font-size: 16px;
+
 }
 
 /* //right side */
@@ -96,6 +103,7 @@
     flex-direction: column;
     padding: 1rem;
     width: 100%;
+
 }
 
 .dashboard_rightside_top {
@@ -104,8 +112,6 @@
     border-color: red;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     background-color: #fff;
-
-
 }
 
 .dashboard_rightside_RecomendedCourse {
@@ -115,12 +121,15 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     margin-top: 1rem;
     border-radius: .8rem;
+    margin-top: 15px;
 }
 
 .dashboard_rightside_RecomendedCourse>h5 {
     color: rgba(0, 0, 0, 0.54);
     font-size: 20px;
     text-align: left;
+    margin-top: 15px;
+
 }
 
 .dashboard_rightside_RecomendedCoursesection {
@@ -129,6 +138,7 @@
     display: flex;
     overflow-x: auto;
     gap: 8px;
+    margin-top: 15px;
 }
 
 .dashboard_rightside_Recom_prod {
@@ -139,6 +149,7 @@
     height: 70px;
     border-radius: .3rem;
     padding: .3rem;
+    margin-top: 15px;
 }
 
 .dashboard_rightside_Recom_prod>img {
@@ -167,6 +178,7 @@
 
 .dasboard_bottom_left_section {
     width: 30%;
+
     /* border: 1px solid rgb(0, 0, 255); */
     height: 500px;
     ;
@@ -180,6 +192,7 @@
     height: 500px;
     background-color: #fff;
     margin-left: 50px;
+    margin-top: 15px;
 }
 
 .dasboard_bottom_right_top {
@@ -187,6 +200,7 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+
 }
 
 .dasboard_bottom_right_twosections {
@@ -207,13 +221,15 @@
 
 
 .dashboard_bottom_line {
-    margin-top: -15px;
+
+    margin-top: 8px;
 }
 
 .dasboard_bottom_right_below {
     margin-top: -10px;
     display: flex;
     width: 100%;
+    margin-top: 8px;
     justify-content: space-between;
 }
 
@@ -261,6 +277,7 @@
 
 .dashboard_rtext {
     text-align: left;
+    margin-top: 10px;
 }
 
 .dashboard_FormStatus_rightside {
