@@ -1,22 +1,22 @@
 import React from "react";
-import Home from "../Component/Home/Home";
 import { Routes, Route } from "react-router-dom";
+import { ChakraProvider } from "@chakra-ui/react";
+import Home from "../Component/Home/Home";
+import Courses from "../Pages/Courses/Courses";
 import InternShips from "../Pages/InternShips/InternShips";
 import JobsPage from "../Pages/Job/JobsPage";
+import SearchPage from "../Pages/Search/SearchPage";
+import AddProduct from "../Pages/AddProduct/AddProduct";
+import AvilableInter from "../Pages/AvilableInter/AvilableInter";
+import AdminDashBoard from "../Component/AdminDahBoard/AdminDashBoard";
 import SignIngPage from "../Pages/SignIngPage";
 import LoginPage from "../Pages/LoginPage";
 import CartPages from "../Pages/CartPages";
 import ViewAndAplly from "../Pages/ViewAndAplly";
-import ProfilePage from "../Pages/Profile/Profile";
 import ChangePassword from "../Pages/ChangePassword";
-import Courses from "../Pages/Courses/Courses";
-import NotFoundPage from "../Pages/NotFoundPage";
-import { ChakraProvider } from "@chakra-ui/react";
+import ProfilePage from "../Pages/Profile/Profile";
 import DashBoard from "../Component/Dashboard/DashBoard";
-import SearchPage from "../Pages/Search/SearchPage";
-import AdminDashBoard from "../Component/AdminDahBoard/AdminDashBoard";
-import AddProduct from "../Pages/AddProduct/AddProduct";
-import AvilableInter from "../Pages/AvilableInter/AvilableInter";
+import NotFoundPage from "../Pages/NotFoundPage";
 function AllRouter() {
   return (
     <Routes>

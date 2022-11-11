@@ -1,6 +1,6 @@
 import React from "react";
 
-function CoursesPage(props) {
+function CoursesPage() {
   return <div></div>;
 }
 
