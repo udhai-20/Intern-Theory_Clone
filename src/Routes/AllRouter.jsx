@@ -35,6 +35,8 @@ function AllRouter() {
       <Route path="/profile" element={<ProfilePage />} />
       <Route path="/dashboard" element={<DashBoard />} />
       <Route path="*" element={<NotFoundPage />} />
+  
+
     </Routes>
   );
 }
