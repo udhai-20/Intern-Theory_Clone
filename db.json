@@ -40,7 +40,7 @@
     "Software Development"
   ],
   "Types": ["Full Time", "Part TIme", "Work From Home"],
-  
+ 
 "interships": [
   {
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlPD84iU_lPqoa3SZX9zbQ3m6r6_ZjaFk7Yw&usqp=CAU.jpg",
@@ -204,6 +204,7 @@
     "location-1": "Bombay Hemp Company Pvt. Ltd. (BOHECO), Unit #2, Cama Industrial Estate, SunMill Compound Rd, Lower Parel, Mumbai – 400013, Maharashtra, India., mumbai, 400013",
     "id": 8
   },
+  
   { 
     "image": "https://assets.interntheory.com/uploads/company/logos/964b36c595044cf05eeab95d881e196638a6b3ef.jpg",
   "courseName": "Marketing Communications Intern",
