@@ -1,5 +1,4 @@
 import "./Courses.css";
-// import { data } from "./data";
 import { getCourses } from "../../Redux/AppReducer/action";
 import CourseCard from "./CourseCard";
 import { useDispatch, useSelector } from "react-redux";
@@ -7,7 +6,6 @@ import { useEffect } from "react";
 export default function Course() {
   const dispatch = useDispatch();
   const data = useSelector((state) => state.AppReducer.courseData);
-  console.log(data);
   useEffect(() => {
     dispatch(getCourses);
   }, []);

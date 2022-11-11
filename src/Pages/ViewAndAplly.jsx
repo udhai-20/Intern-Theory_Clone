@@ -1,7 +1,12 @@
 import React from "react";
+import Apply from "../Component/Apply/Apply";
 
-function ViewAndAplly(props) {
-  return <div></div>;
+function ViewAndAplly() {
+  return (
+    <div>
+      <Apply />
+    </div>
+  );
 }
 
 export default ViewAndAplly;
