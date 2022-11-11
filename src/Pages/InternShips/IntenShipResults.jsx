@@ -143,9 +143,10 @@ function IntenShipResults() {
       )}
 
       {FilterResult.searchData.length > 0 &&
-        FilterResult.searchData.map((el) => {
+        FilterResult.searchData.map((el, i) => {
           return (
             <Box
+              key={i + 1}
               width="80%"
               display="flex"
               justifyContent="space-between"
@@ -154,7 +155,7 @@ function IntenShipResults() {
               margin={"auto"}
               marginBottom={"15px"}
             >
-              <Box width={"25%"} shadow="xs" _hover={{ background: "gray.50" }}>
+              <Box width={"25%"}>
                 {/* <Image src={interImage} alt="left_image" /> */}
               </Box>
 

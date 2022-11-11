@@ -7,12 +7,13 @@ import SignIngPage from "../Pages/SignIngPage";
 import LoginPage from "../Pages/LoginPage";
 import CartPages from "../Pages/CartPages";
 import ViewAndAplly from "../Pages/ViewAndAplly";
-import ProfilePage from "../Pages/ProfilePage";
+import ProfilePage from "../Pages/Profile/Profile";
 import ChangePassword from "../Pages/ChangePassword";
 import Courses from "../Pages/Courses/Courses";
 import NotFoundPage from "../Pages/NotFoundPage";
 import { ChakraProvider } from "@chakra-ui/react";
-function AllRouter(props) {
+import DashBoard from "../Component/Dashboard/DashBoard";
+function AllRouter() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
@@ -32,6 +33,7 @@ function AllRouter(props) {
       <Route path="/viewandaplly/:id" element={<ViewAndAplly />} />
       <Route path="/changepassword" element={<ChangePassword />} />
       <Route path="/profile" element={<ProfilePage />} />
+      <Route path="/dashboard" element={<DashBoard />} />
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );

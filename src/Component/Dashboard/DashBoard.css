@@ -1,0 +1,313 @@
+.dashboard_wrapper {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 10px;
+    height: auto;
+}
+
+.dashboard_wrapper .dashboard_leftside {
+    width: 30%;
+    background-color: #fff;
+    height: auto;
+    padding: .5rem;
+    border-radius: .8rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.dashboard_wrapper>.dashboard_rightside {
+    width: 66%;
+}
+
+.dashboard_leftside_child img {
+    width: 50%;
+}
+
+.dashboard_leftside_child {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    margin: auto;
+}
+
+.dashboard_leftside_child_profile {
+    background-color: #087CDD;
+    width: max-content;
+    margin-top: 15px;
+    padding: 0.4rem;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 0.4rem;
+}
+
+.dashboard_leftside_child_profile:hover {
+    background-color: #4e7fa8;
+}
+
+.dashboard_leftside_name {
+    color: #999;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.75rem;
+    margin-top: 10px;
+}
+
+.dashboard_leftside_line {
+    color: #999;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.dashboard_leftside_parent {
+    width: 80%;
+    margin: auto;
+}
+
+.dashboard_leftside_contact {
+    text-align: left;
+    margin-top: 15px;
+}
+
+.dashboard_leftside_contact_email {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: #3C4858;
+    text-align: left;
+    gap: 8px;
+    overflow: hidden;
+    overflow-wrap: hidden;
+    margin-top: 15px;
+}
+
+.dashboard_leftside_contact_email_color {
+    color: black;
+    font-size: 16px;
+}
+
+/* //right side */
+.dashboard_rightside>div {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 100%;
+}
+
+.dashboard_rightside_top {
+    border: dashed;
+    font-size: 13px;
+    border-color: red;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background-color: #fff;
+}
+
+.dashboard_rightside_RecomendedCourse {
+    background-color: #fff;
+    display: flex;
+    width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-top: 1rem;
+    border-radius: .8rem;
+    margin-top: 15px;
+}
+
+.dashboard_rightside_RecomendedCourse>h5 {
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 20px;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.dashboard_rightside_RecomendedCoursesection {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.dashboard_rightside_Recom_prod {
+    margin-top: .3rem;
+    width: 40%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    display: flex;
+    height: 70px;
+    border-radius: .3rem;
+    padding: .3rem;
+    margin-top: 15px;
+}
+
+.dashboard_rightside_Recom_prod>img {
+    width: 40%;
+    height: 100%;
+    margin-right: 5px;
+
+
+}
+
+.dashboard_rightside_Recom_prod>p {
+    font-size: .8rem;
+    color: #3C4858;
+}
+
+.dasboard_bottom_section {
+    width: 80%;
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 10px;
+    height: 500px;
+}
+
+.dasboard_bottom_left_section {
+    width: 30%;
+    /* border: 1px solid rgb(0, 0, 255); */
+    height: 500px;
+    ;
+}
+
+.dasboard_bottom_right_section {
+    width: 66%;
+    padding: .8rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    border-radius: .8rem;
+    /* border: 1px solid rgb(0, 255, 30); */
+    height: 500px;
+    background-color: #fff;
+    margin-left: 50px;
+    margin-top: 1px;
+}
+
+.dasboard_bottom_right_top {
+    padding: .5rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.dasboard_bottom_right_twosections {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.dasboard_bottom_right_twosections p {
+    text-transform: uppercase;
+    /* color: #087CDD;onclick it should be this color */
+    color: rgba(0, 0, 0, 0.54);
+    ;
+    font-size: 0.875rem;
+}
+
+.dashboard_bottom_line {
+    margin-top: 8px;
+}
+
+.dasboard_bottom_right_below {
+    margin-top: -10px;
+    display: flex;
+    width: 100%;
+    margin-top: 8px;
+    justify-content: space-between;
+}
+
+.dasboard_bottom_right_twosections_bottom {
+    display: flex;
+    gap: 10px;
+    font-size: 0.875rem;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.dashboard_select {
+    padding: .2rem;
+    border: none;
+    border-bottom: 1px solid gray;
+    background: transparent;
+}
+
+.dashboard_select option {
+    padding: .2rem;
+}
+
+.dashboard_FormStatus {
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+
+.dashboard_FormStatus_leftside {
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid rgb(25, 0, 255); */
+    width: 50%;
+}
+
+.dashboard_FormStatus_leftside_img {
+    width: 35%;
+}
+
+.dashboard_img {
+    display: block;
+    width: 100%;
+}
+
+.dashboard_rtext {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.dashboard_FormStatus_rightside {
+    /* border: 1px solid rgb(0, 255, 30); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+    padding: 12px;
+}
+
+.dashboard_FormStatus_rightside_p1 {
+    color: rgb(223, 30, 46) !important;
+    font-weight: 600 !important;
+    font-size: 0.875rem;
+}
+
+.dashboard_FormStatus_rightside_p1:hover {
+    color: rgb(237, 174, 180);
+    cursor: pointer;
+}
+
+.dashboard_FormStatus_rightside:last-child {
+    color: #087CDD;
+    font-size: 0.875rem;
+    font-weight: 600 !important;
+}
+
+.dashboard_FormStatus_rightside_green {
+    color: #16b423;
+    font-size: 0.875rem;
+    font-weight: 600 !important;
+}
+
+.dashboard_FormStatus_rightside:last-child:hover {
+    color: #4589c0;
+    cursor: pointer;
+}
+
+.dashboard_dashedline {
+    margin: 25px 0;
+    height: 2px;
+    background:
+        repeating-linear-gradient(90deg, rgb(192, 187, 187) 0 10px, #0000 0 12px)
+}
+
+* {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
