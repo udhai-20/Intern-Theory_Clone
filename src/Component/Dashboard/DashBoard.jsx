@@ -1,6 +1,7 @@
 import React from "react";
 import "./DashBoard.css";
 import { AiOutlineMail, AiFillPhone } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 function DashBoard(props) {
   return (
@@ -13,7 +14,10 @@ function DashBoard(props) {
                 src="https://assets.interntheory.com/creative/default-images/guyProfile.jpg"
                 alt="userimage"
               />
-              <p className="dashboard_leftside_child_profile">My Profile</p>
+              <Link to="/profile">
+                <p className="dashboard_leftside_child_profile">My Profile</p>
+              </Link>
+
               <p className="dashboard_leftside_name">Udhaya prakash</p>
             </div>
             <hr className="dashboard_leftside_line"></hr>
