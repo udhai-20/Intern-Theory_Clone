@@ -1,13 +1,14 @@
 import React from "react";
+
 import './step2.css'
 
 const Step2 = () => {
-  return ( <div class="register_step_2" id="register_step_2">
-  <div class="step_2_main">
-    <p class="heading">Education</p>
-    <p class="para">Add your educational qualification</p>
+  return ( <div className="register_step_2" id="register_step_2">
+  <div className="step_2_main">
+    <p className="heading">Education</p>
+    <p className="para">Add your educational qualification</p>
 
-    <div class="step_2_form">
+    <div className="step_2_form">
       <form autocomplete="off" id="step_2_form">
         <div>
           <label for="education" style={{color:"red",fontWeight:"bold"}}>Level of Education *</label>
@@ -49,9 +50,10 @@ const Step2 = () => {
           />
         </div>
         <div>
-          <button class="step_2_btn" style={{backgroundColor:"red",color:"white",padding:"10px 20px",border:"none"}}>
+           <button className="step_2_btn" style={{backgroundColor:"red",color:"white",padding:"10px 20px",border:"none"}}>
             ADD
           </button>
+         
         </div>
       </form>
     </div>
