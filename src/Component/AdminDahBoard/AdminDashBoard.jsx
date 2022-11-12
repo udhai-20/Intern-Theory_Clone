@@ -1,9 +1,52 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./AdminDashBoard.css";
-import { AiOutlineMail, AiFillPhone } from "react-icons/ai";
+import {
+  AiOutlineMail,
+  AiFillPhone,
+  AiFillFileAdd,
+  AiFillDatabase,
+  AiFillAccountBook,
+} from "react-icons/ai";
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import axios from "axios";
+import {
+  getCourseFailure,
+  getCourseRequest,
+  getCourseSuccess,
+  SearchFailure,
+  SearchRequest,
+  SearchSuccess,
+} from "../../Redux/AppReducer/action";
 
 function AdminDashBoard(props) {
+  const dispatch = useDispatch();
+  let data = useSelector((state) => state.AppReducer);
+  const getIntern = () => {
+    dispatch(SearchRequest());
+    axios
+      .get(`http://localhost:8080/interships`)
+      .then((res) => dispatch(SearchSuccess(res.data)))
+      .catch((err) => {
+        console.log("err:", err);
+        dispatch(SearchFailure());
+      });
+  };
+  const getCourses = () => {
+    dispatch(getCourseRequest());
+    axios
+      .get(`http://localhost:8080/courses`)
+      .then((res) => dispatch(getCourseSuccess(res.data)))
+      .catch((err) => {
+        console.log("err:", err);
+        dispatch(getCourseFailure());
+      });
+  };
+  useEffect(() => {
+    getIntern();
+    getCourses();
+  }, []);
+
   return (
     <div>
       <div className="dashboard_wrapper">
@@ -39,32 +82,43 @@ function AdminDashBoard(props) {
         {/* //right side */}
         <div className="dashboard_rightside">
           <div className="dashboard_rightside_top ">
-            <p>
-              Still in college and want to start a business already? Become our
-              affiliate and kickstart your entrepreneurial journey. Click here
-              for details
-            </p>
+            <p>Admin Dashboard</p>
           </div>
           <div className="dashboard_rightside_RecomendedCourse">
             <h5>Intenship Section</h5>
             <div className="dashboard_rightside_RecomendedCoursesection">
               <div className="dashboard_rightside_Recom_prod">
-                <img src="https://assets.interntheory.com/creative/courses/thumbnails/digital-marketing-course.png" />
-                <p> Add Intenships Datas </p>
+                <Link to="/Admin/addintern">
+                  <AiFillFileAdd className="admin_icons_styles" />
+                </Link>
+
+                <p className="admin_icons_text"> Add Intenships Datas </p>
               </div>
               <div className="dashboard_rightside_Recom_prod">
-                <img src="https://assets.interntheory.com/creative/courses/thumbnails/stock-market-course.png" />
-                <p>Update Intenships Datas</p>
+                <Link to="/Admin/inerndatas">
+                  <AiFillDatabase className="admin_icons_styles" />
+                </Link>
+                <p className="admin_icons_text">Intenships Datas</p>
               </div>
-              <div className="dashboard_rightside_Recom_prod">
+              {/* <div className="dashboard_rightside_Recom_prod">
                 <img src="https://assets.interntheory.com/courses/banner/1573120767.png" />
                 <p>Delete Intenship Datas</p>
-              </div>
+              </div> */}
             </div>
             <h5>Course Sections</h5>
-            <div className="dashboard_rightside_Recom_prod">
-              <img src="https://assets.interntheory.com/uploads/company/logos/bf3174743fe71c1e3028caabc90044f486d5bc7b.jpg" />
-              <p> Full Stack Web Development </p>
+            <div className="dashboard_rightside_RecomendedCoursesection">
+              <div className="dashboard_rightside_Recom_prod">
+                <Link to="/Admin/addcourse">
+                  <AiFillFileAdd className="admin_icons_styles" />
+                </Link>
+                <p className="admin_icons_text">Add Course Datas</p>
+              </div>
+              <div className="dashboard_rightside_Recom_prod">
+                <Link to="/Admin/inerndatas">
+                  <AiFillDatabase className="admin_icons_styles" />
+                </Link>
+                <p className="admin_icons_text">Course Datas</p>
+              </div>
             </div>
           </div>
         </div>
@@ -74,8 +128,8 @@ function AdminDashBoard(props) {
         <div className="dasboard_bottom_right_section">
           <div className="dasboard_bottom_right_top">
             <div className="dasboard_bottom_right_twosections">
-              <p>myApplication</p>
-              <p>mycourses</p>
+              <p>Intenships Datas</p>
+              <p>mycourses datas</p>
             </div>
 
             <div></div>
@@ -107,20 +161,16 @@ function AdminDashBoard(props) {
           <div className="dashboard_FormStatus">
             <div className="dashboard_FormStatus_leftside">
               <div className="dashboard_FormStatus_leftside_img">
-                <img
-                  className="dashboard_img"
-                  src="https://assets.interntheory.com/uploads/company/logos/1d75708bc583f58cdf96401fb790d7d6a904b79e.jpg"
-                />
+                <AiFillAccountBook className="dashbord_icons_bot" />
               </div>
               <div className="dashboard_rtext">
-                <p>Business Developement Intern</p>
-                <p>Digivance Solutions</p>
-                <p>Stipend: ₹ 9000 per month</p>
+                <p>Total Internship Datas</p>
               </div>
             </div>
             <div className="dashboard_FormStatus_rightside">
-              <p className="dashboard_FormStatus_rightside_p1">REJECTED</p>
-              <p>VIEW APPLICATION</p>
+              <p className="dashboard_FormStatus_rightside_p1">
+                Total Count:{data.searchData.length}
+              </p>
             </div>
           </div>
 
@@ -130,20 +180,16 @@ function AdminDashBoard(props) {
           <div className="dashboard_FormStatus">
             <div className="dashboard_FormStatus_leftside">
               <div className="dashboard_FormStatus_leftside_img">
-                <img
-                  className="dashboard_img"
-                  src="https://assets.interntheory.com/uploads/company/companylogos/62362fbf882221470f099d8d0a119df93ce19831/7e34b7356b30b3696d14fcab94c6e8989a42fd69com.jpg"
-                />
+                <AiFillAccountBook className="dashbord_icons_bot" />
               </div>
               <div className="dashboard_rtext">
-                <p>Sales Officer</p>
-                <p>Laugh Out Loud</p>
-                <p>Stipend: ₹ 3000 per month</p>
+                <p>Total Courses Datas</p>
               </div>
             </div>
             <div className="dashboard_FormStatus_rightside">
-              <p className="dashboard_FormStatus_rightside_green">SELECTED</p>
-              <p>VIEW APPLICATION</p>
+              <p className="dashboard_FormStatus_rightside_p1">
+                Total Count:{data.courseData.length}
+              </p>
             </div>
           </div>
           <div style={{ width: "96%", margin: "auto" }}>

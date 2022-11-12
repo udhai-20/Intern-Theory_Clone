@@ -153,10 +153,10 @@
 
 }
 
-.dashboard_rightside_Recom_prod>p {
+/* .dashboard_rightside_Recom_prod>p {
     font-size: .8rem;
     color: #3C4858;
-}
+} */
 
 .dasboard_bottom_section {
     width: 80%;
@@ -263,6 +263,11 @@
 
 .dashboard_rtext {
     text-align: left;
+    align-items: center;
+    padding: 40px;
+    margin: auto;
+    color: #087CDD !important;
+
     margin-top: 10px;
 }
 
@@ -276,8 +281,10 @@
 }
 
 .dashboard_FormStatus_rightside_p1 {
-    color: rgb(223, 30, 46) !important;
+    color: #087CDD !important;
     font-weight: 600 !important;
+    align-items: center;
+    padding: 40px;
     font-size: 0.875rem;
 }
 
@@ -308,6 +315,23 @@
     height: 2px;
     background:
         repeating-linear-gradient(90deg, rgb(192, 187, 187) 0 10px, #0000 0 12px)
+}
+
+.admin_icons_styles {
+    font-size: 60px;
+    color: #087CDD;
+}
+
+.admin_icons_text {
+    align-items: center !important;
+    margin: auto;
+    font-size: .975rem;
+    color: #087CDD !important;
+}
+
+.dashbord_icons_bot {
+    font-size: 120px;
+    color: #087CDD !important;
 }
 
 * {
