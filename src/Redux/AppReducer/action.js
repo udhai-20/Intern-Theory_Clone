@@ -15,13 +15,16 @@ import {
   GET_APPLY_DATA_FAILURE,
   GET_APPLY_DATA_REQUEST,
   GET_APPLY_DATA_SUCCESS,
+  DELETE_DETAILS_REQUEST,
+  DELETE_DETAILS_SUCCESS,
+  DELETE_DETAILS_FAILURE,
 } from "./actionTypes";
 
 const SearchRequest = () => {
   return { type: SEARCH_DATA_REQUEST };
 };
 const SearchSuccess = (payload) => {
-  console.log("datachecking:", payload);
+  // console.log("datachecking:", payload);
   return { type: SEARCH_DATA_SUCCESS, payload };
 };
 const SearchFailure = () => {
@@ -63,6 +66,16 @@ const getApplySuccess = (payload) => {
 const getApplyFailure = () => {
   return { type: GET_APPLY_DATA_FAILURE };
 };
+const deletedetailsRequest = () => {
+  return { type: DELETE_DETAILS_REQUEST };
+};
+const deletedetailsSuccess = () => {
+  return { type: DELETE_DETAILS_SUCCESS };
+};
+const deletedetailsFailure = () => {
+  return { type: DELETE_DETAILS_FAILURE };
+};
+
 export const getCourses = (dispatch) => {
   dispatch(getCourseRequest());
   return axios
@@ -109,4 +122,7 @@ export {
   deleteCartRequest,
   deleteCartSuccess,
   deleteCartFailure,
+  deletedetailsRequest,
+  deletedetailsSuccess,
+  deletedetailsFailure,
 };

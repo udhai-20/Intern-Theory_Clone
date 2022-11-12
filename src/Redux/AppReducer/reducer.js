@@ -14,6 +14,9 @@ import {
   GET_APPLY_DATA_FAILURE,
   GET_APPLY_DATA_REQUEST,
   GET_APPLY_DATA_SUCCESS,
+  DELETE_DETAILS_REQUEST,
+  DELETE_DETAILS_SUCCESS,
+  DELETE_DETAILS_FAILURE,
 } from "./actionTypes";
 
 const initialState = {
@@ -57,6 +60,12 @@ export const reducer = (oldState = initialState, action) => {
     case GET_APPLY_DATA_SUCCESS:
       return { ...oldState, isLoading: false, applyData: payload };
     case GET_APPLY_DATA_FAILURE:
+      return { ...oldState, isLoading: false, isError: true };
+    case DELETE_DETAILS_REQUEST:
+      return { ...oldState, isLoading: true };
+    case DELETE_DETAILS_SUCCESS:
+      return { ...oldState, isLoading: false };
+    case DELETE_DETAILS_FAILURE:
       return { ...oldState, isLoading: false, isError: true };
 
     default:

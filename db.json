@@ -49,6 +49,7 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlPD84iU_lPqoa3SZX9zbQ3m6r6_ZjaFk7Yw&usqp=CAU.jpg",
       "courseName": "Content Writer",
       "title": "Sejal Exports",
+      "type": "business",
       "availablity": "full time internship",
       "category": "Content Writing",
       "quantity": "1",
@@ -61,13 +62,14 @@
       "stipend": "3000 - 6000 per month",
       "remain": "2 weeks left",
       "companyDesc": "Sejal Exports, a name which spells respect and trust in the industry is itself a mere product of the honest and determined efforts of Mr. Sevantibhai M.Shah who is also the founding father of the company. It was his great visualization of the industry that has been a pioneering corner stone in the inception and eventual development of the present company Sejal Exports India. After the initial establishment, the actual business enterprise of Sejal Exports India was started by Mr. Chandubhai M.",
-      "location-1": "01/102 1st Floor, Adarsh Nivas, R.R Mohan Roy Road, Prathana Samaj Road, Charni Road, mumbai, 400004.",
+      "location_1": "01/102 1st Floor, Adarsh Nivas, R.R Mohan Roy Road, Prathana Samaj Road, Charni Road, mumbai, 400004.",
       "id": 1
     },
     {
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSup8EMrbtUe2ZWJh_w6pzlUSqKE9hCv8bS8A&usqp=CAU",
       "courseName": "Area Sales Manager",
       "title": "HomeCapital",
+      "type": "sales",
       "availablity": "full time internship",
       "category": "Business Development",
       "quantity": "1",
@@ -80,13 +82,14 @@
       "remain": "1 weeks left",
       "skills": "Business Development",
       "companyDesc": "About the Company: Home buying is one of the most important milestones in the life of every Individual. At HomeCapital, we believe that Home is the real Capital for a family and grows in value across generations. Buying your first home early has compounding effect on your family’s wealth, happier lives and increased social security for you and your loved ones",
-      "location-1": "602, 6 floor , Suratwala mark plazzo ,Suavespaces, opposite HP petrol pump , hinjawadi- 411057, pune, 411057.",
+      "location_1": "602, 6 floor , Suratwala mark plazzo ,Suavespaces, opposite HP petrol pump , hinjawadi- 411057, pune, 411057.",
       "id": 2
     },
     {
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBhlgkeDinAJD4qx-7r1aLnCir7YlsgPFfSQ&usqp=CAU",
       "courseName": "Human Resource Associate",
       "title": "Laugh Out Loud Ventures",
+      "type": "hr",
       "availablity": "full time internship",
       "category": "Human Resources",
       "quantity": "5",
@@ -99,7 +102,7 @@
       "idesc": "If you've never worked in HR before, and if evil recruiting managers keep rejecting you from HR internships because of this fact, this internship is good news for you. Come in with zero HR experience (or a ton, either is fine) and we'll magically turn you into epic HR professionals who know everything about people (okay, maybe not that, but we'll definitely teach you a bunch of things about HR and leadership and silly jokes). This is completely work-from-home and we're flexible about work hours.",
       "skills": "learner",
       "companyDesc": "We write jokes for people; we also make those jokes look nice, and sell them to other people. We are fun. We have multiple internships available in different fields.",
-      "location-1": "Mumbai",
+      "location_1": "Mumbai",
       "id": 3
     },
     {
@@ -119,7 +122,7 @@
       "idesc": "We’re looking for a driven, ambitious individual who wants to create a career in social media and content marketing. We provide extensive training, guidance and support, as well as the opportunity to experience the industry from the inside and gain valuable work experience.",
       "skills": " Marketing",
       "companyDesc": "We, Bombay Hemp Company, incorporated in 2013, are an Agro-based enterprise reimagining the future of Indian agriculture and sustainable living with hemp as our lens. Hemp’s uses are kaleidoscopic. Pull its Fibre out and it’ll give you Yarn; chop it into Softwood, it’ll give you material to build Shelter; study its Genetics, and you’ll find Medicine.  Our design fuses this very potential with the existing industries of Agriculture, Technology, and Medicine, to bring together Community, Impact, and Value.",
-      "location-1": "Bombay Hemp Company Pvt. Ltd. (BOHECO), Unit #2, Cama Industrial Estate, SunMill Compound Rd, Lower Parel, Mumbai – 400013, Maharashtra, India., mumbai, 400013",
+      "location_1": "Bombay Hemp Company Pvt. Ltd. (BOHECO), Unit #2, Cama Industrial Estate, SunMill Compound Rd, Lower Parel, Mumbai – 400013, Maharashtra, India., mumbai, 400013",
       "id": 4
     },
     {
@@ -139,7 +142,7 @@
       "companyDesc": "-",
       "location": "bangalore",
       "remain": "3 weeks left",
-      "location-1": "K-87A, 2nd Floor, Shyam Nagar, New Delhi, Delhi 110018, delhi, 110018.",
+      "location_1": "K-87A, 2nd Floor, Shyam Nagar, New Delhi, Delhi 110018, delhi, 110018.",
       "id": 5
     },
     {
@@ -160,7 +163,7 @@
       "idesc": "-",
       "skills": "Adobe preimer",
       "companyDesc": "-",
-      "location-1": "K-87A, 2nd Floor, Shyam Nagar, New Delhi, Delhi 110018, delhi, 110018.",
+      "location_1": "K-87A, 2nd Floor, Shyam Nagar, New Delhi, Delhi 110018, delhi, 110018.",
       "id": 6
     },
     {
@@ -181,7 +184,7 @@
       "idesc": "We’re looking for a driven, ambitious individual who wants to create a career in social media and content marketing. We provide extensive training, guidance and support, as well as the opportunity to experience the industry from the inside and gain valuable work experience.",
       "skills": " Marketing",
       "companyDesc": "We, Bombay Hemp Company, incorporated in 2013, are an Agro-based enterprise reimagining the future of Indian agriculture and sustainable living with hemp as our lens. Hemp’s uses are kaleidoscopic. Pull its Fibre out and it’ll give you Yarn; chop it into Softwood, it’ll give you material to build Shelter; study its Genetics, and you’ll find Medicine.  Our design fuses this very potential with the existing industries of Agriculture, Technology, and Medicine, to bring together Community, Impact, and Value.",
-      "location-1": "Bombay Hemp Company Pvt. Ltd. (BOHECO), Unit #2, Cama Industrial Estate, SunMill Compound Rd, Lower Parel, Mumbai – 400013, Maharashtra, India., mumbai, 400013",
+      "location_1": "Bombay Hemp Company Pvt. Ltd. (BOHECO), Unit #2, Cama Industrial Estate, SunMill Compound Rd, Lower Parel, Mumbai – 400013, Maharashtra, India., mumbai, 400013",
       "id": 7
     },
     {
@@ -203,7 +206,7 @@
       "idesc": "We’re looking for a driven, ambitious individual who wants to create a career in social media and content marketing. We provide extensive training, guidance and support, as well as the opportunity to experience the industry from the inside and gain valuable work experience.",
       "skills": " Marketing",
       "companyDesc": "We, Bombay Hemp Company, incorporated in 2013, are an Agro-based enterprise reimagining the future of Indian agriculture and sustainable living with hemp as our lens. Hemp’s uses are kaleidoscopic. Pull its Fibre out and it’ll give you Yarn; chop it into Softwood, it’ll give you material to build Shelter; study its Genetics, and you’ll find Medicine.  Our design fuses this very potential with the existing industries of Agriculture, Technology, and Medicine, to bring together Community, Impact, and Value.",
-      "location-1": "Bombay Hemp Company Pvt. Ltd. (BOHECO), Unit #2, Cama Industrial Estate, SunMill Compound Rd, Lower Parel, Mumbai – 400013, Maharashtra, India., mumbai, 400013",
+      "location_1": "Bombay Hemp Company Pvt. Ltd. (BOHECO), Unit #2, Cama Industrial Estate, SunMill Compound Rd, Lower Parel, Mumbai – 400013, Maharashtra, India., mumbai, 400013",
       "id": 8
     },
     {
@@ -224,7 +227,7 @@
       "idesc": "We’re looking for a driven, ambitious individual who wants to create a career in social media and content marketing. We provide extensive training, guidance and support, as well as the opportunity to experience the industry from the inside and gain valuable work experience.",
       "skills": " Marketing",
       "companyDesc": "We, Bombay Hemp Company, incorporated in 2013, are an Agro-based enterprise reimagining the future of Indian agriculture and sustainable living with hemp as our lens. Hemp’s uses are kaleidoscopic. Pull its Fibre out and it’ll give you Yarn; chop it into Softwood, it’ll give you material to build Shelter; study its Genetics, and you’ll find Medicine.  Our design fuses this very potential with the existing industries of Agriculture, Technology, and Medicine, to bring together Community, Impact, and Value.",
-      "location-1": "Bombay Hemp Company Pvt. Ltd. (BOHECO), Unit #2, Cama Industrial Estate, SunMill Compound Rd, Lower Parel, Mumbai – 400013, Maharashtra, India., mumbai, 400013",
+      "location_1": "Bombay Hemp Company Pvt. Ltd. (BOHECO), Unit #2, Cama Industrial Estate, SunMill Compound Rd, Lower Parel, Mumbai – 400013, Maharashtra, India., mumbai, 400013",
       "id": 9
     },
     {
@@ -245,7 +248,7 @@
       "idesc": "We’re looking for a driven, ambitious individual who wants to create a career in social media and content marketing. We provide extensive training, guidance and support, as well as the opportunity to experience the industry from the inside and gain valuable work experience.",
       "skills": " Marketing",
       "companyDesc": "We, Bombay Hemp Company, incorporated in 2013, are an Agro-based enterprise reimagining the future of Indian agriculture and sustainable living with hemp as our lens. Hemp’s uses are kaleidoscopic. Pull its Fibre out and it’ll give you Yarn; chop it into Softwood, it’ll give you material to build Shelter; study its Genetics, and you’ll find Medicine.  Our design fuses this very potential with the existing industries of Agriculture, Technology, and Medicine, to bring together Community, Impact, and Value.",
-      "location-1": "Bombay Hemp Company Pvt. Ltd. (BOHECO), Unit #2, Cama Industrial Estate, SunMill Compound Rd, Lower Parel, Mumbai – 400013, Maharashtra, India., mumbai, 400013",
+      "location_1": "Bombay Hemp Company Pvt. Ltd. (BOHECO), Unit #2, Cama Industrial Estate, SunMill Compound Rd, Lower Parel, Mumbai – 400013, Maharashtra, India., mumbai, 400013",
       "id": 10
     },
     {
@@ -266,7 +269,7 @@
       "idesc": "We’re looking for a driven, ambitious individual who wants to create a career in social media and content marketing. We provide extensive training, guidance and support, as well as the opportunity to experience the industry from the inside and gain valuable work experience.",
       "skills": " Marketing",
       "companyDesc": "We, Bombay Hemp Company, incorporated in 2013, are an Agro-based enterprise reimagining the future of Indian agriculture and sustainable living with hemp as our lens. Hemp’s uses are kaleidoscopic. Pull its Fibre out and it’ll give you Yarn; chop it into Softwood, it’ll give you material to build Shelter; study its Genetics, and you’ll find Medicine.  Our design fuses this very potential with the existing industries of Agriculture, Technology, and Medicine, to bring together Community, Impact, and Value.",
-      "location-1": "Bombay Hemp Company Pvt. Ltd. (BOHECO), Unit #2, Cama Industrial Estate, SunMill Compound Rd, Lower Parel, Mumbai – 400013, Maharashtra, India., mumbai, 400013",
+      "location_1": "Bombay Hemp Company Pvt. Ltd. (BOHECO), Unit #2, Cama Industrial Estate, SunMill Compound Rd, Lower Parel, Mumbai – 400013, Maharashtra, India., mumbai, 400013",
       "id": 11
     },
     {
@@ -288,7 +291,7 @@
       "idesc": "We’re looking for a driven, ambitious individual who wants to create a career in social media and content marketing. We provide extensive training, guidance and support, as well as the opportunity to experience the industry from the inside and gain valuable work experience.",
       "skills": " Marketing",
       "companyDesc": "We, Bombay Hemp Company, incorporated in 2013, are an Agro-based enterprise reimagining the future of Indian agriculture and sustainable living with hemp as our lens. Hemp’s uses are kaleidoscopic. Pull its Fibre out and it’ll give you Yarn; chop it into Softwood, it’ll give you material to build Shelter; study its Genetics, and you’ll find Medicine.  Our design fuses this very potential with the existing industries of Agriculture, Technology, and Medicine, to bring together Community, Impact, and Value.",
-      "location-1": "Bombay Hemp Company Pvt. Ltd. (BOHECO), Unit #2, Cama Industrial Estate, SunMill Compound Rd, Lower Parel, Mumbai – 400013, Maharashtra, India., mumbai, 400013",
+      "location_1": "Bombay Hemp Company Pvt. Ltd. (BOHECO), Unit #2, Cama Industrial Estate, SunMill Compound Rd, Lower Parel, Mumbai – 400013, Maharashtra, India., mumbai, 400013",
       "id": 12
     },
     {
@@ -309,7 +312,7 @@
       "idesc": "We’re looking for a driven, ambitious individual who wants to create a career in social media and content marketing. We provide extensive training, guidance and support, as well as the opportunity to experience the industry from the inside and gain valuable work experience.",
       "skills": "Marketing",
       "companyDesc": "We, Bombay Hemp Company, incorporated in 2013, are an Agro-based enterprise reimagining the future of Indian agriculture and sustainable living with hemp as our lens. Hemp’s uses are kaleidoscopic. Pull its Fibre out and it’ll give you Yarn; chop it into Softwood, it’ll give you material to build Shelter; study its Genetics, and you’ll find Medicine.  Our design fuses this very potential with the existing industries of Agriculture, Technology, and Medicine, to bring together Community, Impact, and Value.",
-      "location-1": "Bombay Hemp Company Pvt. Ltd. (BOHECO), Unit #2, Cama Industrial Estate, SunMill Compound Rd, Lower Parel, Mumbai – 400013, Maharashtra, India., mumbai, 400013",
+      "location_1": "Bombay Hemp Company Pvt. Ltd. (BOHECO), Unit #2, Cama Industrial Estate, SunMill Compound Rd, Lower Parel, Mumbai – 400013, Maharashtra, India., mumbai, 400013",
       "id": 13
     },
     {
@@ -330,7 +333,7 @@
       "idesc": "We’re looking for a driven, ambitious individual who wants to create a career in social media and content marketing. We provide extensive training, guidance and support, as well as the opportunity to experience the industry from the inside and gain valuable work experience.",
       "skills": " Marketing",
       "companyDesc": "We, Bombay Hemp Company, incorporated in 2013, are an Agro-based enterprise reimagining the future of Indian agriculture and sustainable living with hemp as our lens. Hemp’s uses are kaleidoscopic. Pull its Fibre out and it’ll give you Yarn; chop it into Softwood, it’ll give you material to build Shelter; study its Genetics, and you’ll find Medicine.  Our design fuses this very potential with the existing industries of Agriculture, Technology, and Medicine, to bring together Community, Impact, and Value.",
-      "location-1": "Bombay Hemp Company Pvt. Ltd. (BOHECO), Unit #2, Cama Industrial Estate, SunMill Compound Rd, Lower Parel, Mumbai – 400013, Maharashtra, India., mumbai, 400013",
+      "location_1": "Bombay Hemp Company Pvt. Ltd. (BOHECO), Unit #2, Cama Industrial Estate, SunMill Compound Rd, Lower Parel, Mumbai – 400013, Maharashtra, India., mumbai, 400013",
       "id": 14
     },
     {
