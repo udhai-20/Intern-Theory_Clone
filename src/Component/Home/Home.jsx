@@ -1,4 +1,5 @@
 import React from "react";
+import {NavLink} from 'react-router-dom'
 
 import "./home.css";
 
@@ -114,7 +115,8 @@ function Home(props) {
           <div className="search_box_2">
             <div className="search_box_btn">
               <input type="text" placeholder="Search..." id="search_post" />
-              <button id="search_btn_">SEARCH</button>
+             <NavLink to="/jobs"><button id="search_btn_" style={{backgroundColor:"red"
+            ,padding: "5px 10px" , border: "none" , cursor:"pointer"}}>SEARCH</button></NavLink> 
             </div>
           </div>
         </form>
@@ -358,7 +360,7 @@ function Home(props) {
   <!-- /////////////////////////////////////// SECTION_6 START ////////////////////////////// --> */}
 
   <section className="section_6">
-    <div className="slide_nav" onclick="left()">
+    <div className="slide_nav" >
       <img src="https://image.flaticon.com/icons/png/512/271/271220.png" />
     </div>
     <div className="section_6_cart">
@@ -394,7 +396,7 @@ function Home(props) {
         </div>
       </div>
     </div>
-    <div className="slide_nav" onclick="right()">
+    <div className="slide_nav" >
       <img src="https://image.flaticon.com/icons/png/512/271/271228.png" />
     </div>
   </section>

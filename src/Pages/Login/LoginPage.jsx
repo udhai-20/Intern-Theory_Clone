@@ -1,27 +1,28 @@
 import React from "react";
+
 import './login.css'
 
 const LoginPage = () => {
-  return (<div><div class="student_login_parent" id="student_login_parent">
-  <div class="login">
-    <div class="student_company">
+  return (<div><div className="student_login_parent" id="student_login_parent">
+  <div className="login">
+    <div className="student_company">
       <div>
-        <a id="student" href="#">STUDENT</a>
+        STUDENT
       </div>
       <div>
-        <a id="company" href="#">COMPANY</a>
+        COMPANY
       </div>
     </div>
-    <div><h2 class="login_f_normal">Login</h2></div>
+    <div><h2 className="login_f_normal">Login</h2></div>
     <div>
-      <p class="login_information">
+      <p className="login_information">
         If you are a company looking to hire interns, please login as a
         company by clicking
-        <a class="color_blue" href="#">here.</a>
+      
       </p>
     </div>
     <div
-      class="login_with"
+      className="login_with"
       style={{backgroundColor: "rgb(67, 102, 178)"}}
     
     >
@@ -34,7 +35,7 @@ const LoginPage = () => {
       <div>SIGIN WITH FACEBOOK</div>
     </div>
     <div
-      class="login_with"
+      className="login_with"
       style={{backgroundColor: "rgb(8, 125, 220)"}}
       
     >
@@ -46,9 +47,9 @@ const LoginPage = () => {
       </div>
       <div>SIGIN WITH GOOGLE</div>
     </div>
-    <div class="or"><h5>OR</h5></div>
+    <div className="or"><h5>OR</h5></div>
     <div>
-      <form class="form">
+      <form className="form">
         <label for="email">Email/Number</label>
         <input
           type="text"
@@ -65,7 +66,7 @@ const LoginPage = () => {
         />
       </form>
     </div>
-    <div class="reminder">
+    <div className="reminder">
       <div>
         <p>
           <input type="checkbox" name="" id="" />
@@ -74,18 +75,18 @@ const LoginPage = () => {
         </p>
       </div>
       <div>
-        <p class="color_blue" onclick="yet_to_add()">Forgot Password?</p>
+        <p className="color_blue" onclick="yet_to_add()">Forgot Password?</p>
       </div>
     </div>
-    <div class="not_account">
+    <div className="not_account">
       <p>
         Don't have an account?
-        <span class="color_blue" onclick="create_account()"
+       <span className="color_blue"
           >Create your account</span
         >
       </p>
     </div>
-    <button class="login_btn" onclick="sendData()">LOGIN</button>
+    <button className="login_btn" >LOGIN</button>
   </div>
 </div></div>);
 };

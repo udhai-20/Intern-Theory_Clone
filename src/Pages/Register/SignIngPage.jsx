@@ -3,17 +3,17 @@ import "./register.css"
 
 function SigningPage() {
   return (
-    <div class="register" id="register">
-      <div class="register_main">
-        <p class="heading">Register Candidate</p>
-        <p class="para">Already have an account? <a href="#">Sign in</a></p>
-        <div class="background_red">
+    <div className="register" id="register">
+      <div className="register_main">
+        <p className="heading">Register Candidate</p>
+        <p className="para">Already have an account? Sign in</p>
+        <div className="background_red">
           <p>
             If you are a company looking to hire interns, please register as a
-            company by clicking <a href="#">here.</a>
+            company by clicking here.
           </p>
         </div>
-        <div class="login_with" style={{backgroundColor: "rgb(67, 102, 178)"}}>
+        <div className="login_with" style={{backgroundColor: "rgb(67, 102, 178)"}}>
           <div>
             <img
               src="https://www.interntheory.com/assets/iconsLogos/facebook-circular-logo.svg"
@@ -22,7 +22,7 @@ function SigningPage() {
           </div>
           <div>SIGIN WITH FACEBOOK</div>
         </div>
-        <div class="login_with" style={{backgroundColor: "rgb(8, 125, 220)"}}>
+        <div className="login_with" style={{backgroundColor: "rgb(8, 125, 220)"}}>
           <div>
             <img
               src="https://www.interntheory.com/assets/iconsLogos/googlelogo.svg"
@@ -31,7 +31,7 @@ function SigningPage() {
           </div>
           <div>SIGIN WITH GOOGLE</div>
         </div>
-        <div class="text_center">OR</div>
+        <div className="text_center">OR</div>
        <div>
         <form id="register_form" autoComplete="off">
             <input
@@ -101,7 +101,9 @@ function SigningPage() {
           />
 
           </div>
-          <button id="next_btn"  >NEXT</button>
+          <button id="next_btn" style={{backgroundColor:"red"
+        , padding:"10px 20px", color:"white"}} >NEXT</button>
+          
           </form>
           </div>
         
