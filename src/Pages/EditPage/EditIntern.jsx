@@ -20,142 +20,95 @@ import {
   SearchRequest,
   SearchSuccess,
 } from "../../Redux/AppReducer/action";
+import { useNavigate } from "react-router-dom";
 
-const initial = {
-  image: "",
-  courseName: "",
-  title: "",
-  Timing: "",
-  type: "",
-  quantity: "",
-  duration: "",
-  startDate: "",
-  deadline: "",
-  stippend: "",
-  idesc: "",
-  skills: "",
-  companyDesc: "",
-  location: "",
-  location_1: "",
-  image: "",
-};
 export default function EditIntern() {
+  const navigate = useNavigate();
   const { id } = useParams();
-  const [image, setimage] = useState("");
-  const [courseName, setcourseName] = useState("");
-  const [title, setProviderName] = useState("");
-  const [Timing, setAvailability] = useState("Full Time Internship");
-  const [type, settype] = useState("");
-  const [quantity, setQuantity] = useState("");
-  const [duration, setDuration] = useState("");
-  const [startDate, setStartDate] = useState("");
-  const [deadline, setDeadline] = useState("");
-  const [stippend, setStippend] = useState("");
-  const [idesc, setIdesc] = useState("");
-  const [skills, setSkills] = useState("");
-  const [companyDesc, setCompanyDesc] = useState("");
-  const [location, setLocation] = useState("");
-  const [remining, setRemining] = useState("");
-  const [location_1, setaddress] = useState("");
-  //   const [product, setProduct] = useState(initial);
-
+  const [product, setProduct] = useState({
+    image: "",
+    courseName: "",
+    title: "",
+    remain: "",
+    Timing: "",
+    type: "",
+    quantity: "",
+    duration: "",
+    startDate: "",
+    deadline: "",
+    stippend: "",
+    idesc: "",
+    skills: "",
+    companyDesc: "",
+    location: "",
+    location_1: "",
+  });
   console.log("id:", id);
-  const dispatch = useDispatch();
-  let data = useSelector((state) => state.AppReducer);
-  //   const {
-  //     image,
-  //     courseName,
-  //     title,
-  //     Timing,
-  //     type,
-  //     quantity,
-  //     duration,
-  //     startDate,
-  //     deadline,
-  //     stippend,
-  //     idesc,
-  //     skills,
-  //     companyDesc,
-  //     remining,
-  //     location_1,
-  //   } = product;
+  //   let data = useSelector((state) => state.AppReducer);
+  const {
+    image,
+    courseName,
+    title,
+    Timing,
+    type,
+    quantity,
+    duration,
+    startDate,
+    deadline,
+    stippend,
+    idesc,
+    skills,
+    companyDesc,
+    remain,
+    location,
+    location_1,
+  } = product;
   const editIntern = () => {
-    dispatch(SearchRequest());
     axios
       .get(`http://localhost:8080/interships/${id}`)
-      .then((res) => dispatch(SearchSuccess(res.data)))
+      .then((res) =>
+        setProduct({
+          image: res.data.image,
+          courseName: res.data.courseName,
+          title: res.data.title,
+          Timing: res.data.Timing,
+          type: res.data.type,
+          remain: res.data.remain,
+          quantity: res.data.quantity,
+          duration: res.data.duration,
+          startDate: res.data.startDate,
+          deadline: res.data.deadline,
+          stippend: res.data.stipend,
+          idesc: res.data.idesc,
+          skills: res.data.skills,
+          companyDesc: res.data.companyDesc,
+          location: res.data.location,
+          location_1: res.data.location_1,
+        })
+      )
       .catch((err) => {
         console.log("err:", err);
-        dispatch(SearchFailure());
       });
+  };
+
+  const handleCatchinput = (e) => {
+    const { value, name } = e.target;
+    setProduct({ ...product, [name]: value });
   };
   console.log("courseName:", courseName);
   const handleEdit = () => {
-    console.log("edit");
-    if (
-      image &&
-      courseName &&
-      title &&
-      Timing &&
-      type &&
-      quantity &&
-      duration &&
-      startDate &&
-      deadline &&
-      stippend &&
-      idesc &&
-      skills &&
-      companyDesc &&
-      location &&
-      remining &&
-      location_1
-    ) {
-      console.log("edit-1");
-      const data = {
-        image,
-        courseName,
-        title,
-        Timing,
-        type,
-        quantity,
-        duration,
-        startDate,
-        deadline,
-        stippend,
-        idesc,
-        skills,
-        companyDesc,
-        location,
-        remining,
-        location_1,
-      };
-      console.log("data:", data);
-      axios
-        .patch("http://localhost:8080/interships", data)
-        .then((res) => {
-          console.log(res.data);
-          setimage("");
-          setcourseName("");
-          setProviderName("");
-          setAvailability("");
-          settype("");
-          setQuantity("");
-          setDuration("");
-          setStartDate("");
-          setDeadline("");
-          setStippend("");
-          setIdesc("");
-          setSkills("");
-          setCompanyDesc("");
-          setLocation("");
-          setRemining("");
-          setaddress("");
-        })
-        .catch((er) => {
-          console.log(er);
-        });
-    }
+    console.log("id:", id);
+    console.log("product:", product);
+    axios
+      .patch(`http://localhost:8080/interships/${id}`, product)
+      .then((res) => console.log(res.data))
+      .catch((err) => {
+        console.log("err", err);
+      });
+
+    navigate("/Admin/inerndatas");
   };
+
   useEffect(() => {
     editIntern();
   }, []);
@@ -168,7 +121,7 @@ export default function EditIntern() {
         color="tomato"
         marginTop={"10px"}
       >
-        Add Internship Details
+        Update Internship Details
       </Text>
       <Box
         w="80%"
@@ -194,54 +147,62 @@ export default function EditIntern() {
           height="500px"
         >
           <Input
-            onChange={(e) => setimage(e.target.value)}
-            value={data.searchData.image}
+            onChange={handleCatchinput}
+            defaultValue={image}
+            name="image"
             type={"url"}
             placeholder="Enter Url"
           />
           <Input
-            value={data.searchData.courseName}
+            defaultValue={courseName}
             type={"text"}
-            onChange={(e) => setcourseName(e.target.value)}
+            name="courseName"
+            onChange={handleCatchinput}
             placeholder="Enter Course Name"
           />
           <Input
-            Value={data.searchData.title}
+            defaultValue={title}
             type={"text"}
-            onChange={(e) => setProviderName(e.target.value)}
+            name="title"
+            onChange={handleCatchinput}
             placeholder="Enter Provider Name"
           />
           <Select
-            value={data.searchData.Timing}
+            defaultValue={Timing}
+            name="Timing"
             placeholder="internship Timing"
-            onChange={(e) => setAvailability(e.target.value)}
+            onChange={handleCatchinput}
           >
-            <option value="Full Time Internship">Full Time</option>
-            <option value="Work From Home">work from home</option>
+            <option defaultValue="Full Time Internship">Full Time</option>
+            <option defaultValue="Work From Home">work from home</option>
           </Select>
           <Input
-            value={data.searchData.type}
+            defaultValue={type}
+            name="type"
             type={"text"}
-            onChange={(e) => settype(e.target.value)}
+            onChange={handleCatchinput}
             placeholder="Enter Internship type"
           />
           <Input
-            value={data.searchData.quantity}
+            defaultValue={quantity}
             type={"number"}
-            onChange={(e) => setQuantity(e.target.value)}
+            name="quantity"
+            onChange={handleCatchinput}
             placeholder="Enter Intern Count"
           />
           <Input
-            value={data.searchData.duration}
+            defaultValue={duration}
+            name="duration"
             type={"text"}
             placeholder="Enter duration"
-            onChange={(e) => setDuration(e.target.value)}
+            onChange={handleCatchinput}
           />
           <Input
             type={"date"}
-            value={data.searchData.startDate}
+            defaultValue={startDate}
+            name="startDate"
             placeholder="Enter Start Date"
-            onChange={(e) => setStartDate(e.target.value)}
+            onChange={handleCatchinput}
           />
         </Box>
         <Box
@@ -255,54 +216,62 @@ export default function EditIntern() {
           height="500px"
         >
           <Input
-            value={data.searchData.deadline}
+            defaultValue={deadline}
+            name="startDate"
             type={"date"}
             placeholder="Enter End Date"
-            onChange={(e) => setDeadline(e.target.value)}
+            onChange={handleCatchinput}
           />
           <Input
-            value={data.searchData.stipend}
+            defaultValue={stippend}
+            name="stippend"
             type={"text"}
             placeholder="Enter Stippend"
-            onChange={(e) => setStippend(e.target.value)}
+            onChange={handleCatchinput}
           />
 
           <Input
-            value={data.searchData.idesc}
+            defaultValue={idesc}
+            name="idesc"
             type={"text"}
-            onChange={(e) => setIdesc(e.target.value)}
+            onChange={handleCatchinput}
             placeholder="Enter internship description"
           />
 
           <Input
-            value={data.searchData.skills}
+            defaultValue={skills}
+            name="skills"
             type={"text"}
             placeholder="Enter Prefered Skills"
-            onChange={(e) => setSkills(e.target.value)}
+            onChange={handleCatchinput}
           />
           <Input
-            value={data.searchData.companyDesc}
+            defaultValue={companyDesc}
+            name="companyDesc"
             type={"text"}
             placeholder="Enter Company description"
-            onChange={(e) => setCompanyDesc(e.target.value)}
+            onChange={handleCatchinput}
           />
           <Input
-            value={data.searchData.remain}
-            onChange={(e) => setRemining(e.target.value)}
+            defaultValue={remain}
+            name="remain"
+            onChange={handleCatchinput}
             type={"text"}
             placeholder="Enter Remaining Weeks"
           />
           <Input
-            value={data.searchData.location}
+            defaultValue={location}
+            name="location"
             type={"text"}
             placeholder="Enter Location"
-            onChange={(e) => setLocation(e.target.value)}
+            onChange={handleCatchinput}
           />
           <Input
-            value={data.searchData.location_1}
+            defaultValue={location_1}
+            name="location_1"
             type={"text"}
             placeholder="Enter Address"
-            onChange={(e) => setaddress(e.target.value)}
+            onChange={handleCatchinput}
           />
           <Button
             onClick={handleEdit}

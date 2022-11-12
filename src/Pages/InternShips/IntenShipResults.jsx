@@ -76,23 +76,23 @@ function IntenShipResults() {
                 Develop Your Skillset
               </Text>
               <Text fontSize={"15px"} color="#3C4858">
-                Taught by Industry Experts Internship
+                Online Skill Development Programs
               </Text>
               <Text fontSize={"15px"} color="rgba(0, 0, 0, 0.54)">
                 Taught by Industry Experts Internship
               </Text>
               <Text fontSize={"15px"} color="rgba(0, 0, 0, 0.54)">
-                Taught by Industry Experts Internship
+                Certified Courses
               </Text>
               <Text fontSize={"15px"} color="rgba(0, 0, 0, 0.54)">
-                Taught by Industry Experts Internship
+                Guaranteed Internship Opportunities
               </Text>
               <Text
                 fontSize={"15px"}
                 fontWeight="bold"
                 color="rgba(0, 0, 0, 0.54)"
               >
-                Taught by Industry Experts Internship
+                TaLearn Industry-Demanded Skills
               </Text>
             </Box>
           </Box>

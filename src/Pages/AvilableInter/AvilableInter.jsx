@@ -12,6 +12,7 @@ import axios from "axios";
 import { AiFillDelete, AiFillEdit } from "react-icons/ai";
 import { Box, Button, Grid, GridItem, Img, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 function AvilableInter(props) {
   const dispatch = useDispatch();
   let data = useSelector((state) => state.AppReducer.searchData);
@@ -22,7 +23,7 @@ function AvilableInter(props) {
       .get(`http://localhost:8080/interships`)
       .then((res) => dispatch(SearchSuccess(res.data)))
       .catch((err) => {
-        console.log("err:", err);
+        // console.log("err:", err);
         dispatch(SearchFailure());
       });
   };
@@ -33,7 +34,7 @@ function AvilableInter(props) {
     axios
       .delete(`http://localhost:8080/interships/${id}`)
       .then((res) => {
-        console.log("res:", res.data);
+        // console.log("res:", res.data);
         dispatch(deletedetailsSuccess());
         getIntern();
       })
@@ -42,11 +43,10 @@ function AvilableInter(props) {
         console.log("err:", err);
       });
   };
-
-  console.log(" data.length:", data.length);
+  // console.log(" data.length:", data.length);
   useEffect(() => {
     getIntern();
-  }, [data.length]);
+  }, []);
   // console.log("data-bottom", data);
   return (
     <Box>
@@ -87,7 +87,7 @@ function AvilableInter(props) {
               >
                 <Img src={el.image} w="100%" h={"200px"} />
                 <Text fontSize={{ sm: "sm", md: "md" }}>{el.courseName}</Text>
-                <Text fontSize={{ sm: "sm", md: "md" }}>{el.availablity}</Text>
+                <Text fontSize={{ sm: "sm", md: "md" }}>{el.Timing}</Text>
                 <Text fontSize={{ sm: "sm", md: "md" }}>{el.location}</Text>
                 <Box
                   fontSize={"xl"}
