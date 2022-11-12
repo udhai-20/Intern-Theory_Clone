@@ -18,6 +18,7 @@ import ChangePassword from "../Pages/ChangePassword";
 import ProfilePage from "../Pages/Profile/Profile";
 import DashBoard from "../Component/Dashboard/DashBoard";
 import NotFoundPage from "../Pages/NotFoundPage";
+import EditIntern from "../Pages/EditPage/EditIntern";
 function AllRouter() {
   return (
     <Routes>
@@ -56,10 +57,18 @@ function AllRouter() {
         }
       />
       <Route
-        path="/Admin/avilableinerns"
+        path="/Admin/inerndatas"
         element={
           <ChakraProvider>
             <AvilableInter />
+          </ChakraProvider>
+        }
+      />
+      <Route
+        path="/Admin/editintern/:id"
+        element={
+          <ChakraProvider>
+            <EditIntern />
           </ChakraProvider>
         }
       />
