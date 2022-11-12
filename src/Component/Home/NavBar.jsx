@@ -319,7 +319,7 @@ if(menu){
           </svg>
         </div>
         <div className="side_menu_content">
-        <NavLink to='/signin'> <p onClick={()=>setMenu(logo=logo)}
+        <NavLink to='/signup'> <p onClick={()=>setMenu(logo=logo)}
         style={{color:"black"}}>Register</p></NavLink>
          
           <svg

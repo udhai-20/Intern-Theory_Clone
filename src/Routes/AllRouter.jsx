@@ -9,8 +9,9 @@ import SearchPage from "../Pages/Search/SearchPage";
 import AddProduct from "../Pages/AddProduct/AddProduct";
 import AvilableInter from "../Pages/AvilableInter/AvilableInter";
 import AdminDashBoard from "../Component/AdminDahBoard/AdminDashBoard";
-import SignIngPage from "../Pages/SignIngPage";
-import LoginPage from "../Pages/LoginPage";
+import SignIngPage from "../Pages/Register/SignIngPage";
+import Step2 from "../Pages/Register/Step2";
+import LoginPage from "../Pages/Login/LoginPage";
 import CartPages from "../Pages/CartPages";
 import ViewAndAplly from "../Pages/ViewAndAplly";
 import ChangePassword from "../Pages/ChangePassword";
@@ -63,7 +64,8 @@ function AllRouter() {
         }
       />
       <Route path="/admin/dashboard" element={<AdminDashBoard />} />
-      <Route path="/signin" element={<SignIngPage />} />
+      <Route path="/signup" element={<SignIngPage />} />
+      <Route path="/step2" element={<Step2 />} />
       <Route path="/login" element={<LoginPage />} />
       <Route path="/cart" element={<CartPages />} />
       <Route path="/viewandaplly/:id" element={<ViewAndAplly />} />
