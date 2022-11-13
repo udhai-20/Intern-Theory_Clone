@@ -22,7 +22,7 @@ function Navbar(props) {
   let logo = false;
   let sty;
   let stn;
-
+  // https://interandjob.netlify.app/viewandaplly/12
   ////////////
   const fetchname = () => {
     if (LoginUser.fname) {
@@ -32,8 +32,13 @@ function Navbar(props) {
     }
   };
   const logout = () => {
-    navigate("/login");
-    localStorage.clear();
+    if (LoginUser) {
+      navigate("/login");
+      localStorage.removeItem("Login_id");
+    } else {
+      navigate("/login");
+      localStorage.removeItem("Admin_id");
+    }
   };
   const [menu, setMenu] = useState(logo);
 
@@ -73,7 +78,7 @@ function Navbar(props) {
   }, []);
   useEffect(() => {
     fetchname();
-  }, [LoginUser, AdminUser, name]);
+  }, [LoginUser, AdminUser]);
   return (
     <div className="parent">
       <nav>
