@@ -254,6 +254,7 @@
 
 .dashboard_FormStatus_leftside_img {
     width: 35%;
+
 }
 
 .dashboard_img {
@@ -263,7 +264,7 @@
 
 .dashboard_rtext {
     text-align: left;
-    margin-top: 10px;
+    margin-top: -20px;
 }
 
 .dashboard_FormStatus_rightside {
@@ -278,6 +279,8 @@
 .dashboard_FormStatus_rightside_p1 {
     color: rgb(223, 30, 46) !important;
     font-weight: 600 !important;
+    /* border: 1px solid red; */
+    margin-right: -20px;
     font-size: 0.875rem;
 }
 

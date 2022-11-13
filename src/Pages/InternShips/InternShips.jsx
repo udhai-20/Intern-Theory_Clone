@@ -216,8 +216,6 @@ function InternShips(props) {
         boxShadow="xs"
         marginTop={"15px"}
         p="30px"
-        position={"sticky"}
-        top="0px"
         fontFamily={`font-family: "Roboto", "Helvetica", "Arial", sans-serif`}
       >
         <Box
