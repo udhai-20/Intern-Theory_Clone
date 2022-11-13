@@ -67,7 +67,7 @@ export default function EditIntern() {
   } = product;
   const editIntern = () => {
     axios
-      .get(`http://localhost:8080/interships/${id}`)
+      .get(`https://internjob-app.herokuapp.com/interships/${id}`)
       .then((res) =>
         setProduct({
           image: res.data.image,
@@ -95,7 +95,7 @@ export default function EditIntern() {
   const getIntern = () => {
     dispatch(SearchRequest());
     axios
-      .get(`http://localhost:8080/interships`)
+      .get(`https://internjob-app.herokuapp.com/interships`)
       .then((res) => dispatch(SearchSuccess(res.data)))
       .catch((err) => {
         // console.log("err:", err);
@@ -111,7 +111,7 @@ export default function EditIntern() {
     console.log("id:", id);
     console.log("product:", product);
     axios
-      .patch(`http://localhost:8080/interships/${id}`, product)
+      .patch(`https://internjob-app.herokuapp.com/interships/${id}`, product)
       .then((res) => {
         getIntern();
       })

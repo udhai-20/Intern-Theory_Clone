@@ -68,7 +68,7 @@ export default function Add() {
       };
       console.log("data:", data);
       axios
-        .post("http://localhost:8080/interships", data)
+        .post("https://internjob-app.herokuapp.com/interships", data)
         .then((res) => {
           setimage("");
           setcourseName("");

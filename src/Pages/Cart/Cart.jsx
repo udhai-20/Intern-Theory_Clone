@@ -9,7 +9,7 @@ const Cart = () => {
   const sum = useRef(0);
   const getCart = () => {
     axios
-      .get("http://localhost:8080/cart")
+      .get("https://internjob-app.herokuapp.com/cart")
       .then((res) => {
         setFlag(true);
         setCart(res.data);
@@ -18,7 +18,7 @@ const Cart = () => {
   };
   const deleteCartFun = (id) => {
     axios
-      .delete(` http://localhost:8080/cart/${id}`)
+      .delete(` https://internjob-app.herokuapp.com/cart/${id}`)
       .then((res) => {
         getCart();
       })
@@ -87,7 +87,7 @@ const Cart = () => {
               <div style={{ width: "100%" }}>
                 {cart.length == 0 ? (
                   <Link to="/courses">
-                    <button className="c-btn checkout-btn-90">CHHECKOUT</button>
+                    <button className="c-btn checkout-btn-90">CHECKOUT</button>
                   </Link>
                 ) : (
                   <button

@@ -47,7 +47,7 @@ function InternShips(props) {
     setpreferancepop(false);
     setcitiypopup(!citiypop);
     axios
-      .get(`http://localhost:8080/cities`)
+      .get(`https://internjob-app.herokuapp.com/cities`)
       .then((res) => {
         setCity(res.data);
       })
@@ -63,7 +63,9 @@ function InternShips(props) {
     setcitiypopup(!citiypop);
     dispatch(SearchRequest());
     axios
-      .get(`http://localhost:8080/interships?location=${converlowercase}`)
+      .get(
+        `https://internjob-app.herokuapp.com/interships?location=${converlowercase}`
+      )
       .then((res) => dispatch(SearchSuccess(res.data)))
       .catch((err) => {
         console.log("err:", err);
@@ -79,7 +81,7 @@ function InternShips(props) {
     console.log("preferancepop:", preferancepop);
     settypepopup(!typepop);
     axios
-      .get(`http://localhost:8080/Types`)
+      .get(`https://internjob-app.herokuapp.com/Types`)
       .then((res) => {
         setType(res.data);
         console.log(res.data);
@@ -96,7 +98,9 @@ function InternShips(props) {
 
     dispatch(SearchRequest());
     axios
-      .get(`http://localhost:8080/interships?q=${converlowercase}`)
+      .get(
+        `https://internjob-app.herokuapp.com/interships?q=${converlowercase}`
+      )
       .then((res) => dispatch(SearchSuccess(res.data)))
       .catch((err) => {
         console.log("err:", err);
@@ -114,7 +118,7 @@ function InternShips(props) {
     setpreferancepop(!preferancepop);
 
     axios
-      .get(`http://localhost:8080/preferance`)
+      .get(`https://internjob-app.herokuapp.com/preferance`)
       .then((res) => {
         setpreferance(res.data);
         console.log(res.data);
@@ -132,7 +136,7 @@ function InternShips(props) {
     if (citiyselected) {
       axios
         .get(
-          `http://localhost:8080/interships?location=${citiyselected.toLowerCase()}&type=${converlowercase}`
+          `https://internjob-app.herokuapp.com/interships?location=${citiyselected.toLowerCase()}&type=${converlowercase}`
         )
         .then((res) => dispatch(SearchSuccess(res.data)))
         .catch((err) => {
@@ -183,7 +187,9 @@ function InternShips(props) {
       let converlowercase = search.toLowerCase();
       dispatch(SearchRequest());
       axios
-        .get(`http://localhost:8080/interships?q=${converlowercase}`)
+        .get(
+          `https://internjob-app.herokuapp.com/interships?q=${converlowercase}`
+        )
         .then((res) => dispatch(SearchSuccess(res.data)))
         .catch((err) => {
           console.log("err:", err);

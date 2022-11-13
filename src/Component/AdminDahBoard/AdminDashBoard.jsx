@@ -25,7 +25,7 @@ function AdminDashBoard(props) {
   const getIntern = () => {
     dispatch(SearchRequest());
     axios
-      .get(`http://localhost:8080/interships`)
+      .get(`https://internjob-app.herokuapp.com/interships`)
       .then((res) => dispatch(SearchSuccess(res.data)))
       .catch((err) => {
         console.log("err:", err);
@@ -35,7 +35,7 @@ function AdminDashBoard(props) {
   const getCourses = () => {
     dispatch(getCourseRequest());
     axios
-      .get(`http://localhost:8080/courses`)
+      .get(`https://internjob-app.herokuapp.com/courses`)
       .then((res) => dispatch(getCourseSuccess(res.data)))
       .catch((err) => {
         console.log("err:", err);

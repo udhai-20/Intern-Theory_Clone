@@ -27,7 +27,6 @@ const theme = extendTheme({
     body: `'Body Font Name', sans-serif`,
   },
 });
-
 function JobsResults() {
   const [icons, showIcons] = useState(false);
   let FilterResult = useSelector((state) => state.AppReducer);

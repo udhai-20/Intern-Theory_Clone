@@ -7,7 +7,7 @@ import {
   postuserloginfailure,
 } from "../../Redux/AuthReducer/action";
 import { Link, useNavigate } from "react-router-dom";
-var userDetailsLS = JSON.parse(localStorage.getItem("user_id")) || "";
+
 const initial = {
   fname: "rohit",
   email: "",
@@ -26,11 +26,9 @@ const LoginPage = () => {
 
   const handleSubmit = () => {
     // dispatch(postuserloginrequest());
-    let flag = false;
+    var userDetailsLS = JSON.parse(localStorage.getItem("user_id"));
     if (user.email === "" || user.password === "") {
       alert("Please enter all crendentials");
-      flag = false;
-      dispatch(postuserloginfailure());
     }
     if (user.email === "admin@123gmail.com") {
       user.fname = "udhaya";
@@ -44,9 +42,7 @@ const LoginPage = () => {
       localStorage.setItem("Login_id", JSON.stringify(user));
       alert("user Loggedin succesfull");
       Navigate("/dashboard");
-      // <Navigate to="/dashboard" />;
     } else {
-      // dispatch(postuserloginfailure());
       alert("Invalid email or Password");
     }
   };

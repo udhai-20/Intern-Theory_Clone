@@ -79,7 +79,7 @@ const deletedetailsFailure = () => {
 export const getCourses = (dispatch) => {
   dispatch(getCourseRequest());
   return axios
-    .get("http://localhost:8080/courses")
+    .get("https://internjob-app.herokuapp.com/courses")
     .then((res) => {
       dispatch(getCourseSuccess(res.data));
     })
@@ -90,7 +90,7 @@ export const getCourses = (dispatch) => {
 export const addToCart = (data) => (dispatch) => {
   dispatch(addToCartRequest());
   axios
-    .post("http://localhost:8080/cart", data)
+    .post("https://internjob-app.herokuapp.com/cart", data)
     .then((res) => {
       alert("Item Added To Cart Successfully");
     })
@@ -101,7 +101,7 @@ export const addToCart = (data) => (dispatch) => {
 export const getApply = (id) => (dispatch) => {
   dispatch(getApplyRequest());
   return axios
-    .get(` http://localhost:8080/interships/${id}`)
+    .get(` https://internjob-app.herokuapp.com/interships/${id}`)
     .then((res) => {
       dispatch(getApplySuccess(res.data));
     })

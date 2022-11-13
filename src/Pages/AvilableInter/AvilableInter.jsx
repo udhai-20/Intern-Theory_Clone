@@ -20,7 +20,7 @@ function AvilableInter(props) {
   const getIntern = () => {
     dispatch(SearchRequest());
     axios
-      .get(`http://localhost:8080/interships`)
+      .get(`https://internjob-app.herokuapp.com/interships`)
       .then((res) => dispatch(SearchSuccess(res.data)))
       .catch((err) => {
         // console.log("err:", err);
@@ -32,7 +32,7 @@ function AvilableInter(props) {
   const handleDelete = (id) => {
     dispatch(deletedetailsRequest());
     axios
-      .delete(`http://localhost:8080/interships/${id}`)
+      .delete(`https://internjob-app.herokuapp.com/interships/${id}`)
       .then((res) => {
         // console.log("res:", res.data);
         dispatch(deletedetailsSuccess());
