@@ -14,7 +14,7 @@ import axios from "axios";
 function Navbar(props) {
   const LoginUser = JSON.parse(localStorage.getItem("Login_id")) || "";
   const AdminUser = JSON.parse(localStorage.getItem("Admin_id")) || "";
-  const [cartlength, setCartlength] = useState([0]);
+  const [cartlength, setCartlength] = useState(0);
   const [name, setName] = useState("SignIn");
   console.log("AdminUser:", AdminUser);
   // console.log("  LoginUser.fname:", );
@@ -73,9 +73,9 @@ function Navbar(props) {
   }, []);
   useEffect(() => {
     fetchname();
-  }, []);
+  }, [cartlength]);
   return (
-    <div>
+    <div className="parent">
       <nav>
         <div className="side_menu" id="side_bar" style={sty}>
           <div className="menu_btn" id="menu_btn_2">
@@ -564,7 +564,7 @@ function Navbar(props) {
           </NavLink>
 
           <div className="total" id="total">
-            {cartlength.length}
+            {cartlength}
           </div>
         </div>
         <div className="cart_btn when_login new_left">
