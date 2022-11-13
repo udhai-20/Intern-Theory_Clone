@@ -2,14 +2,15 @@ import "./Courses.css";
 import { getCourses } from "../../Redux/AppReducer/action";
 import CourseCard from "./CourseCard";
 import { useDispatch, useSelector } from "react-redux";
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
+import axios from "axios";
 export default function Course() {
   const dispatch = useDispatch();
   const data = useSelector((state) => state.AppReducer.courseData);
   useEffect(() => {
     dispatch(getCourses);
   }, []);
-
+  useEffect(() => {}, []);
   return (
     <div className="c-container">
       <div className="c-wrapper">
@@ -33,7 +34,7 @@ export default function Course() {
             </div>
             <div className="caurse-card-wrapper">
               {data.length > 0 &&
-                data.map((item) => <CourseCard key={item.id} {...item} />)}
+                data.map((item) => <CourseCard key={item.id} data={item} />)}
             </div>
           </div>
         </div>
