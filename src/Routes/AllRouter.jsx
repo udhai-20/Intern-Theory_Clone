@@ -19,6 +19,7 @@ import ProfilePage from "../Pages/Profile/Profile";
 import DashBoard from "../Component/Dashboard/DashBoard";
 import NotFoundPage from "../Pages/NotFoundPage";
 import EditIntern from "../Pages/EditPage/EditIntern";
+import RequAuth from "../Component/ReqAuth/RequAuth";
 function AllRouter() {
   return (
     <Routes>
@@ -72,15 +73,23 @@ function AllRouter() {
           </ChakraProvider>
         }
       />
-      <Route path="/admin/dashboard" element={<AdminDashBoard />} />
+      <Route path="/Admin/dashboard" element={<AdminDashBoard />} />
       <Route path="/signup" element={<SignIngPage />} />
       <Route path="/step2" element={<Step2 />} />
+
       <Route path="/login" element={<LoginPage />} />
       <Route path="/cart" element={<CartPages />} />
       <Route path="/viewandaplly/:id" element={<ViewAndAplly />} />
       <Route path="/changepassword" element={<ChangePassword />} />
       <Route path="/profile" element={<ProfilePage />} />
-      <Route path="/dashboard" element={<DashBoard />} />
+      <Route
+        path="/dashboard"
+        element={
+          <RequAuth>
+            <DashBoard />
+          </RequAuth>
+        }
+      />
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );

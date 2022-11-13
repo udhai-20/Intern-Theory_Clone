@@ -2,8 +2,11 @@ import React from "react";
 import "./DashBoard.css";
 import { AiOutlineMail, AiFillPhone } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 function DashBoard(props) {
+  let loginRes = useSelector((state) => state.AuthReducer);
+  console.log("loginRes:", loginRes);
   return (
     <div>
       <div className="dashboard_wrapper">

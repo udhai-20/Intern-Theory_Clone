@@ -11,6 +11,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
+
 import "./AddProduct.css";
 import {
   getCourseFailure,
@@ -23,6 +24,7 @@ import {
 import { useNavigate } from "react-router-dom";
 
 export default function EditIntern() {
+  const dispatch = useDispatch();
   const navigate = useNavigate();
   const { id } = useParams();
   const [product, setProduct] = useState({
@@ -90,18 +92,30 @@ export default function EditIntern() {
         console.log("err:", err);
       });
   };
-
+  const getIntern = () => {
+    dispatch(SearchRequest());
+    axios
+      .get(`http://localhost:8080/interships`)
+      .then((res) => dispatch(SearchSuccess(res.data)))
+      .catch((err) => {
+        // console.log("err:", err);
+        dispatch(SearchFailure());
+      });
+  };
   const handleCatchinput = (e) => {
     const { value, name } = e.target;
     setProduct({ ...product, [name]: value });
   };
-  console.log("courseName:", courseName);
+  // console.log("courseName:", courseName);
   const handleEdit = () => {
     console.log("id:", id);
     console.log("product:", product);
     axios
       .patch(`http://localhost:8080/interships/${id}`, product)
-      .then((res) => console.log(res.data))
+      .then((res) => {
+        getIntern();
+      })
+
       .catch((err) => {
         console.log("err", err);
       });

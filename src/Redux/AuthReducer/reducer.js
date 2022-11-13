@@ -1,8 +1,36 @@
-const initialState = {
-  isLoading: false,
-  isError: false,
+import React from "react";
+import * as types from "./actionType";
+const initial = {
+  isAuth: false,
+  isAuthLoading: false,
+  isAuthError: false,
 };
-export const reducer = (oldState = initialState, action) => {
+export const reducer = (state = initial, action) => {
   const { type, payload } = action;
-  return oldState;
+  switch (type) {
+    case types.USER_LOGIN_REQUEST:
+      return {
+        ...state,
+        isAuthLoading: true,
+      };
+    case types.USER_LOGIN_SUCCESS:
+      console.log("action:", state);
+      // localStorage.setItem("auth",JSON.stringify())
+      return {
+        ...state,
+        isAuthLoading: false,
+        isAuth: true,
+      };
+    case types.USER_LOGIN_REQUEST:
+      return {
+        ...state,
+        isAuthError: true,
+        isAuth: false,
+        token: "",
+        isAuthLoading: false,
+      };
+
+    default:
+      return state;
+  }
 };
