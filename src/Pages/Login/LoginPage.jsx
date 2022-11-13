@@ -1,33 +1,54 @@
-import React from "react";
-
+import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import "./login.css";
 
-import { Navigate } from "react-router-dom";
+import {
+  postuserloginrequest,
+  postuserloginsucess,
+  postuserloginfailure,
+} from "../../Redux/AuthReducer/action";
+
+import { Link, useNavigate } from "react-router-dom";
 var userDetailsLS = JSON.parse(localStorage.getItem("user_id")) || "";
 const initial = {
-  name: "",
+  fname: "rohit",
   email: "",
   password: "",
+  isAuth: true,
 };
 const LoginPage = () => {
-  const [user, setUser] = React.useState(initial);
+  const dispatch = useDispatch();
+  const Navigate = useNavigate();
+  const [user, setUser] = useState(initial);
   const handleLogincatchInput = (e) => {
     const { value, name } = e.target;
     setUser({ ...user, [name]: value });
   };
-  const { name, email, password } = user;
+  const { email, password } = user;
 
   const handleSubmit = () => {
-    if ((user.email = "" || user.password == "")) {
+    // dispatch(postuserloginrequest());
+    let flag = false;
+    if (user.email === "" || user.password === "") {
       alert("Please enter all crendentials");
+      flag = false;
+      dispatch(postuserloginfailure());
+    }
+    if (user.email === "admin@123gmail.com") {
+      localStorage.setItem("Admin_id", JSON.stringify(user));
+      Navigate("/Admin/dashboard");
     } else if (
-      user.email != userDetailsLS.email ||
-      user.password !== userDetailsLS.password
+      user.email === userDetailsLS.email &&
+      user.password === userDetailsLS.password
     ) {
-      alert("Invalid email or Password");
-    } else {
+      // dispatch(postuserloginsucess());
+      localStorage.setItem("Login_id", JSON.stringify(user));
       alert("user Loggedin succesfull");
-      <Navigate to="/dashboard" />;
+      Navigate("/dashboard");
+      // <Navigate to="/dashboard" />;
+    } else {
+      // dispatch(postuserloginfailure());
+      alert("Invalid email or Password");
     }
   };
   return (
@@ -75,10 +96,11 @@ const LoginPage = () => {
             <h5>OR</h5>
           </div>
           <div>
-            <form className="form">
+            <div className="form">
               <label for="email">Email/Number</label>
               <input
                 type="text"
+                name="email"
                 value={email}
                 onChange={handleLogincatchInput}
                 placeholder="Email/Number*"
@@ -88,11 +110,12 @@ const LoginPage = () => {
               <input
                 value={password}
                 onChange={handleLogincatchInput}
+                name="password"
                 type="password"
                 placeholder="Password*"
                 id="password"
               />
-            </form>
+            </div>
           </div>
           <div className="reminder">
             <div>
@@ -111,7 +134,9 @@ const LoginPage = () => {
           <div className="not_account">
             <p>
               Don't have an account?
-              <span className="color_blue">Create your account</span>
+              <Link to="/signup">
+                <span className="color_blue">Create your account</span>
+              </Link>
             </p>
           </div>
           <button onClick={handleSubmit} className="login_btn">

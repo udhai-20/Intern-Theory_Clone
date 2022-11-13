@@ -3,10 +3,10 @@ import { useSelector } from "react-redux";
 import { Navigate, useLocation } from "react-router-dom";
 
 function RequAuth({ children }) {
-  const check = useSelector((state) => state.AuthReducer.isAuth);
+  const LoginUser = JSON.parse(localStorage.getItem("Login_id")) || "";
   const location = useLocation();
   //   console.log("location:", location);
-  if (!check) {
+  if (!LoginUser) {
     return <Navigate to="/login" state={{ from: location.pathname }} replace />;
   }
   return children;

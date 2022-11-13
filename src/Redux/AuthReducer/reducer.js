@@ -2,7 +2,6 @@ import React from "react";
 import * as types from "./actionType";
 const initial = {
   isAuth: false,
-  token: "",
   isAuthLoading: false,
   isAuthError: false,
 };
@@ -15,10 +14,11 @@ export const reducer = (state = initial, action) => {
         isAuthLoading: true,
       };
     case types.USER_LOGIN_SUCCESS:
+      console.log("action:", state);
+      // localStorage.setItem("auth",JSON.stringify())
       return {
         ...state,
         isAuthLoading: false,
-        token: payload,
         isAuth: true,
       };
     case types.USER_LOGIN_REQUEST:
