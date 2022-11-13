@@ -1,4 +1,5 @@
 import React from "react";
+import {NavLink} from 'react-router-dom'
 
 import "./home.css";
 
@@ -271,6 +272,7 @@ function Home(props) {
               LET’S GET SOME <span> WORK EXPERIENCE </span>
             </h1>
           </div>
+
           <div className="section_3_body">
             <div className="cart_work_exp">
               <img src="https://assets.interntheory.com/creative/home-internships/Marketing-Icon.jpg" />
@@ -295,6 +297,12 @@ function Home(props) {
             </div>
             <div className="cart_work_exp">
               <img src="https://assets.interntheory.com/creative/home-internships/All-Internships.jpg" />
+          <div className="search_box_2">
+            <div className="search_box_btn">
+              <input type="text" placeholder="Search..." id="search_post" />
+             <NavLink to="/jobs"><button id="search_btn_" style={{backgroundColor:"red"
+            ,padding: "5px 10px" , border: "none" , cursor:"pointer"}}>SEARCH</button></NavLink> 
+
             </div>
           </div>
         </section>
@@ -342,7 +350,6 @@ function Home(props) {
         </section>
         {/* 
   <!-- /////////////////////////////////////// SECTION_6 START ////////////////////////////// --> */}
-
         <section className="section_6">
           <div className="slide_nav" onclick="left()">
             <img src="https://image.flaticon.com/icons/png/512/271/271220.png" />
@@ -389,6 +396,50 @@ function Home(props) {
       </div>
     </div>
   );
+  <section className="section_6">
+    <div className="slide_nav" >
+      <img src="https://image.flaticon.com/icons/png/512/271/271220.png" />
+    </div>
+    <div className="section_6_cart">
+      <div>
+        <div className="section_6_cart_sec_1">
+          <img
+            className="section_6_cart_img"
+            src="https://assets.interntheory.com/img/testimonial-image/in1.jpg"
+          />
+          <h5>Sshikha Bodwaani</h5>
+          <span className="section_6_cart_position"
+            >Sr. Exec. HR at BookMyShow</span
+          >
+        </div>
+        <div className="section_6_cart_sec_2">
+          <p>
+            "We have been using InternTheory for over a year now and are
+            very happy with the quality of applications that we receive.
+            Their team has been very helpful in screening applications for
+            the various internship requirements we had. It has been a
+            delight working with them."
+          </p>
+        </div>
+      </div>
+      <div>
+        <div className="section_6_cart_sec_1 section_6_cart_sec_1_2">
+          <img
+            className="section_6_cart_img"
+            src="https://assets.interntheory.com/img/testimonial-image/in4.jpg"
+          />
+          <h5>Harshil Bhadra</h5>
+          <span className="section_6_cart_position">Intern at Porsche</span>
+        </div>
+      </div>
+    </div>
+    <div className="slide_nav" >
+      <img src="https://image.flaticon.com/icons/png/512/271/271228.png" />
+    </div>
+  </section>
+</div>
+   
+</div>
+);
 }
-
 export default Home;
