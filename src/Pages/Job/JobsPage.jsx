@@ -77,7 +77,7 @@ function JobsPage(props) {
   const handleCatchTypes = () => {
     setcitiypopup(false);
     setpreferancepop(false);
-    console.log("preferancepop:", preferancepop);
+
     settypepopup(!typepop);
     axios
       .get(`http://localhost:8080/Types`)
@@ -179,7 +179,7 @@ function JobsPage(props) {
     setpreferanceselected("");
     setselectedtype("");
     setselectedcitiy("");
-    console.log("search:", search);
+
     if (search) {
       let converlowercase = search.toLowerCase();
       dispatch(SearchRequest());
@@ -236,8 +236,6 @@ function JobsPage(props) {
         boxShadow="xs"
         marginTop={"15px"}
         p="30px"
-        position={"sticky"}
-        top="0px"
         fontFamily={`font-family: "Roboto", "Helvetica", "Arial", sans-serif`}
       >
         <Box

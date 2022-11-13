@@ -73,7 +73,7 @@ function Navbar(props) {
   }, []);
   useEffect(() => {
     fetchname();
-  }, [cartlength]);
+  }, [LoginUser, AdminUser, name]);
   return (
     <div className="parent">
       <nav>
@@ -538,9 +538,7 @@ function Navbar(props) {
         </div>
         <div className="sign_btn after_login">
           <NavLink to="/login">
-            <button className="butt">
-              {LoginUser.fname ? LoginUser.fname : "SignIn"}
-            </button>
+            <button className="butt">{name ? name : "signup"}</button>
           </NavLink>
         </div>
 
