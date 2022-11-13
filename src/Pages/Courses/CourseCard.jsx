@@ -1,14 +1,14 @@
 import "./CourseCard.css";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../Redux/AppReducer/action";
-
-export default function CourseCard(data) {
-  console.log("course card");
+import { useEffect, useState } from "react";
+import axios from "axios";
+import { Link } from "react-router-dom";
+export default function CourseCard({ data }) {
   const dispatch = useDispatch();
   const handleAddToCart = () => {
     dispatch(addToCart(data));
   };
-
   return (
     <>
       <div className="c-card-container">
