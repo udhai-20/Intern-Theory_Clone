@@ -92,7 +92,7 @@ const Cart = () => {
                 ) : (
                   <button
                     onClick={() => {
-                      alert("Enrolled");
+                      alert("Enrolled successfully");
                     }}
                     className="c-btn checkout-btn-90"
                   >
