@@ -7,7 +7,6 @@ import {
   postuserloginsucess,
   postuserloginfailure,
 } from "../../Redux/AuthReducer/action";
-
 import { Link, useNavigate } from "react-router-dom";
 var userDetailsLS = JSON.parse(localStorage.getItem("user_id")) || "";
 const initial = {
@@ -35,6 +34,7 @@ const LoginPage = () => {
       dispatch(postuserloginfailure());
     }
     if (user.email === "admin@123gmail.com") {
+      user.fname = "udhaya";
       localStorage.setItem("Admin_id", JSON.stringify(user));
       Navigate("/Admin/dashboard");
     } else if (

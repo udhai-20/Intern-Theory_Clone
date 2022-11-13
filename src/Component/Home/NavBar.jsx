@@ -15,6 +15,7 @@ function Navbar(props) {
   const LoginUser = JSON.parse(localStorage.getItem("Login_id")) || "";
   const AdminUser = JSON.parse(localStorage.getItem("Admin_id")) || "";
   const [cartlength, setCartlength] = useState([0]);
+  const [name, setName] = useState("SignIn");
   console.log("AdminUser:", AdminUser);
   // console.log("  LoginUser.fname:", );
   const navigate = useNavigate();
@@ -22,6 +23,14 @@ function Navbar(props) {
   let sty;
   let stn;
 
+  ////////////
+  const fetchname = () => {
+    if (LoginUser.fname) {
+      setName(LoginUser.fname);
+    } else if (AdminUser.fname) {
+      setName(AdminUser.fname);
+    }
+  };
   const logout = () => {
     navigate("/login");
     localStorage.clear();
@@ -61,6 +70,9 @@ function Navbar(props) {
       .catch((err) => {
         console.log("err", err);
       });
+  }, []);
+  useEffect(() => {
+    fetchname();
   }, []);
   return (
     <div>
