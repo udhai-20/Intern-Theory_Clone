@@ -27,9 +27,8 @@ function InternShips(props) {
   const [searchParams, setSearchParams] = useSearchParams();
   const dispatch = useDispatch();
   let FilterResult = useSelector((state) => state.AppReducer);
-  // console.log("FilterResult:", FilterResult);
   const [citiypop, setcitiypopup] = useState(false);
-  const [city, setCity] = useState(searchParams.getAll("citiys") || []);
+  const [city, setCity] = useState([]);
   const [citiyselected, setselectedcitiy] = useState("");
   const [type, setType] = useState([]);
   const [typeselected, setselectedtype] = useState("");
@@ -38,7 +37,8 @@ function InternShips(props) {
   const [preferanceselected, setpreferanceselected] = useState("");
   const [preferancepop, setpreferancepop] = useState(false);
   const [search, setSearch] = useState("");
-
+  const [querycity, setQuerycity] = useState(searchParams.getAll("citiys"));
+  console.log("querycity:", querycity);
   const toast = useToast();
 
   // city avilable in our site get req
@@ -57,22 +57,43 @@ function InternShips(props) {
   };
   // console.log("type:", type);
   // city getrequest
+
+  const handleFilter = (Citys) => {
+    const option = Citys;
+    // console.log("option:", option);
+    let newCatagory = [...querycity];
+    // console.log("newCatagory:", newCatagory);
+    if (newCatagory.includes(option)) {
+      newCatagory.splice(newCatagory.indexOf(option), 1);
+    } else {
+      newCatagory.push(option);
+    }
+    setQuerycity(newCatagory);
+  };
   const handleResultList = (Citys) => {
+    handleFilter(Citys);
     let converlowercase = Citys.toLowerCase();
+
     console.log("converlowercase:", converlowercase);
     setcitiypopup(!citiypop);
     dispatch(SearchRequest());
+    let data;
     axios
       .get(
         `https://internjob-app.herokuapp.com/interships?location=${converlowercase}`
       )
-      .then((res) => dispatch(SearchSuccess(res.data)))
+      .then((res) => {
+        data = res.data;
+        dispatch(SearchSuccess(res.data));
+      })
       .catch((err) => {
         console.log("err:", err);
         dispatch(SearchFailure());
       });
 
     setselectedcitiy(Citys);
+
+    return data;
   };
   //type avilabe
   const handleCatchTypes = () => {
@@ -206,8 +227,30 @@ function InternShips(props) {
       });
     }
   };
-  console.log("citiyselected:", citiyselected);
-  useEffect(() => {}, []);
+
+  const getdats = () => {
+    axios
+      .get(`https://internjob-app.herokuapp.com/interships`)
+      .then((res) => {
+        console.log(res.data);
+      })
+      .catch((err) => {
+        console.log("err", err);
+      });
+  };
+
+  useEffect(() => {
+    const params = {};
+    querycity && (params.citiys = querycity);
+    console.log("params:", params);
+    setSearchParams(params);
+  }, [querycity]);
+
+  useEffect(() => {
+    if (querycity.length > 0 && getdats.length > 0) {
+      console.log(getdats);
+    }
+  }, [getdats]);
 
   return (
     <Box>
