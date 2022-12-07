@@ -79,7 +79,7 @@ const deletedetailsFailure = () => {
 export const getCourses = (dispatch) => {
   dispatch(getCourseRequest());
   return axios
-    .get("https://internjob-app.herokuapp.com/courses")
+    .get("https://intertheory.onrender.com/courses")
     .then((res) => {
       dispatch(getCourseSuccess(res.data));
     })
@@ -90,7 +90,7 @@ export const getCourses = (dispatch) => {
 export const addToCart = (data) => (dispatch) => {
   dispatch(addToCartRequest());
   axios
-    .post("https://internjob-app.herokuapp.com/cart", data)
+    .post("https://intertheory.onrender.com/cart", data)
     .then((res) => {
       alert("Item Added To Cart Successfully");
     })
@@ -101,7 +101,7 @@ export const addToCart = (data) => (dispatch) => {
 export const getApply = (id) => (dispatch) => {
   dispatch(getApplyRequest());
   return axios
-    .get(` https://internjob-app.herokuapp.com/interships/${id}`)
+    .get(`https://intertheory.onrender.com/interships/${id}`)
     .then((res) => {
       dispatch(getApplySuccess(res.data));
     })

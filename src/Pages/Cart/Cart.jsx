@@ -9,7 +9,7 @@ const Cart = () => {
   const sum = useRef(0);
   const getCart = () => {
     axios
-      .get("https://internjob-app.herokuapp.com/cart")
+      .get("https://intertheory.onrender.com/cart")
       .then((res) => {
         setFlag(true);
         setCart(res.data);
@@ -18,7 +18,7 @@ const Cart = () => {
   };
   const deleteCartFun = (id) => {
     axios
-      .delete(` https://internjob-app.herokuapp.com/cart/${id}`)
+      .delete(`https://intertheory.onrender.com/cart/${id}`)
       .then((res) => {
         getCart();
       })

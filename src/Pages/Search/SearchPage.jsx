@@ -49,7 +49,7 @@ function SearchPage(props) {
     setpreferancepop(false);
     setcitiypopup(!citiypop);
     axios
-      .get(`http://localhost:8080/cities`)
+      .get(`https://intertheory.onrender.com/cities`)
       .then((res) => {
         setCity(res.data);
       })
@@ -65,7 +65,9 @@ function SearchPage(props) {
     setcitiypopup(!citiypop);
     dispatch(SearchRequest());
     axios
-      .get(`http://localhost:8080/interships?location=${converlowercase}`)
+      .get(
+        `https://intertheory.onrender.com/interships?location=${converlowercase}`
+      )
       .then((res) => dispatch(SearchSuccess(res.data)))
       .catch((err) => {
         console.log("err:", err);
@@ -81,7 +83,7 @@ function SearchPage(props) {
     console.log("preferancepop:", preferancepop);
     settypepopup(!typepop);
     axios
-      .get(`http://localhost:8080/Types`)
+      .get(`https://intertheory.onrender.com/Types`)
       .then((res) => {
         setType(res.data);
         console.log(res.data);
@@ -98,7 +100,7 @@ function SearchPage(props) {
 
     dispatch(SearchRequest());
     axios
-      .get(`http://localhost:8080/interships?q=${converlowercase}`)
+      .get(`https://intertheory.onrender.com/interships?q=${converlowercase}`)
       .then((res) => dispatch(SearchSuccess(res.data)))
       .catch((err) => {
         console.log("err:", err);
@@ -116,7 +118,7 @@ function SearchPage(props) {
     setpreferancepop(!preferancepop);
 
     axios
-      .get(`http://localhost:8080/preferance`)
+      .get(`https://intertheory.onrender.com/preferance`)
       .then((res) => {
         setpreferance(res.data);
         console.log(res.data);
@@ -134,7 +136,7 @@ function SearchPage(props) {
     if (citiyselected) {
       axios
         .get(
-          `http://localhost:8080/interships?location=${citiyselected.toLowerCase()}&type=${converlowercase}`
+          `https://intertheory.onrender.com/interships?location=${citiyselected.toLowerCase()}&type=${converlowercase}`
         )
         .then((res) => dispatch(SearchSuccess(res.data)))
         .catch((err) => {
@@ -144,7 +146,7 @@ function SearchPage(props) {
     } else if (citiyselected && typeselected) {
       axios
         .get(
-          `http://localhost:8080/interships?location=${citiyselected.toLowerCase()}&type=${converlowercase}&Timing=${typeselected.toLowerCase()}`
+          `https://intertheory.onrender.com/interships?location=${citiyselected.toLowerCase()}&type=${converlowercase}&Timing=${typeselected.toLowerCase()}`
         )
         .then((res) => dispatch(SearchSuccess(res.data)))
         .catch((err) => {
@@ -153,7 +155,7 @@ function SearchPage(props) {
         });
     } else {
       axios
-        .get(`http://localhost:8080/interships?q=${converlowercase}`)
+        .get(`https://intertheory.onrender.com/interships?q=${converlowercase}`)
         .then((res) => dispatch(SearchSuccess(res.data)))
         .catch((err) => {
           console.log("err:", err);
@@ -185,7 +187,7 @@ function SearchPage(props) {
       let converlowercase = search.toLowerCase();
       dispatch(SearchRequest());
       axios
-        .get(`http://localhost:8080/interships?q=${converlowercase}`)
+        .get(`https://intertheory.onrender.com/interships?q=${converlowercase}`)
         .then((res) => dispatch(SearchSuccess(res.data)))
         .catch((err) => {
           console.log("err:", err);
@@ -214,7 +216,7 @@ function SearchPage(props) {
 
     dispatch(SearchRequest());
     axios
-      .get(`http://localhost:8080/interships?q=bangalore`)
+      .get(`https://intertheory.onrender.com/interships?q=bangalore`)
       .then((res) => dispatch(SearchSuccess(res.data)))
       .catch((err) => {
         console.log("err:", err);

@@ -47,7 +47,7 @@ function InternShips(props) {
     setpreferancepop(false);
     setcitiypopup(!citiypop);
     axios
-      .get(`https://internjob-app.herokuapp.com/cities`)
+      .get(`https://intertheory.onrender.com/cities`)
       .then((res) => {
         setCity(res.data);
       })
@@ -80,7 +80,7 @@ function InternShips(props) {
     let data;
     axios
       .get(
-        `https://internjob-app.herokuapp.com/interships?location=${converlowercase}`
+        `https://intertheory.onrender.com/interships?location=${converlowercase}`
       )
       .then((res) => {
         data = res.data;
@@ -102,7 +102,7 @@ function InternShips(props) {
     console.log("preferancepop:", preferancepop);
     settypepopup(!typepop);
     axios
-      .get(`https://internjob-app.herokuapp.com/Types`)
+      .get(`https://intertheory.onrender.com/Types`)
       .then((res) => {
         setType(res.data);
         console.log(res.data);
@@ -119,9 +119,7 @@ function InternShips(props) {
 
     dispatch(SearchRequest());
     axios
-      .get(
-        `https://internjob-app.herokuapp.com/interships?q=${converlowercase}`
-      )
+      .get(`https://intertheory.onrender.com/interships?q=${converlowercase}`)
       .then((res) => dispatch(SearchSuccess(res.data)))
       .catch((err) => {
         console.log("err:", err);
@@ -139,7 +137,7 @@ function InternShips(props) {
     setpreferancepop(!preferancepop);
 
     axios
-      .get(`https://internjob-app.herokuapp.com/preferance`)
+      .get(`https://intertheory.onrender.com/preferance`)
       .then((res) => {
         setpreferance(res.data);
         console.log(res.data);
@@ -157,7 +155,7 @@ function InternShips(props) {
     if (citiyselected) {
       axios
         .get(
-          `https://internjob-app.herokuapp.com/interships?location=${citiyselected.toLowerCase()}&type=${converlowercase}`
+          `https://intertheory.onrender.com/interships?location=${citiyselected.toLowerCase()}&type=${converlowercase}`
         )
         .then((res) => dispatch(SearchSuccess(res.data)))
         .catch((err) => {
@@ -167,7 +165,7 @@ function InternShips(props) {
     } else if (citiyselected && typeselected) {
       axios
         .get(
-          `http://localhost:8080/interships?location=${citiyselected.toLowerCase()}&type=${converlowercase}&Timing=${typeselected.toLowerCase()}`
+          `https://intertheory.onrender.com/interships?location=${citiyselected.toLowerCase()}&type=${converlowercase}&Timing=${typeselected.toLowerCase()}`
         )
         .then((res) => dispatch(SearchSuccess(res.data)))
         .catch((err) => {
@@ -176,7 +174,7 @@ function InternShips(props) {
         });
     } else {
       axios
-        .get(`http://localhost:8080/interships?q=${converlowercase}`)
+        .get(`https://intertheory.onrender.com/interships?q=${converlowercase}`)
         .then((res) => dispatch(SearchSuccess(res.data)))
         .catch((err) => {
           console.log("err:", err);
@@ -208,9 +206,7 @@ function InternShips(props) {
       let converlowercase = search.toLowerCase();
       dispatch(SearchRequest());
       axios
-        .get(
-          `https://internjob-app.herokuapp.com/interships?q=${converlowercase}`
-        )
+        .get(`https://intertheory.onrender.com/interships?q=${converlowercase}`)
         .then((res) => dispatch(SearchSuccess(res.data)))
         .catch((err) => {
           console.log("err:", err);
@@ -230,7 +226,7 @@ function InternShips(props) {
 
   const getdats = () => {
     axios
-      .get(`https://internjob-app.herokuapp.com/interships`)
+      .get(`https://intertheory.onrender.com/interships`)
       .then((res) => {
         console.log(res.data);
       })

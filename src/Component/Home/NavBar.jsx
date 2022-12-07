@@ -68,7 +68,7 @@ function Navbar(props) {
   };
   useEffect(() => {
     axios
-      .get("https://internjob-app.herokuapp.com./cart")
+      .get("https://intertheory.onrender.com/cart")
       .then((res) => {
         setCartlength(res.data.length);
       })

@@ -68,7 +68,7 @@ export default function Add() {
       };
       console.log("data:", data);
       axios
-        .post("https://internjob-app.herokuapp.com/interships", data)
+        .post("https://intertheory.onrender.com/interships", data)
         .then((res) => {
           setimage("");
           setcourseName("");
