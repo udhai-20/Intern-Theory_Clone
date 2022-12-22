@@ -66,7 +66,7 @@ export default function Add() {
         remain,
         location_1,
       };
-      console.log("data:", data);
+      // console.log("data:", data);
       axios
         .post("https://intertheory.onrender.com/interships", data)
         .then((res) => {

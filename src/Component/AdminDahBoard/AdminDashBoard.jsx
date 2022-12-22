@@ -28,7 +28,7 @@ function AdminDashBoard(props) {
       .get(`https://intertheory.onrender.com/interships`)
       .then((res) => dispatch(SearchSuccess(res.data)))
       .catch((err) => {
-        console.log("err:", err);
+        // console.log("err:", err);
         dispatch(SearchFailure());
       });
   };

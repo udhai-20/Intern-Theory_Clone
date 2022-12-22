@@ -14,7 +14,7 @@ export const reducer = (state = initial, action) => {
         isAuthLoading: true,
       };
     case types.USER_LOGIN_SUCCESS:
-      console.log("action:", state);
+      // console.log("action:", state);
       // localStorage.setItem("auth",JSON.stringify())
       return {
         ...state,

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./register.css";
 import { useNavigate } from "react-router-dom";
+import { BallTriangle } from "react-loader-spinner";
+import axios from "axios";
 const initial = {
   fname: "",
   lname: "",
@@ -11,6 +13,7 @@ const initial = {
 //   city: "",
 //   preference: "",
 function SigningPage() {
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   const [user, setUser] = useState(initial);
   const handleCatchvalue = (e) => {
@@ -18,10 +21,36 @@ function SigningPage() {
     setUser({ ...user, [name]: value });
   };
   const { fname, lname, email, password } = user;
-  const handleSubmit = () => {
+  // console.log("loading-top:", loading);
+  const handleSubmit = (e) => {
+    e.preventDefault();
     if (fname && lname && email && password) {
-      localStorage.setItem("user_id", JSON.stringify(user));
-      navigate("/login");
+      // localStorage.setItem("user_id", JSON.stringify(user));
+      let payload = {
+        fname,
+        lname,
+        email,
+        password,
+      };
+      // console.log(payload);
+      setLoading(true);
+      axios
+        .post(`https://talented-slacks-ox.cyclic.app/users/signup`, payload)
+        .then((res) => {
+          setLoading(false);
+          if (res.data == "email Already Exists") {
+            alert("email Already Exists");
+          } else {
+            alert("signup Successful");
+            navigate("/login");
+          }
+        })
+        .catch((err) => {
+          setLoading(false);
+          // console.log("loading-bottom:", loading);
+          // console.log("failure", err.response);
+          console.log("err", err);
+        });
     } else {
       alert("Fill all the input fields");
     }
@@ -29,6 +58,18 @@ function SigningPage() {
 
   return (
     <div className="register" id="register">
+      <div className="loading_block">
+        <BallTriangle
+          height={100}
+          width={200}
+          radius={5}
+          color="#4fa94d"
+          ariaLabel="ball-triangle-loading"
+          wrapperClass={{}}
+          wrapperStyle=""
+          visible={loading}
+        />
+      </div>
       <div className="register_main">
         <p className="heading">Register Candidate</p>
         <p className="para">Already have an account? Sign in</p>
@@ -64,7 +105,7 @@ function SigningPage() {
         </div>
         <div className="text_center">OR</div>
         <div>
-          <form id="register_form" autoComplete="off">
+          <form id="register_form">
             <input
               type="text"
               name="fname"

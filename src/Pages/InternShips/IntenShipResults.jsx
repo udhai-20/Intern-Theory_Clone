@@ -31,7 +31,7 @@ const theme = extendTheme({
 function IntenShipResults() {
   const [icons, showIcons] = useState(false);
   let FilterResult = useSelector((state) => state.AppReducer);
-  console.log("FilterResult:", FilterResult.isLoading);
+  // console.log("FilterResult:", FilterResult.isLoading);
   const handleShow = () => {
     showIcons(!icons);
   };

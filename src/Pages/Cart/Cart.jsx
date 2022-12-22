@@ -30,7 +30,7 @@ const Cart = () => {
     cart.map((el) => {
       sum.current += Number(el.newPrice);
     });
-    console.log(sum.current);
+    // console.log(sum.current);
   }
   useEffect(() => {
     getCart();
