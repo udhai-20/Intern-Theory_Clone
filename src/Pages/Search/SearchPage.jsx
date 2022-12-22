@@ -61,7 +61,7 @@ function SearchPage(props) {
   // city getrequest
   const handleResultList = (Citys) => {
     let converlowercase = Citys.toLowerCase();
-    console.log("converlowercase:", converlowercase);
+    // console.log("converlowercase:", converlowercase);
     setcitiypopup(!citiypop);
     dispatch(SearchRequest());
     axios
@@ -80,13 +80,13 @@ function SearchPage(props) {
   const handleCatchTypes = () => {
     setcitiypopup(false);
     setpreferancepop(false);
-    console.log("preferancepop:", preferancepop);
+    // console.log("preferancepop:", preferancepop);
     settypepopup(!typepop);
     axios
       .get(`https://intertheory.onrender.com/Types`)
       .then((res) => {
         setType(res.data);
-        console.log(res.data);
+        // console.log(res.data);
       })
       .catch((err) => {
         console.log("err", err);
@@ -112,7 +112,7 @@ function SearchPage(props) {
 
   //preferance avilabe
   const handleCatchPreferance = () => {
-    console.log("preferance");
+    // console.log("preferance");
     setcitiypopup(false);
     settypepopup(false);
     setpreferancepop(!preferancepop);
@@ -121,7 +121,7 @@ function SearchPage(props) {
       .get(`https://intertheory.onrender.com/preferance`)
       .then((res) => {
         setpreferance(res.data);
-        console.log(res.data);
+        // console.log(res.data);
       })
       .catch((err) => {
         console.log("err", err);
@@ -130,7 +130,7 @@ function SearchPage(props) {
   //type get request
   const handlePreferanceResultList = (preferance) => {
     let converlowercase = preferance.toLowerCase();
-    console.log("converlowercase:", citiyselected, converlowercase);
+    // console.log("converlowercase:", citiyselected, converlowercase);
     setpreferancepop(!preferancepop);
     dispatch(SearchRequest());
     if (citiyselected) {
@@ -182,7 +182,7 @@ function SearchPage(props) {
     setpreferanceselected("");
     setselectedtype("");
     setselectedcitiy("");
-    console.log("search:", search);
+    // console.log("search:", search);
     if (search) {
       let converlowercase = search.toLowerCase();
       dispatch(SearchRequest());
@@ -204,7 +204,7 @@ function SearchPage(props) {
       });
     }
   };
-  console.log("citiyselected:", citiyselected);
+  // console.log("citiyselected:", citiyselected);
   useEffect(() => {}, []);
 
   const getData = () => {
@@ -212,7 +212,7 @@ function SearchPage(props) {
     setpreferanceselected("");
     setselectedtype("");
     setselectedcitiy("");
-    console.log("search:", search);
+    // console.log("search:", search);
 
     dispatch(SearchRequest());
     axios

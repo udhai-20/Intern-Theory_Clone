@@ -108,8 +108,8 @@ export default function EditIntern() {
   };
   // console.log("courseName:", courseName);
   const handleEdit = () => {
-    console.log("id:", id);
-    console.log("product:", product);
+    // console.log("id:", id);
+    // console.log("product:", product);
     axios
       .patch(`https://intertheory.onrender.com/interships/${id}`, product)
       .then((res) => {

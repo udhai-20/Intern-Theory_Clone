@@ -38,7 +38,7 @@ function InternShips(props) {
   const [preferancepop, setpreferancepop] = useState(false);
   const [search, setSearch] = useState("");
   const [querycity, setQuerycity] = useState(searchParams.getAll("citiys"));
-  console.log("querycity:", querycity);
+  // console.log("querycity:", querycity);
   const toast = useToast();
 
   // city avilable in our site get req
@@ -74,7 +74,7 @@ function InternShips(props) {
     handleFilter(Citys);
     let converlowercase = Citys.toLowerCase();
 
-    console.log("converlowercase:", converlowercase);
+    // console.log("converlowercase:", converlowercase);
     setcitiypopup(!citiypop);
     dispatch(SearchRequest());
     let data;
@@ -99,13 +99,13 @@ function InternShips(props) {
   const handleCatchTypes = () => {
     setcitiypopup(false);
     setpreferancepop(false);
-    console.log("preferancepop:", preferancepop);
+    // console.log("preferancepop:", preferancepop);
     settypepopup(!typepop);
     axios
       .get(`https://intertheory.onrender.com/Types`)
       .then((res) => {
         setType(res.data);
-        console.log(res.data);
+        // console.log(res.data);
       })
       .catch((err) => {
         console.log("err", err);
@@ -131,7 +131,7 @@ function InternShips(props) {
 
   //preferance avilabe
   const handleCatchPreferance = () => {
-    console.log("preferance");
+    // console.log("preferance");
     setcitiypopup(false);
     settypepopup(false);
     setpreferancepop(!preferancepop);
@@ -140,7 +140,7 @@ function InternShips(props) {
       .get(`https://intertheory.onrender.com/preferance`)
       .then((res) => {
         setpreferance(res.data);
-        console.log(res.data);
+        // console.log(res.data);
       })
       .catch((err) => {
         console.log("err", err);
@@ -149,7 +149,7 @@ function InternShips(props) {
   //type get request
   const handlePreferanceResultList = (preferance) => {
     let converlowercase = preferance.toLowerCase();
-    console.log("converlowercase:", citiyselected, converlowercase);
+    // console.log("converlowercase:", citiyselected, converlowercase);
     setpreferancepop(!preferancepop);
     dispatch(SearchRequest());
     if (citiyselected) {
@@ -201,7 +201,7 @@ function InternShips(props) {
     setpreferanceselected("");
     setselectedtype("");
     setselectedcitiy("");
-    console.log("search:", search);
+    // console.log("search:", search);
     if (search) {
       let converlowercase = search.toLowerCase();
       dispatch(SearchRequest());
@@ -238,13 +238,13 @@ function InternShips(props) {
   useEffect(() => {
     const params = {};
     querycity && (params.citiys = querycity);
-    console.log("params:", params);
+    // console.log("params:", params);
     setSearchParams(params);
   }, [querycity]);
 
   useEffect(() => {
     if (querycity.length > 0 && getdats.length > 0) {
-      console.log(getdats);
+      // console.log(getdats);
     }
   }, [getdats]);
 

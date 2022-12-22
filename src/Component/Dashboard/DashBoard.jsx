@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 
 function DashBoard(props) {
   let loginRes = useSelector((state) => state.AuthReducer);
-  console.log("loginRes:", loginRes);
+  // console.log("loginRes:", loginRes);
   return (
     <div>
       <div className="dashboard_wrapper">

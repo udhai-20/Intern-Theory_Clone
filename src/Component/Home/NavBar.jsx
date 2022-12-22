@@ -4,6 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import inter_job from "../../Images/logo.png";
 import axios from "axios";
+import { getData } from "../Utils/localStorage";
 
 // document.getElementById("munu_btn").addEventListener("click",myFun)
 
@@ -12,11 +13,12 @@ import axios from "axios";
 // }
 
 function Navbar(props) {
-  const LoginUser = JSON.parse(localStorage.getItem("Login_id")) || "";
-  const AdminUser = JSON.parse(localStorage.getItem("Admin_id")) || "";
+  // const LoginUser = JSON.parse(localStorage.getItem("Login_id")) || "";
+  const AdminUser = getData("admin_Token");
+  const LoginUser = getData("user_Token");
   const [cartlength, setCartlength] = useState(0);
   const [name, setName] = useState("SignIn");
-  console.log("AdminUser:", AdminUser);
+  // console.log("AdminUser:", AdminUser);
   // console.log("  LoginUser.fname:", );
   const navigate = useNavigate();
   let logo = false;
@@ -25,19 +27,19 @@ function Navbar(props) {
   // https://interandjob.netlify.app/viewandaplly/12
   ////////////
   const fetchname = () => {
-    if (LoginUser.fname) {
-      setName(LoginUser.fname);
-    } else if (AdminUser.fname) {
-      setName(AdminUser.fname);
-    }
+    // if (LoginUser.fname) {
+    //   setName(LoginUser.fname);
+    // } else if (AdminUser.fname) {
+    //   setName(AdminUser.fname);
+    // }
   };
   const logout = () => {
     if (LoginUser) {
       navigate("/login");
-      localStorage.removeItem("Login_id");
+      localStorage.removeItem("user_Token");
     } else {
       navigate("/login");
-      localStorage.removeItem("Admin_id");
+      localStorage.removeItem("admin_Token");
     }
   };
   const [menu, setMenu] = useState(logo);
@@ -544,7 +546,7 @@ function Navbar(props) {
         </div>
         <div className="sign_btn after_login">
           <NavLink to="/login">
-            <button className="butt">{name ? name : "signup"}</button>
+            <button className="butt">{LoginUser ? "User" : "signup"}</button>
           </NavLink>
         </div>
 

@@ -20,33 +20,50 @@ import DashBoard from "../Component/Dashboard/DashBoard";
 import NotFoundPage from "../Pages/NotFoundPage";
 import EditIntern from "../Pages/EditPage/EditIntern";
 import RequAuth from "../Component/ReqAuth/RequAuth";
+
+import PrivateRoutes from "./PrivateRoutes";
 function AllRouter() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/courses" element={<Courses />} />
+      <Route
+        path="/courses"
+        element={
+          <PrivateRoutes>
+            <Courses />
+          </PrivateRoutes>
+        }
+      />
+
       <Route
         path="/internships"
         element={
-          <ChakraProvider>
-            <InternShips />
-          </ChakraProvider>
+          <PrivateRoutes>
+            <ChakraProvider>
+              <InternShips />
+            </ChakraProvider>
+          </PrivateRoutes>
         }
       />
+
       <Route
         path="/jobs"
         element={
-          <ChakraProvider>
-            <JobsPage />
-          </ChakraProvider>
+          <PrivateRoutes>
+            <ChakraProvider>
+              <JobsPage />
+            </ChakraProvider>
+          </PrivateRoutes>
         }
       />
       <Route
         path="/SearchResult"
         element={
-          <ChakraProvider>
-            <SearchPage />
-          </ChakraProvider>
+          <PrivateRoutes>
+            <ChakraProvider>
+              <SearchPage />
+            </ChakraProvider>
+          </PrivateRoutes>
         }
       />
       <Route
@@ -78,16 +95,37 @@ function AllRouter() {
       <Route path="/step2" element={<Step2 />} />
 
       <Route path="/login" element={<LoginPage />} />
-      <Route path="/cart" element={<CartPages />} />
-      <Route path="/viewandaplly/:id" element={<ViewAndAplly />} />
+      <Route
+        path="/cart"
+        element={
+          <PrivateRoutes>
+            <CartPages />
+          </PrivateRoutes>
+        }
+      />
+      <Route
+        path="/viewandaplly/:id"
+        element={
+          <PrivateRoutes>
+            <ViewAndAplly />
+          </PrivateRoutes>
+        }
+      />
       <Route path="/changepassword" element={<ChangePassword />} />
-      <Route path="/profile" element={<ProfilePage />} />
+      <Route
+        path="/profile"
+        element={
+          <PrivateRoutes>
+            <ProfilePage />
+          </PrivateRoutes>
+        }
+      />
       <Route
         path="/dashboard"
         element={
-          <RequAuth>
+          <PrivateRoutes>
             <DashBoard />
-          </RequAuth>
+          </PrivateRoutes>
         }
       />
       <Route path="*" element={<NotFoundPage />} />

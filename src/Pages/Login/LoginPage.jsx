@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { BallTriangle } from "react-loader-spinner";
 import "./login.css";
 import {
   postuserloginrequest,
@@ -7,6 +8,8 @@ import {
   postuserloginfailure,
 } from "../../Redux/AuthReducer/action";
 import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
+import { saveData } from "../../Component/Utils/localStorage";
 
 const initial = {
   fname: "rohit",
@@ -16,7 +19,8 @@ const initial = {
 };
 const LoginPage = () => {
   const dispatch = useDispatch();
-  const Navigate = useNavigate();
+  const navigate = useNavigate();
+  const [loading, setLoading] = useState(false);
   const [user, setUser] = useState(initial);
   const handleLogincatchInput = (e) => {
     const { value, name } = e.target;
@@ -25,30 +29,60 @@ const LoginPage = () => {
   const { email, password } = user;
 
   const handleSubmit = () => {
-    // dispatch(postuserloginrequest());
-    var userDetailsLS = JSON.parse(localStorage.getItem("user_id"));
     if (user.email === "" || user.password === "") {
       alert("Please enter all crendentials");
     }
     if (user.email === "admin@123gmail.com") {
-      user.fname = "udhaya";
-      localStorage.setItem("Admin_id", JSON.stringify(user));
-      Navigate("/Admin/dashboard");
-    } else if (
-      user.email === userDetailsLS.email &&
-      user.password === userDetailsLS.password
-    ) {
-      // dispatch(postuserloginsucess());
-      localStorage.setItem("Login_id", JSON.stringify(user));
-      alert("user Loggedin succesfull");
-      Navigate("/dashboard");
+      user.fname = "Admin";
+      saveData("admin_Token", "admin");
+      navigate("/Admin/dashboard");
     } else {
-      alert("Invalid email or Password");
+      login_Check();
     }
+  };
+  const login_Check = () => {
+    let payload = {
+      email,
+      password,
+    };
+    setLoading(true);
+    axios
+      .post("https://talented-slacks-ox.cyclic.app/users/login", payload) // need to add api for login
+      .then((res) => {
+        setLoading(false);
+        console.log(res);
+        if (res.data == "Something went wrong, please try again later") {
+          alert("email or password wrong login again");
+        } else {
+          console.log(res.data);
+          let { token } = res.data;
+          saveData("user_Token", token);
+          alert("login Successful");
+          navigate("/");
+        }
+      })
+      .catch((err) => {
+        setLoading(false);
+        let { error } = err.response.data;
+        console.log("data", err.response.data);
+        alert(`${error}`);
+      });
   };
   return (
     <div>
       <div className="student_login_parent" id="student_login_parent">
+        <div className="loading_block">
+          <BallTriangle
+            height={100}
+            width={200}
+            radius={5}
+            color="#4fa94d"
+            ariaLabel="ball-triangle-loading"
+            wrapperClass={{}}
+            wrapperStyle=""
+            visible={loading}
+          />
+        </div>
         <div className="login">
           <div className="student_company">
             <div>STUDENT</div>
