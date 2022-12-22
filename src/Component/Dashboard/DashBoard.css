@@ -5,8 +5,9 @@
     margin: auto;
     margin-top: 30px;
     height: auto;
+    z-index: -1;
     /* border: 1px solid red; */
-    position: relative;
+    /* position: relative; */
 }
 
 .dashboard_wrapper .dashboard_leftside {
@@ -165,14 +166,15 @@
     justify-content: space-between;
     margin: auto;
     margin-top: 10px;
-    height: 500px;
+    margin-bottom: 15px;
+    height: auto;
 }
 
 .dasboard_bottom_left_section {
     width: 30%;
     /* border: 1px solid rgb(0, 0, 255); */
     height: 500px;
-    ;
+
 }
 
 .dasboard_bottom_right_section {
@@ -180,8 +182,7 @@
     padding: .8rem;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
     border-radius: .8rem;
-    /* border: 1px solid rgb(0, 255, 30); */
-    height: 500px;
+    height: auto;
     background-color: #fff;
     margin-left: 50px;
     margin-top: 1px;
@@ -197,14 +198,13 @@
 .dasboard_bottom_right_twosections {
     display: flex;
     justify-content: space-between;
-    gap: 15px;
+    gap: 5px;
 }
 
 .dasboard_bottom_right_twosections p {
     text-transform: uppercase;
     /* color: #087CDD;onclick it should be this color */
     color: rgba(0, 0, 0, 0.54);
-    ;
     font-size: 0.875rem;
 }
 
@@ -247,13 +247,13 @@
 
 .dashboard_FormStatus_leftside {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     /* border: 1px solid rgb(25, 0, 255); */
-    width: 50%;
+    width: 60%;
 }
 
-.dashboard_FormStatus_leftside_img {
-    width: 35%;
+.dashboard_FormStatus_leftside_img>img {
+    width: 150px;
 
 }
 
@@ -316,3 +316,126 @@
 * {
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
+
+
+
+
+/* ///mediaqueary */
+
+@media all and (min-width: 530px) and (max-width: 800px) {
+    .dashboard_wrapper {
+        display: grid;
+        width: 80%;
+        /* border: 1px solid red; */
+        /* position: relative; */
+    }
+
+    .dashboard_wrapper .dashboard_leftside {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        /* border: 1px solid red; */
+    }
+
+    .dashboard_rightside_top {
+        width: 100%;
+        margin: auto;
+    }
+
+    .dashboard_wrapper>.dashboard_rightside {
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .dashboard_rightside_RecomendedCoursesection {
+        /* border: 1px solid red; */
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        margin-top: 15px;
+    }
+
+    .dashboard_rightside_Recom_prod {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        padding: .3rem;
+        margin-top: 5px;
+    }
+
+    .dashboard_rightside_Recom_prod>img {
+        width: 100%;
+        margin-right: 5px;
+    }
+
+    .dasboard_bottom_section {
+        width: 90%;
+        display: flex;
+        /* border: 1px solid red; */
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        height: auto;
+        /* border: 1px solid rgb(9, 255, 0); */
+
+    }
+
+    .dasboard_bottom_left_section {
+        display: none;
+    }
+
+    .dasboard_bottom_right_section {
+        width: 80%;
+        height: auto;
+        margin-left: 5px;
+        margin-top: 1px;
+    }
+
+    .dashboard_FormStatus {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        justify-content: space-between;
+        /* border: 1px solid red; */
+
+    }
+
+    .dashboard_FormStatus_leftside {
+        display: flex;
+        justify-content: space-around;
+        /* border: 1px solid rgb(25, 0, 255); */
+        width: 100%;
+    }
+
+    .dashboard_FormStatus_leftside_img>img {
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .dashboard_FormStatus_rightside p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .dashboard_FormStatus_rightside {
+        /* border: 1px solid rgb(0, 255, 30); */
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+
+    }
+
+}
+
+@media all and (min-width:531px) and (max-width:350px) {}

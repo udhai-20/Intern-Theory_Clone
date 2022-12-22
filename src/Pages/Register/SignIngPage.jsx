@@ -21,7 +21,7 @@ function SigningPage() {
     setUser({ ...user, [name]: value });
   };
   const { fname, lname, email, password } = user;
-  console.log("loading-top:", loading);
+  // console.log("loading-top:", loading);
   const handleSubmit = (e) => {
     e.preventDefault();
     if (fname && lname && email && password) {
@@ -32,7 +32,7 @@ function SigningPage() {
         email,
         password,
       };
-      console.log(payload);
+      // console.log(payload);
       setLoading(true);
       axios
         .post(`https://talented-slacks-ox.cyclic.app/users/signup`, payload)
@@ -47,8 +47,8 @@ function SigningPage() {
         })
         .catch((err) => {
           setLoading(false);
-          console.log("loading-bottom:", loading);
-          console.log("failure", err.response);
+          // console.log("loading-bottom:", loading);
+          // console.log("failure", err.response);
           console.log("err", err);
         });
     } else {
@@ -105,7 +105,7 @@ function SigningPage() {
         </div>
         <div className="text_center">OR</div>
         <div>
-          <form id="register_form" autoComplete="off">
+          <form id="register_form">
             <input
               type="text"
               name="fname"

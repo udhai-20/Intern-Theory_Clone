@@ -50,11 +50,11 @@ const LoginPage = () => {
       .post("https://talented-slacks-ox.cyclic.app/users/login", payload) // need to add api for login
       .then((res) => {
         setLoading(false);
-        console.log(res);
+        // console.log(res);
         if (res.data == "Something went wrong, please try again later") {
           alert("email or password wrong login again");
         } else {
-          console.log(res.data);
+          // console.log(res.data);
           let { token } = res.data;
           saveData("user_Token", token);
           alert("login Successful");
@@ -63,9 +63,9 @@ const LoginPage = () => {
       })
       .catch((err) => {
         setLoading(false);
-        let { error } = err.response.data;
-        console.log("data", err.response.data);
-        alert(`${error}`);
+        let { msg } = err.response.data;
+        // console.log("data", err.response.data);
+        alert(`Login ${msg}`);
       });
   };
   return (

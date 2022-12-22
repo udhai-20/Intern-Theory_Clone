@@ -21,7 +21,7 @@ function Home(props) {
               </p>
             </div>
             <div className="search_box">
-              <form id="search_form" autocomplete="off">
+              <form id="search_form">
                 <div className="search_box_1">
                   <div className="cities autocomplete">
                     <input
