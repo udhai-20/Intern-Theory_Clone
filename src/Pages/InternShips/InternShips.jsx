@@ -252,6 +252,8 @@ function InternShips(props) {
     <Box>
       <Box
         display={"flex"}
+        // zIndex={-1}
+        flexDirection={{ base: "column", lg: "row" }}
         width={"80%"}
         margin="auto"
         justifyContent="space-between"
@@ -281,7 +283,9 @@ function InternShips(props) {
             <List
               top="40px"
               pos={"absolute"}
-              bg="rgb(255, 255, 255)"
+              bg={{ lg: "rgb(255, 255, 255)", base: "gray.600" }}
+              color={"white"}
+              zIndex={1}
               boxShadow="base"
               p="3"
               width={"100%"}
@@ -332,8 +336,9 @@ function InternShips(props) {
             <List
               top="40px"
               pos={"absolute"}
-              bg="rgb(255, 255, 255)"
-              // bg={"red.800"}
+              bg={{ lg: "rgb(255, 255, 255)", base: "gray.600" }}
+              color={"white"}
+              zIndex={1}
               boxShadow="base"
               p="3"
               width={"100%"}
@@ -385,8 +390,9 @@ function InternShips(props) {
             <List
               top="40px"
               pos={"absolute"}
-              bg="rgb(255, 255, 255)"
-              // bg={"red.800"}
+              bg={{ lg: "rgb(255, 255, 255)", base: "gray.600" }}
+              color={"white"}
+              zIndex={1}
               boxShadow="base"
               p="3"
               width={"100%"}

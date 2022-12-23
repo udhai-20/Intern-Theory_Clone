@@ -28,7 +28,7 @@ function AvilableInter(props) {
       });
   };
 
-  console.log(" data.length:", data.length);
+  // console.log(" data.length:", data.length);
   const handleDelete = (id) => {
     dispatch(deletedetailsRequest());
     axios

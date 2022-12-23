@@ -19,7 +19,6 @@ import ProfilePage from "../Pages/Profile/Profile";
 import DashBoard from "../Component/Dashboard/DashBoard";
 import NotFoundPage from "../Pages/NotFoundPage";
 import EditIntern from "../Pages/EditPage/EditIntern";
-import RequAuth from "../Component/ReqAuth/RequAuth";
 
 import PrivateRoutes from "./PrivateRoutes";
 function AllRouter() {

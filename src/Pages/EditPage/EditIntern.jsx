@@ -45,7 +45,7 @@ export default function EditIntern() {
     location: "",
     location_1: "",
   });
-  console.log("id:", id);
+  // console.log("id:", id);
   //   let data = useSelector((state) => state.AppReducer);
   const {
     image,
