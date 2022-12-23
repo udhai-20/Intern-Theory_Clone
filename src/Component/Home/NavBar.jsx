@@ -536,7 +536,7 @@ function Navbar(props) {
               id="div_3_1"
               className="hidden visible"
               style={{ display: "none" }}
-              onclick="logIn()"
+              // onClick="logIn()"
             >
               <div className="side_menu_svg_cont"></div>
               <div className="side_menu_content">
@@ -616,13 +616,21 @@ function Navbar(props) {
         </div>
 
         <div className="cart_btn when_login new_right">
-          <NavLink to="/profile">
-            {" "}
-            <img
-              className="cart_image profile_img"
-              src="https://assets.interntheory.com/creative/default-images/guyProfile.jpg"
-            />
-          </NavLink>
+          {AdminUser ? (
+            <NavLink>
+              <img
+                className="cart_image profile_img"
+                src="https://assets.interntheory.com/creative/default-images/guyProfile.jpg"
+              />
+            </NavLink>
+          ) : (
+            <NavLink to="/profile">
+              <img
+                className="cart_image profile_img"
+                src="https://assets.interntheory.com/creative/default-images/guyProfile.jpg"
+              />
+            </NavLink>
+          )}
         </div>
         {AdminUser ? null : (
           <div className="cart_btn">
