@@ -229,6 +229,7 @@ function JobsPage(props) {
     <Box>
       <Box
         display={"flex"}
+        flexDirection={{ base: "column", lg: "row" }}
         width={"80%"}
         margin="auto"
         justifyContent="space-between"
@@ -258,7 +259,9 @@ function JobsPage(props) {
             <List
               top="40px"
               pos={"absolute"}
-              bg="rgb(255, 255, 255)"
+              bg={{ lg: "rgb(255, 255, 255)", base: "gray.600" }}
+              color={{ base: "white", lg: "black" }}
+              zIndex={{ base: 1, lg: -1 }}
               boxShadow="base"
               p="3"
               width={"100%"}
@@ -309,8 +312,9 @@ function JobsPage(props) {
             <List
               top="40px"
               pos={"absolute"}
-              bg="rgb(255, 255, 255)"
-              // bg={"red.800"}
+              bg={{ lg: "rgb(255, 255, 255)", base: "gray.600" }}
+              color={{ base: "white", lg: "black" }}
+              zIndex={{ base: 1, lg: -1 }}
               boxShadow="base"
               p="3"
               width={"100%"}
@@ -362,8 +366,9 @@ function JobsPage(props) {
             <List
               top="40px"
               pos={"absolute"}
-              bg="rgb(255, 255, 255)"
-              // bg={"red.800"}
+              bg={{ lg: "rgb(255, 255, 255)", base: "gray.600" }}
+              color={{ base: "white", lg: "black" }}
+              zIndex={{ base: 1, lg: -1 }}
               boxShadow="base"
               p="3"
               width={"100%"}

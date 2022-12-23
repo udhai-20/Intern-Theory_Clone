@@ -17,7 +17,7 @@ function DashBoard(props) {
                 src="https://assets.interntheory.com/creative/default-images/guyProfile.jpg"
                 alt="userimage"
               />
-              <Link to="/profile">
+              <Link to="/profile" className="profile">
                 <p className="dashboard_leftside_child_profile">My Profile</p>
               </Link>
 
@@ -73,13 +73,14 @@ function DashBoard(props) {
           </div>
         </div>
       </div>
+      {/* ///bottom of dashboard */}
       <div className="dasboard_bottom_section">
         <div className="dasboard_bottom_left_section"></div>
         <div className="dasboard_bottom_right_section">
           <div className="dasboard_bottom_right_top">
             <div className="dasboard_bottom_right_twosections">
               <p>myApplication</p>
-              <p>mycourses</p>
+              <p className="mycourse">mycourses</p>
             </div>
 
             <div></div>

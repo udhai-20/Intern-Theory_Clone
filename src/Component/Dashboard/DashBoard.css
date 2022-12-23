@@ -201,6 +201,10 @@
     gap: 5px;
 }
 
+.mycourse {
+    display: none;
+}
+
 .dasboard_bottom_right_twosections p {
     text-transform: uppercase;
     /* color: #087CDD;onclick it should be this color */
@@ -317,6 +321,9 @@
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
+.profile {
+    cursor: pointer;
+}
 
 
 
@@ -398,6 +405,11 @@
         margin-top: 1px;
     }
 
+    .dasboard_bottom_right_section {
+        width: 74%;
+        margin-top: 1px;
+    }
+
     .dashboard_FormStatus {
         display: flex;
         align-items: center;
@@ -438,4 +450,263 @@
 
 }
 
-@media all and (min-width:531px) and (max-width:350px) {}
+/* small */
+@media all and (min-width:350px) and (max-width:531px) {
+
+    .dashboard_wrapper {
+        display: grid;
+        width: 85%;
+        /* border: 1px solid red; */
+    }
+
+    .dashboard_wrapper .dashboard_leftside {
+        width: 85%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        /* border: 1px solid red; */
+    }
+
+    .dashboard_leftside_contact_email_color {
+        display: none;
+    }
+
+    .dasboard_bottom_right_section {
+        width: 74%;
+        /* border: 1px solid red; */
+        margin-top: 1px;
+    }
+
+    .dashboard_rightside_top {
+        width: 100%;
+        margin: auto;
+    }
+
+    .dashboard_wrapper>.dashboard_rightside {
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .dashboard_rightside_RecomendedCoursesection {
+        /* border: 1px solid red; */
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 8px;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .dashboard_rightside_Recom_prod {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        padding: .3rem;
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    .dashboard_rightside_Recom_prod>img {
+        width: 100%;
+        margin-right: 5px;
+    }
+
+    .dasboard_bottom_section {
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        /* border: 1px solid rgb(9, 255, 0); */
+
+    }
+
+    .dasboard_bottom_left_section {
+        display: none;
+    }
+
+    .dasboard_bottom_right_twosections_bottom {
+        display: none;
+    }
+
+    .dashboard_FormStatus {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        justify-content: space-between;
+        /* border: 1px solid red; */
+
+    }
+
+
+    .dashboard_FormStatus_leftside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        vertical-align: middle;
+        /* border: 1px solid rgb(25, 0, 255); */
+        width: auto;
+
+    }
+
+    .dashboard_rtext {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    .dashboard_FormStatus_leftside_img>img {
+        display: flex !important;
+        justify-content: center !important;
+        width: 200px;
+
+    }
+
+    .dashboard_FormStatus_rightside p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .dashboard_FormStatus_rightside {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+
+    }
+
+
+
+}
+
+@media all and (min-width:280px) and (max-width:351px) {
+    .dashboard_wrapper {
+        display: grid;
+        width: 85%;
+        /* border: 1px solid red; */
+    }
+
+    .dashboard_wrapper .dashboard_leftside {
+        width: 85%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        /* border: 1px solid red; */
+    }
+
+    .dashboard_leftside_contact_email_color,
+    .dashboard_leftside_contact_email {
+        display: none;
+    }
+
+    .dashboard_rightside_top {
+        width: 100%;
+        margin: auto;
+    }
+
+    .dashboard_wrapper>.dashboard_rightside {
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .dashboard_rightside_RecomendedCoursesection {
+        /* border: 1px solid red; */
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 8px;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .dashboard_rightside_Recom_prod {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        padding: .3rem;
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    .dashboard_rightside_Recom_prod>img {
+        width: 100%;
+        margin-right: 5px;
+    }
+
+    .dasboard_bottom_section {
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        /* border: 1px solid rgb(9, 255, 0); */
+
+    }
+
+    .dasboard_bottom_left_section {
+        display: none;
+    }
+
+    .dasboard_bottom_right_twosections_bottom {
+        display: none;
+    }
+
+
+    .dashboard_FormStatus {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        justify-content: space-between;
+        /* border: 1px solid red; */
+
+    }
+
+
+    .dashboard_FormStatus_leftside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        vertical-align: middle;
+        /* border: 1px solid rgb(25, 0, 255); */
+        width: auto;
+
+    }
+
+    .dashboard_rtext {
+        text-align: left;
+        padding: 0;
+        margin: 0;
+        font-size: medium;
+
+    }
+
+    .dashboard_FormStatus_leftside_img>img {
+        display: flex !important;
+        justify-content: center !important;
+        width: 150px;
+
+    }
+
+    .dashboard_FormStatus_rightside p {
+        margin: 0;
+        padding: 0;
+        font-size: small;
+    }
+
+    .dashboard_FormStatus_rightside {
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-evenly;
+        margin: 0;
+        padding: 0;
+
+    }
+
+
+}

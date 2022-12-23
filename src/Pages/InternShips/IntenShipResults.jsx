@@ -38,69 +38,105 @@ function IntenShipResults() {
   return (
     <ChakraProvider theme={theme}>
       <Box
-        width="80%"
-        display="flex"
-        justifyContent="space-between"
+        width={{ base: "95%", lg: "80%" }}
         gap="4"
-        height={"auto"}
         margin={"auto"}
-        marginBottom={"15px"}
+        display="flex"
+        marginBottom={"10px"}
+        // border={"1px"}
       >
-        <Box width={"25%"} shadow="xs" _hover={{ background: "gray.50" }}>
-          <Image src={interImage} alt="left_image" />
+        <Box
+          width={"25%"}
+          display={{ lg: "block", base: "none" }}
+          shadow="xs"
+          _hover={{ background: "gray.50" }}
+        >
+          <Image
+            width={"300px"}
+            height={"300px"}
+            src={interImage}
+            alt="left_image"
+          />
         </Box>
 
         <Box
-          width={"80%"}
+          width={{ base: "90%", lg: "80%" }}
           bg="rgb(255, 255, 255)"
           shadow="md"
           flexDirection={"row"}
+          margin="0 auto"
           p={"10px"}
           display="flex"
-          alignItems={"center"}
+          // alignItems={"center"}
           justifyContent={"space-between"}
         >
-          {/* {FilterResult.length > 0 &&
-            FilterResult.map((el) => {
-              return ( */}
-          {/* <> */}
-          <Box display={"flex"} width={"50%"}>
-            <Box width={"33%"}>
+          <Box display={"flex"} width={{ lg: "50%", base: "85%" }}>
+            <Box
+              width={{ lg: "33%", base: "28%" }}
+              display={{ lg: "block", md: "block", base: "none" }}
+            >
               <Image
                 src="https://assets.interntheory.com/creative/logo.png"
-                width={"90%"}
+                width={"100%"}
               />
             </Box>
-            <Box display={"flex"} flexDirection="column" textAlign={"left"}>
-              <Text fontSize={"lg"} color="#3C4858">
+            <Box
+              display={"flex"}
+              width={{ lg: "60%", base: "80%" }}
+              flexDirection="column"
+              marginLeft="20px"
+            >
+              <Text fontSize={"lg"} width="100%" color="#3C4858">
                 Develop Your Skillset
               </Text>
-              <Text fontSize={"15px"} color="#3C4858">
+              <Text fontSize={"15px"} width="100%" color="#3C4858">
                 Online Skill Development Programs
               </Text>
-              <Text fontSize={"15px"} color="rgba(0, 0, 0, 0.54)">
+              <Text fontSize={"15px"} width="100%" color="rgba(0, 0, 0, 0.54)">
                 Taught by Industry Experts Internship
               </Text>
-              <Text fontSize={"15px"} color="rgba(0, 0, 0, 0.54)">
+              <Text fontSize={"15px"} width="100%" color="rgba(0, 0, 0, 0.54)">
                 Certified Courses
               </Text>
-              <Text fontSize={"15px"} color="rgba(0, 0, 0, 0.54)">
+              <Text fontSize={"15px"} width="100%" color="rgba(0, 0, 0, 0.54)">
                 Guaranteed Internship Opportunities
               </Text>
               <Text
                 fontSize={"15px"}
                 fontWeight="bold"
                 color="rgba(0, 0, 0, 0.54)"
+                width="100%"
               >
                 TaLearn Industry-Demanded Skills
               </Text>
             </Box>
           </Box>
-          <Box display={"flex"} flexDirection="column" gap={"6"}>
+          <Box
+            display={"flex"}
+            flexDirection="column"
+            gap={"6"}
+            alignItems="flex-end"
+            textAlign="right"
+            width={{ base: "40%", lg: "auto", md: "auto" }}
+          >
             <Text color={"#3C4858"}> 2-4 Weeks</Text>
-            <Box fontSize={"3xl"} color="rgba(0, 0, 0, 0.54)">
+            <Box
+              fontSize={"3xl"}
+              display={{ lg: "block", md: "block", base: "none" }}
+              color="rgba(0, 0, 0, 0.54)"
+            >
               <Center />
               <AiOutlineShareAlt onClick={handleShow} />
+            </Box>
+            <Box
+              display={{ lg: "none", md: "none", base: "flex" }}
+              width={"100px"}
+              justifyContent={"flex-end"}
+            >
+              <Image
+                src="https://assets.interntheory.com/creative/logo.png"
+                width={"100%"}
+              />
             </Box>
             {icons && (
               <Box
@@ -126,6 +162,7 @@ function IntenShipResults() {
             })} */}
         </Box>
       </Box>
+      {/* main search */}
       {!FilterResult.isLoading && FilterResult.searchData.length == 0 && (
         <Box
           display={"flex"}
@@ -147,40 +184,41 @@ function IntenShipResults() {
           return (
             <Box
               key={i + 1}
-              width="80%"
+              width={{ base: "95%", lg: "80%" }}
               display="flex"
-              justifyContent="space-between"
+              // justifyContent="space-between"
               gap="4"
-              height={"auto"}
               margin={"auto"}
-              marginBottom={"15px"}
+              marginBottom={"10px"}
             >
-              <Box width={"25%"}>
+              <Box width={"25%"} display={{ lg: "block", base: "none" }}>
                 {/* <Image src={interImage} alt="left_image" /> */}
               </Box>
 
               <Box
-                width={"80%"}
+                width={{ base: "90%", lg: "80%" }}
                 bg="rgb(255, 255, 255)"
                 shadow="md"
                 flexDirection={"row"}
                 p={"10px"}
                 display="flex"
-                alignItems={"center"}
+                margin={"auto"}
+                // alignItems={"center"}
                 justifyContent={"space-between"}
+                // border={"1px"}
               >
-                {/* {FilterResult.length > 0 &&
-                FilterResult.map((el) => {
-                  return ( */}
-                {/* <> */}
-                <Box display={"flex"} width={"50%"}>
-                  <Box width={"33%"}>
-                    <Image src={el.image} width={"90%"} />
+                <Box display={"flex"} width={{ lg: "50%", base: "60%" }}>
+                  <Box
+                    width={{ lg: "33%", base: "28%" }}
+                    display={{ lg: "block", md: "block", base: "none" }}
+                  >
+                    <Image src={el.image} width={"100%"} />
                   </Box>
                   <Box
                     display={"flex"}
                     flexDirection="column"
-                    textAlign={"left"}
+                    marginLeft="20px"
+                    width={{ lg: "60%", base: "80%" }}
                   >
                     <Text fontSize={"lg"} color="#3C4858">
                       {el.courseName}
@@ -206,9 +244,20 @@ function IntenShipResults() {
                     </Text>
                   </Box>
                 </Box>
-                <Box display={"flex"} flexDirection="column" gap={"6"}>
+                <Box
+                  display={"flex"}
+                  flexDirection="column"
+                  gap={"6"}
+                  alignItems="flex-end"
+                  textAlign="right"
+                  width={{ base: "40%", lg: "auto", md: "auto" }}
+                >
                   <Text color={"#3C4858"}> {el.remain}</Text>
-                  <Box fontSize={"3xl"} color="rgba(0, 0, 0, 0.54)">
+                  <Box
+                    fontSize={"3xl"}
+                    color="rgba(0, 0, 0, 0.54)"
+                    display={{ lg: "block", md: "block", base: "none" }}
+                  >
                     <Center />
                     <AiOutlineShareAlt />
                   </Box>
@@ -226,6 +275,14 @@ function IntenShipResults() {
                       <AiOutlineWhatsApp />
                     </Box>
                   )}
+                  <Box
+                    display={{ lg: "none", md: "none", base: "flex" }}
+                    width={"100px"}
+                    // border={"1px"}
+                    justifyContent={"flex-end"}
+                  >
+                    <Image src={el.image} width="100%" />
+                  </Box>
                   <Link to={`/viewandaplly/${el.id}`}>
                     <Text fontSize={"15px"} color={"#087CDD"} fontWeight="bold">
                       VIEW AND APPLY
