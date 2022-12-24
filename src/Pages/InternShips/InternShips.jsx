@@ -284,7 +284,7 @@ function InternShips(props) {
               top="40px"
               pos={"absolute"}
               bg={{ lg: "rgb(255, 255, 255)", base: "gray.600" }}
-              color={"white"}
+              color={{ base: "white", lg: "black" }}
               zIndex={1}
               boxShadow="base"
               p="3"
@@ -337,7 +337,7 @@ function InternShips(props) {
               top="40px"
               pos={"absolute"}
               bg={{ lg: "rgb(255, 255, 255)", base: "gray.600" }}
-              color={"white"}
+              color={{ base: "white", lg: "black" }}
               zIndex={1}
               boxShadow="base"
               p="3"
@@ -391,7 +391,7 @@ function InternShips(props) {
               top="40px"
               pos={"absolute"}
               bg={{ lg: "rgb(255, 255, 255)", base: "gray.600" }}
-              color={"white"}
+              color={{ base: "white", lg: "black" }}
               zIndex={1}
               boxShadow="base"
               p="3"

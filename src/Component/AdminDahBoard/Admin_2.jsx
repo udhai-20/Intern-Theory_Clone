@@ -108,7 +108,7 @@ function Admin_2(props) {
             <h5>Course Sections</h5>
             <div className="dashboard_rightside_RecomendedCoursesection">
               <div className="dashboard_rightside_Recom_prod">
-                <Link to="/Admin/addcourse">
+                <Link to="/Admin/addintern">
                   <AiFillFileAdd className="admin_icons_styles" />
                 </Link>
                 <p className="admin_icons_text">Add Course Datas</p>
