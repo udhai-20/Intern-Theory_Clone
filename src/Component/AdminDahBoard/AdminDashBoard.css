@@ -1,16 +1,15 @@
-.admindashboard_wrapper {
+.dashboard_wrapper {
     display: flex;
     width: 80%;
     justify-content: space-between;
     margin: auto;
     margin-top: 30px;
     height: auto;
-    z-index: -1;
     /* border: 1px solid red; */
     position: relative;
 }
 
-.admindashboard_wrapper .admindashboard_leftside {
+.dashboard_wrapper .dashboard_leftside {
     width: 30%;
     background-color: #fff;
     height: auto;
@@ -19,15 +18,15 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-.admindashboard_wrapper>.admindashboard_rightside {
+.dashboard_wrapper>.dashboard_rightside {
     width: 66%;
 }
 
-.admindashboard_leftside_child img {
+.dashboard_leftside_child img {
     width: 50%;
 }
 
-.admindashboard_leftside_child {
+.dashboard_leftside_child {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -36,7 +35,7 @@
     margin: auto;
 }
 
-.admindashboard_leftside_child_profile {
+.dashboard_leftside_child_profile {
     background-color: #087CDD;
     width: max-content;
     margin-top: 15px;
@@ -48,11 +47,11 @@
     border-radius: 0.4rem;
 }
 
-.admindashboard_leftside_child_profile:hover {
+.dashboard_leftside_child_profile:hover {
     background-color: #4e7fa8;
 }
 
-.admindashboard_leftside_name {
+.dashboard_leftside_name {
     color: #999;
     font-size: 16px;
     font-weight: 500;
@@ -60,23 +59,23 @@
     margin-top: 10px;
 }
 
-.admindashboard_leftside_line {
+.dashboard_leftside_line {
     color: #999;
     width: 100%;
     margin-top: 15px;
 }
 
-.admindashboard_leftside_parent {
+.dashboard_leftside_parent {
     width: 80%;
     margin: auto;
 }
 
-.admindashboard_leftside_contact {
+.dashboard_leftside_contact {
     text-align: left;
     margin-top: 15px;
 }
 
-.admindashboard_leftside_contact_email {
+.dashboard_leftside_contact_email {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -88,20 +87,20 @@
     margin-top: 15px;
 }
 
-.admindashboard_leftside_contact_email_color {
+.dashboard_leftside_contact_email_color {
     color: black;
     font-size: 16px;
 }
 
 /* //right side */
-.admindashboard_rightside>div {
+.dashboard_rightside>div {
     display: flex;
     flex-direction: column;
     padding: 1rem;
     width: 100%;
 }
 
-.admindashboard_rightside_top {
+.dashboard_rightside_top {
     border: dashed;
     font-size: 13px;
     border-color: red;
@@ -109,7 +108,7 @@
     background-color: #fff;
 }
 
-.admindashboard_rightside_RecomendedCourse {
+.dashboard_rightside_RecomendedCourse {
     background-color: #fff;
     display: flex;
     width: 100%;
@@ -119,14 +118,14 @@
     margin-top: 15px;
 }
 
-.admindashboard_rightside_RecomendedCourse>h5 {
+.dashboard_rightside_RecomendedCourse>h5 {
     color: rgba(0, 0, 0, 0.54);
     font-size: 20px;
     text-align: left;
     margin-top: 15px;
 }
 
-.admindashboard_rightside_RecomendedCoursesection {
+.dashboard_rightside_RecomendedCoursesection {
     /* border: 1px solid red; */
     width: 100%;
     display: flex;
@@ -135,7 +134,7 @@
     margin-top: 15px;
 }
 
-.admindashboard_rightside_Recom_prod {
+.dashboard_rightside_Recom_prod {
     margin-top: .3rem;
     width: 40%;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
@@ -146,7 +145,7 @@
     margin-top: 15px;
 }
 
-.admindashboard_rightside_Recom_prod>img {
+.dashboard_rightside_Recom_prod>img {
     width: 40%;
     height: 100%;
     margin-right: 5px;
@@ -154,12 +153,12 @@
 
 }
 
-/* .admindashboard_rightside_Recom_prod>p {
+/* .dashboard_rightside_Recom_prod>p {
     font-size: .8rem;
     color: #3C4858;
 } */
 
-.admindashboard_bottom_section {
+.dasboard_bottom_section {
     width: 80%;
     display: flex;
     /* border: 1px solid red; */
@@ -169,14 +168,14 @@
     height: 500px;
 }
 
-.admindashboard_bottom_left_section {
+.dasboard_bottom_left_section {
     width: 30%;
     /* border: 1px solid rgb(0, 0, 255); */
     height: 500px;
     ;
 }
 
-.admindashboard_bottom_right_section {
+.dasboard_bottom_right_section {
     width: 66%;
     padding: .8rem;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
@@ -188,20 +187,20 @@
     margin-top: 1px;
 }
 
-.admindashboard_bottom_right_top {
+.dasboard_bottom_right_top {
     padding: .5rem;
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
 
-.admindashboard_bottom_right_twosections {
+.dasboard_bottom_right_twosections {
     display: flex;
     justify-content: space-between;
     gap: 15px;
 }
 
-.admindashboard_bottom_right_twosections p {
+.dasboard_bottom_right_twosections p {
     text-transform: uppercase;
     /* color: #087CDD;onclick it should be this color */
     color: rgba(0, 0, 0, 0.54);
@@ -209,11 +208,11 @@
     font-size: 0.875rem;
 }
 
-.admindashboard_bottom_line {
+.dashboard_bottom_line {
     margin-top: 8px;
 }
 
-.admindashboard_bottom_right_below {
+.dasboard_bottom_right_below {
     margin-top: -10px;
     display: flex;
     width: 100%;
@@ -221,48 +220,48 @@
     justify-content: space-between;
 }
 
-.admindashboard_bottom_right_twosections_bottom {
+.dasboard_bottom_right_twosections_bottom {
     display: flex;
     gap: 10px;
     font-size: 0.875rem;
     color: rgba(0, 0, 0, 0.54);
 }
 
-.admindashboard_select {
+.dashboard_select {
     padding: .2rem;
     border: none;
     border-bottom: 1px solid gray;
     background: transparent;
 }
 
-.admindashboard_select option {
+.dashboard_select option {
     padding: .2rem;
 }
 
-.admindashboard_FormStatus {
+.dashboard_FormStatus {
     display: flex;
     margin-bottom: 30px;
     justify-content: space-between;
     /* border: 1px solid red; */
 }
 
-.admindashboard_FormStatus_leftside {
+.dashboard_FormStatus_leftside {
     display: flex;
     justify-content: space-around;
     /* border: 1px solid rgb(25, 0, 255); */
     width: 50%;
 }
 
-.admindashboard_FormStatus_leftside_img {
+.dashboard_FormStatus_leftside_img {
     width: 35%;
 }
 
-.admindashboard_img {
+.dashboard_img {
     display: block;
     width: 100%;
 }
 
-.admindashboard_rtext {
+.dashboard_rtext {
     text-align: left;
     align-items: center;
     padding: 40px;
@@ -272,7 +271,7 @@
     margin-top: 10px;
 }
 
-.admindashboard_FormStatus_rightside {
+.dashboard_FormStatus_rightside {
     /* border: 1px solid rgb(0, 255, 30); */
     display: flex;
     flex-direction: column;
@@ -281,7 +280,7 @@
     padding: 12px;
 }
 
-.admindashboard_FormStatus_rightside_p1 {
+.dashboard_FormStatus_rightside_p1 {
     color: #087CDD !important;
     font-weight: 600 !important;
     align-items: center;
@@ -289,29 +288,29 @@
     font-size: 0.875rem;
 }
 
-.admindashboard_FormStatus_rightside_p1:hover {
+.dashboard_FormStatus_rightside_p1:hover {
     color: rgb(237, 174, 180);
     cursor: pointer;
 }
 
-.admindashboard_FormStatus_rightside:last-child {
+.dashboard_FormStatus_rightside:last-child {
     color: #087CDD;
     font-size: 0.875rem;
     font-weight: 600 !important;
 }
 
-.admindashboard_FormStatus_rightside_green {
+.dashboard_FormStatus_rightside_green {
     color: #16b423;
     font-size: 0.875rem;
     font-weight: 600 !important;
 }
 
-.admindashboard_FormStatus_rightside:last-child:hover {
+.dashboard_FormStatus_rightside:last-child:hover {
     color: #4589c0;
     cursor: pointer;
 }
 
-.admindashboard_dashedline {
+.dashboard_dashedline {
     margin: 25px 0;
     height: 2px;
     background:
@@ -321,7 +320,6 @@
 .admin_icons_styles {
     font-size: 60px;
     color: #087CDD;
-    cursor: pointer;
 }
 
 .admin_icons_text {
@@ -340,37 +338,34 @@
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
-.admindashboard_leftside_bottom {
-    display: none;
-}
 
 @media all and (min-width: 300px) and (max-width: 800px) {
-    .admindashboard_wrapper {
+    .dashboard_wrapper {
 
         width: 80%;
         /* border: 1px solid red; */
         /* position: relative; */
     }
 
-    .admindashboard_wrapper .admindashboard_leftside {
+    .dashboard_wrapper .dashboard_leftside {
         display: none;
         /* border: 1px solid red; */
     }
 
-    .admindashboard_rightside_top {
+    .dashboard_rightside_top {
         width: 100%;
         margin: auto;
 
     }
 
-    .admindashboard_wrapper>.admindashboard_rightside {
+    .dashboard_wrapper>.dashboard_rightside {
         width: 100%;
         margin: auto;
         margin-top: 20px;
         /* border: 1px solid green; */
     }
 
-    .admindashboard_rightside_RecomendedCoursesection {
+    .dashboard_rightside_RecomendedCoursesection {
         /* border: 1px solid red; */
         width: 100%;
         display: grid;
@@ -379,7 +374,7 @@
         margin-top: 15px;
     }
 
-    .admindashboard_rightside_Recom_prod {
+    .dashboard_rightside_Recom_prod {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -388,12 +383,12 @@
         margin-top: 5px;
     }
 
-    .admindashboard_rightside_Recom_prod>img {
+    .dashboard_rightside_Recom_prod>img {
         width: 100%;
         margin-right: 5px;
     }
 
-    .admindashboard_bottom_section {
+    .dashboard_bottom_section {
         width: 90%;
         display: flex;
         /* border: 1px solid rgb(0, 255, 13); */
@@ -405,11 +400,11 @@
         height: auto;
     }
 
-    .admindashboard_bottom_left_section {
+    .dashboard_bottom_left_section {
         display: none;
     }
 
-    .admindashboard_bottom_right_section {
+    .dashboard_bottom_right_section {
         width: 100%;
         height: auto;
         margin-left: 5px;
@@ -417,13 +412,13 @@
         /* border: 1px solid rgb(9, 255, 0); */
     }
 
-    .admindashboard_bottom_right_section {
+    .dashboard_bottom_right_section {
 
         width: 90%;
         margin-top: 1px;
     }
 
-    .admindashboard_FormStatus {
+    .dashboard_FormStatus {
 
         display: flex;
         align-items: center;
@@ -434,14 +429,14 @@
 
     }
 
-    .admindashboard_FormStatus_leftside {
+    .dashboard_FormStatus_leftside {
         display: flex;
         justify-content: space-around;
         /* border: 1px solid rgb(25, 0, 255); */
         width: 100%;
     }
 
-    .admindashboard_FormStatus_leftside_img>img {
+    .dashboard_FormStatus_leftside_img>img {
         width: 150px;
         display: flex;
         justify-content: center;
@@ -449,13 +444,13 @@
 
     }
 
-    .admindashboard_FormStatus_rightside p {
+    .dashboard_FormStatus_rightside p {
         margin: 0;
         padding: 0;
 
     }
 
-    .admindashboard_FormStatus_rightside {
+    .dashboard_FormStatus_rightside {
         /* border: 1px solid rgb(0, 255, 30); */
         flex-direction: row;
         width: 100%;
@@ -463,7 +458,7 @@
 
     }
 
-    .admindashboard_leftside_bottom {
+    .dashboard_leftside_bottom {
         width: 80%;
         margin: auto;
         margin-bottom: 15px;

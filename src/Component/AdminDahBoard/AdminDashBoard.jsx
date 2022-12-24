@@ -19,7 +19,7 @@ import {
   SearchSuccess,
 } from "../../Redux/AppReducer/action";
 
-function AdminDashBoard(props) {
+const AdminDashBoard = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   let data = useSelector((state) => state.AppReducer);
@@ -85,8 +85,8 @@ function AdminDashBoard(props) {
         {/* //right side */}
         <div className="admindashboard_rightside">
           <div
-            className="admindashboard_rightside_top "
-            // onClick={() => handlecheck("/login")}
+            className="admindashboard_rightside_top"
+            onClick={() => console.log("checking")}
           >
             <p>Admin Dashboard</p>
           </div>
@@ -102,11 +102,11 @@ function AdminDashBoard(props) {
                 {/* </Link> */}
                 <p className="admin_icons_text"> Add Intenships Datas </p>
               </div>
-              <div
-                className="admindashboard_rightside_Recom_prod"
-                onClick={() => navigate("/Admin/inerndatas")}
-              >
-                <AiFillDatabase className="admin_icons_styles" />
+              <div className="admindashboard_rightside_Recom_prod">
+                <AiFillDatabase
+                  className="admin_icons_styles"
+                  onClick={() => navigate("/Admin/inerndatas")}
+                />
 
                 <p className="admin_icons_text">Intenships Datas</p>
               </div>
@@ -240,6 +240,6 @@ function AdminDashBoard(props) {
       </div>
     </>
   );
-}
+};
 
 export default AdminDashBoard;
