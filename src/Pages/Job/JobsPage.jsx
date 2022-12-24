@@ -261,7 +261,7 @@ function JobsPage(props) {
               pos={"absolute"}
               bg={{ lg: "rgb(255, 255, 255)", base: "gray.600" }}
               color={{ base: "white", lg: "black" }}
-              zIndex={{ base: 1, lg: -1 }}
+              zIndex={1}
               boxShadow="base"
               p="3"
               width={"100%"}
@@ -314,7 +314,7 @@ function JobsPage(props) {
               pos={"absolute"}
               bg={{ lg: "rgb(255, 255, 255)", base: "gray.600" }}
               color={{ base: "white", lg: "black" }}
-              zIndex={{ base: 1, lg: -1 }}
+              zIndex={1}
               boxShadow="base"
               p="3"
               width={"100%"}
@@ -368,7 +368,7 @@ function JobsPage(props) {
               pos={"absolute"}
               bg={{ lg: "rgb(255, 255, 255)", base: "gray.600" }}
               color={{ base: "white", lg: "black" }}
-              zIndex={{ base: 1, lg: -1 }}
+              zIndex={1}
               boxShadow="base"
               p="3"
               width={"100%"}

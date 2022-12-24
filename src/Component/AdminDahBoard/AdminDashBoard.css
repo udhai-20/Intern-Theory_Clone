@@ -5,6 +5,7 @@
     margin: auto;
     margin-top: 30px;
     height: auto;
+    z-index: -1;
     /* border: 1px solid red; */
     position: relative;
 }
@@ -388,7 +389,7 @@
         margin-right: 5px;
     }
 
-    .dashboard_bottom_section {
+    .dasboard_bottom_section {
         width: 90%;
         display: flex;
         /* border: 1px solid rgb(0, 255, 13); */
@@ -396,15 +397,15 @@
         justify-content: center;
         margin: auto;
         margin-top: 10px;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
         height: auto;
     }
 
-    .dashboard_bottom_left_section {
+    .dasboard_bottom_left_section {
         display: none;
     }
 
-    .dashboard_bottom_right_section {
+    .dasboard_bottom_right_section {
         width: 100%;
         height: auto;
         margin-left: 5px;
@@ -413,13 +414,11 @@
     }
 
     .dashboard_bottom_right_section {
-
         width: 90%;
         margin-top: 1px;
     }
 
     .dashboard_FormStatus {
-
         display: flex;
         align-items: center;
         flex-direction: column;
