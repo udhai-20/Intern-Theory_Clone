@@ -21,6 +21,7 @@ import NotFoundPage from "../Pages/NotFoundPage";
 import EditIntern from "../Pages/EditPage/EditIntern";
 
 import PrivateRoutes from "./PrivateRoutes";
+import Admin_2 from "../Component/AdminDahBoard/Admin_2";
 function AllRouter() {
   return (
     <Routes>
@@ -89,7 +90,7 @@ function AllRouter() {
           </ChakraProvider>
         }
       />
-      <Route path="/Admin/dashboard" element={<AdminDashBoard />} />
+      <Route path="/Admin/dashboard" element={<Admin_2 />} />
       <Route path="/signup" element={<SignIngPage />} />
       <Route path="/step2" element={<Step2 />} />
 

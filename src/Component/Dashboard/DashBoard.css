@@ -1,4 +1,4 @@
-.dashboard_wrapper {
+.userdashboard_wrapper {
     display: flex;
     width: 80%;
     justify-content: space-between;
@@ -10,7 +10,7 @@
     /* position: relative; */
 }
 
-.dashboard_wrapper .dashboard_leftside {
+.userdashboard_wrapper .userdashboard_leftside {
     width: 30%;
     background-color: #fff;
     height: auto;
@@ -19,15 +19,15 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-.dashboard_wrapper>.dashboard_rightside {
+.userdashboard_wrapper>.userdashboard_rightside {
     width: 66%;
 }
 
-.dashboard_leftside_child img {
+.userdashboard_leftside_child img {
     width: 50%;
 }
 
-.dashboard_leftside_child {
+.userdashboard_leftside_child {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -36,7 +36,7 @@
     margin: auto;
 }
 
-.dashboard_leftside_child_profile {
+.userdashboard_leftside_child_profile {
     background-color: #087CDD;
     width: max-content;
     margin-top: 15px;
@@ -48,11 +48,11 @@
     border-radius: 0.4rem;
 }
 
-.dashboard_leftside_child_profile:hover {
+.userdashboard_leftside_child_profile:hover {
     background-color: #4e7fa8;
 }
 
-.dashboard_leftside_name {
+.userdashboard_leftside_name {
     color: #999;
     font-size: 16px;
     font-weight: 500;
@@ -60,23 +60,23 @@
     margin-top: 10px;
 }
 
-.dashboard_leftside_line {
+.userdashboard_leftside_line {
     color: #999;
     width: 100%;
     margin-top: 15px;
 }
 
-.dashboard_leftside_parent {
+.userdashboard_leftside_parent {
     width: 80%;
     margin: auto;
 }
 
-.dashboard_leftside_contact {
+.userdashboard_leftside_contact {
     text-align: left;
     margin-top: 15px;
 }
 
-.dashboard_leftside_contact_email {
+.userdashboard_leftside_contact_email {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -88,20 +88,20 @@
     margin-top: 15px;
 }
 
-.dashboard_leftside_contact_email_color {
+.userdashboard_leftside_contact_email_color {
     color: black;
     font-size: 16px;
 }
 
 /* //right side */
-.dashboard_rightside>div {
+.userdashboard_rightside>div {
     display: flex;
     flex-direction: column;
     padding: 1rem;
     width: 100%;
 }
 
-.dashboard_rightside_top {
+.userdashboard_rightside_top {
     border: dashed;
     font-size: 13px;
     border-color: red;
@@ -109,7 +109,7 @@
     background-color: #fff;
 }
 
-.dashboard_rightside_RecomendedCourse {
+.userdashboard_rightside_RecomendedCourse {
     background-color: #fff;
     display: flex;
     width: 100%;
@@ -119,14 +119,14 @@
     margin-top: 15px;
 }
 
-.dashboard_rightside_RecomendedCourse>h5 {
+.userdashboard_rightside_RecomendedCourse>h5 {
     color: rgba(0, 0, 0, 0.54);
     font-size: 20px;
     text-align: left;
     margin-top: 15px;
 }
 
-.dashboard_rightside_RecomendedCoursesection {
+.userdashboard_rightside_RecomendedCoursesection {
     /* border: 1px solid red; */
     width: 100%;
     display: flex;
@@ -135,7 +135,7 @@
     margin-top: 15px;
 }
 
-.dashboard_rightside_Recom_prod {
+.userdashboard_rightside_Recom_prod {
     margin-top: .3rem;
     width: 40%;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
@@ -146,7 +146,7 @@
     margin-top: 15px;
 }
 
-.dashboard_rightside_Recom_prod>img {
+.userdashboard_rightside_Recom_prod>img {
     width: 40%;
     height: 100%;
     margin-right: 5px;
@@ -154,12 +154,12 @@
 
 }
 
-.dashboard_rightside_Recom_prod>p {
+.userdashboard_rightside_Recom_prod>p {
     font-size: .8rem;
     color: #3C4858;
 }
 
-.dasboard_bottom_section {
+.useruserdashboard_bottom_section {
     width: 80%;
     display: flex;
     /* border: 1px solid red; */
@@ -170,14 +170,14 @@
     height: auto;
 }
 
-.dasboard_bottom_left_section {
+.useruserdashboard_bottom_left_section {
     width: 30%;
     /* border: 1px solid rgb(0, 0, 255); */
     height: 500px;
 
 }
 
-.dasboard_bottom_right_section {
+.useruserdashboard_bottom_right_section {
     width: 66%;
     padding: .8rem;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
@@ -188,14 +188,14 @@
     margin-top: 1px;
 }
 
-.dasboard_bottom_right_top {
+.useruserdashboard_bottom_right_top {
     padding: .5rem;
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
 
-.dasboard_bottom_right_twosections {
+.useruserdashboard_bottom_right_twosections {
     display: flex;
     justify-content: space-between;
     gap: 5px;
@@ -205,18 +205,18 @@
     display: none;
 }
 
-.dasboard_bottom_right_twosections p {
+.useruserdashboard_bottom_right_twosections p {
     text-transform: uppercase;
     /* color: #087CDD;onclick it should be this color */
     color: rgba(0, 0, 0, 0.54);
     font-size: 0.875rem;
 }
 
-.dashboard_bottom_line {
+.userdashboard_bottom_line {
     margin-top: 8px;
 }
 
-.dasboard_bottom_right_below {
+.useruserdashboard_bottom_right_below {
     margin-top: -10px;
     display: flex;
     width: 100%;
@@ -224,54 +224,54 @@
     justify-content: space-between;
 }
 
-.dasboard_bottom_right_twosections_bottom {
+.useruserdashboard_bottom_right_twosections_bottom {
     display: flex;
     gap: 10px;
     font-size: 0.875rem;
     color: rgba(0, 0, 0, 0.54);
 }
 
-.dashboard_select {
+.userdashboard_select {
     padding: .2rem;
     border: none;
     border-bottom: 1px solid gray;
     background: transparent;
 }
 
-.dashboard_select option {
+.userdashboard_select option {
     padding: .2rem;
 }
 
-.dashboard_FormStatus {
+.userdashboard_FormStatus {
     display: flex;
     margin-bottom: 30px;
     justify-content: space-between;
     /* border: 1px solid red; */
 }
 
-.dashboard_FormStatus_leftside {
+.userdashboard_FormStatus_leftside {
     display: flex;
     justify-content: space-between;
     /* border: 1px solid rgb(25, 0, 255); */
     width: 60%;
 }
 
-.dashboard_FormStatus_leftside_img>img {
+.userdashboard_FormStatus_leftside_img>img {
     width: 150px;
 
 }
 
-.dashboard_img {
+.userdashboard_img {
     display: block;
     width: 100%;
 }
 
-.dashboard_rtext {
+.userdashboard_rtext {
     text-align: left;
     margin-top: -20px;
 }
 
-.dashboard_FormStatus_rightside {
+.userdashboard_FormStatus_rightside {
     /* border: 1px solid rgb(0, 255, 30); */
     display: flex;
     flex-direction: column;
@@ -280,7 +280,7 @@
     padding: 12px;
 }
 
-.dashboard_FormStatus_rightside_p1 {
+.userdashboard_FormStatus_rightside_p1 {
     color: rgb(223, 30, 46) !important;
     font-weight: 600 !important;
     /* border: 1px solid red; */
@@ -288,29 +288,29 @@
     font-size: 0.875rem;
 }
 
-.dashboard_FormStatus_rightside_p1:hover {
+.userdashboard_FormStatus_rightside_p1:hover {
     color: rgb(237, 174, 180);
     cursor: pointer;
 }
 
-.dashboard_FormStatus_rightside:last-child {
+.userdashboard_FormStatus_rightside:last-child {
     color: #087CDD;
     font-size: 0.875rem;
     font-weight: 600 !important;
 }
 
-.dashboard_FormStatus_rightside_green {
+.userdashboard_FormStatus_rightside_green {
     color: #16b423;
     font-size: 0.875rem;
     font-weight: 600 !important;
 }
 
-.dashboard_FormStatus_rightside:last-child:hover {
+.userdashboard_FormStatus_rightside:last-child:hover {
     color: #4589c0;
     cursor: pointer;
 }
 
-.dashboard_dashedline {
+.userdashboard_dashedline {
     margin: 25px 0;
     height: 2px;
     background:
@@ -330,14 +330,14 @@
 /* ///mediaqueary */
 
 @media all and (min-width: 530px) and (max-width: 800px) {
-    .dashboard_wrapper {
+    .userdashboard_wrapper {
         display: grid;
         width: 80%;
         /* border: 1px solid red; */
         /* position: relative; */
     }
 
-    .dashboard_wrapper .dashboard_leftside {
+    .userdashboard_wrapper .userdashboard_leftside {
         width: 80%;
         display: flex;
         justify-content: center;
@@ -346,18 +346,18 @@
         /* border: 1px solid red; */
     }
 
-    .dashboard_rightside_top {
+    .userdashboard_rightside_top {
         width: 100%;
         margin: auto;
     }
 
-    .dashboard_wrapper>.dashboard_rightside {
+    .userdashboard_wrapper>.userdashboard_rightside {
         width: 80%;
         margin: auto;
         margin-top: 20px;
     }
 
-    .dashboard_rightside_RecomendedCoursesection {
+    .userdashboard_rightside_RecomendedCoursesection {
         /* border: 1px solid red; */
         width: 100%;
         display: grid;
@@ -366,7 +366,7 @@
         margin-top: 15px;
     }
 
-    .dashboard_rightside_Recom_prod {
+    .userdashboard_rightside_Recom_prod {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -375,12 +375,12 @@
         margin-top: 5px;
     }
 
-    .dashboard_rightside_Recom_prod>img {
+    .userdashboard_rightside_Recom_prod>img {
         width: 100%;
         margin-right: 5px;
     }
 
-    .dasboard_bottom_section {
+    .useruserdashboard_bottom_section {
         width: 90%;
         display: flex;
         /* border: 1px solid red; */
@@ -394,23 +394,23 @@
 
     }
 
-    .dasboard_bottom_left_section {
+    .useruserdashboard_bottom_left_section {
         display: none;
     }
 
-    .dasboard_bottom_right_section {
+    .useruserdashboard_bottom_right_section {
         width: 80%;
         height: auto;
         margin-left: 5px;
         margin-top: 1px;
     }
 
-    .dasboard_bottom_right_section {
+    .useruserdashboard_bottom_right_section {
         width: 74%;
         margin-top: 1px;
     }
 
-    .dashboard_FormStatus {
+    .userdashboard_FormStatus {
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -420,14 +420,14 @@
 
     }
 
-    .dashboard_FormStatus_leftside {
+    .userdashboard_FormStatus_leftside {
         display: flex;
         justify-content: space-around;
         /* border: 1px solid rgb(25, 0, 255); */
         width: 100%;
     }
 
-    .dashboard_FormStatus_leftside_img>img {
+    .userdashboard_FormStatus_leftside_img>img {
         width: 150px;
         display: flex;
         justify-content: center;
@@ -435,12 +435,12 @@
 
     }
 
-    .dashboard_FormStatus_rightside p {
+    .userdashboard_FormStatus_rightside p {
         margin: 0;
         padding: 0;
     }
 
-    .dashboard_FormStatus_rightside {
+    .userdashboard_FormStatus_rightside {
         /* border: 1px solid rgb(0, 255, 30); */
         flex-direction: row;
         width: 100%;
@@ -453,13 +453,13 @@
 /* small */
 @media all and (min-width:350px) and (max-width:531px) {
 
-    .dashboard_wrapper {
+    .userdashboard_wrapper {
         display: grid;
         width: 85%;
         /* border: 1px solid red; */
     }
 
-    .dashboard_wrapper .dashboard_leftside {
+    .userdashboard_wrapper .userdashboard_leftside {
         width: 85%;
         display: flex;
         justify-content: center;
@@ -468,28 +468,28 @@
         /* border: 1px solid red; */
     }
 
-    .dashboard_leftside_contact_email_color {
+    .userdashboard_leftside_contact_email_color {
         display: none;
     }
 
-    .dasboard_bottom_right_section {
+    .useruserdashboard_bottom_right_section {
         width: 74%;
         /* border: 1px solid red; */
         margin-top: 1px;
     }
 
-    .dashboard_rightside_top {
+    .userdashboard_rightside_top {
         width: 100%;
         margin: auto;
     }
 
-    .dashboard_wrapper>.dashboard_rightside {
+    .userdashboard_wrapper>.userdashboard_rightside {
         width: 80%;
         margin: auto;
         margin-top: 20px;
     }
 
-    .dashboard_rightside_RecomendedCoursesection {
+    .userdashboard_rightside_RecomendedCoursesection {
         /* border: 1px solid red; */
         width: 100%;
         display: grid;
@@ -499,7 +499,7 @@
         text-align: center;
     }
 
-    .dashboard_rightside_Recom_prod {
+    .userdashboard_rightside_Recom_prod {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -509,12 +509,12 @@
         text-align: center;
     }
 
-    .dashboard_rightside_Recom_prod>img {
+    .userdashboard_rightside_Recom_prod>img {
         width: 100%;
         margin-right: 5px;
     }
 
-    .dasboard_bottom_section {
+    .useruserdashboard_bottom_section {
         width: 90%;
         margin: auto;
         margin-top: 10px;
@@ -523,15 +523,15 @@
 
     }
 
-    .dasboard_bottom_left_section {
+    .useruserdashboard_bottom_left_section {
         display: none;
     }
 
-    .dasboard_bottom_right_twosections_bottom {
+    .useruserdashboard_bottom_right_twosections_bottom {
         display: none;
     }
 
-    .dashboard_FormStatus {
+    .userdashboard_FormStatus {
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -542,7 +542,7 @@
     }
 
 
-    .dashboard_FormStatus_leftside {
+    .userdashboard_FormStatus_leftside {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -552,26 +552,26 @@
 
     }
 
-    .dashboard_rtext {
+    .userdashboard_rtext {
         text-align: center;
         padding: 0;
         margin: 0;
 
     }
 
-    .dashboard_FormStatus_leftside_img>img {
+    .userdashboard_FormStatus_leftside_img>img {
         display: flex !important;
         justify-content: center !important;
         width: 200px;
 
     }
 
-    .dashboard_FormStatus_rightside p {
+    .userdashboard_FormStatus_rightside p {
         margin: 0;
         padding: 0;
     }
 
-    .dashboard_FormStatus_rightside {
+    .userdashboard_FormStatus_rightside {
         flex-direction: row;
         width: 100%;
         justify-content: space-evenly;
@@ -583,13 +583,13 @@
 }
 
 @media all and (min-width:280px) and (max-width:351px) {
-    .dashboard_wrapper {
+    .userdashboard_wrapper {
         display: grid;
         width: 85%;
         /* border: 1px solid red; */
     }
 
-    .dashboard_wrapper .dashboard_leftside {
+    .userdashboard_wrapper .userdashboard_leftside {
         width: 85%;
         display: flex;
         justify-content: center;
@@ -598,23 +598,23 @@
         /* border: 1px solid red; */
     }
 
-    .dashboard_leftside_contact_email_color,
-    .dashboard_leftside_contact_email {
+    .userdashboard_leftside_contact_email_color,
+    .userdashboard_leftside_contact_email {
         display: none;
     }
 
-    .dashboard_rightside_top {
+    .userdashboard_rightside_top {
         width: 100%;
         margin: auto;
     }
 
-    .dashboard_wrapper>.dashboard_rightside {
+    .userdashboard_wrapper>.userdashboard_rightside {
         width: 80%;
         margin: auto;
         margin-top: 20px;
     }
 
-    .dashboard_rightside_RecomendedCoursesection {
+    .userdashboard_rightside_RecomendedCoursesection {
         /* border: 1px solid red; */
         width: 100%;
         display: grid;
@@ -624,7 +624,7 @@
         text-align: center;
     }
 
-    .dashboard_rightside_Recom_prod {
+    .userdashboard_rightside_Recom_prod {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -634,12 +634,12 @@
         text-align: center;
     }
 
-    .dashboard_rightside_Recom_prod>img {
+    .userdashboard_rightside_Recom_prod>img {
         width: 100%;
         margin-right: 5px;
     }
 
-    .dasboard_bottom_section {
+    .useruserdashboard_bottom_section {
         width: 90%;
         margin: auto;
         margin-top: 10px;
@@ -648,16 +648,16 @@
 
     }
 
-    .dasboard_bottom_left_section {
+    .useruserdashboard_bottom_left_section {
         display: none;
     }
 
-    .dasboard_bottom_right_twosections_bottom {
+    .useruserdashboard_bottom_right_twosections_bottom {
         display: none;
     }
 
 
-    .dashboard_FormStatus {
+    .userdashboard_FormStatus {
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -668,7 +668,7 @@
     }
 
 
-    .dashboard_FormStatus_leftside {
+    .userdashboard_FormStatus_leftside {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -678,7 +678,7 @@
 
     }
 
-    .dashboard_rtext {
+    .userdashboard_rtext {
         text-align: left;
         padding: 0;
         margin: 0;
@@ -686,20 +686,20 @@
 
     }
 
-    .dashboard_FormStatus_leftside_img>img {
+    .userdashboard_FormStatus_leftside_img>img {
         display: flex !important;
         justify-content: center !important;
         width: 150px;
 
     }
 
-    .dashboard_FormStatus_rightside p {
+    .userdashboard_FormStatus_rightside p {
         margin: 0;
         padding: 0;
         font-size: small;
     }
 
-    .dashboard_FormStatus_rightside {
+    .userdashboard_FormStatus_rightside {
         flex-direction: column;
         width: 100%;
         justify-content: space-evenly;
